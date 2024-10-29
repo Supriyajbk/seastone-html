@@ -1,0 +1,5 @@
+.contact-section{position: relative; width: 100%; clear: both; background-color: var(--midnight-75); padding: 152px 0 0;}
+.contact-main{max-width: 1024px; margin: 0 auto; }
+.contact-cont{text-align: center; }
+.contact-head h1{color: var(--white); line-height: 1.25; }
+.contact-info-list{flex: 0 0 calc(33.33% - 20px);}

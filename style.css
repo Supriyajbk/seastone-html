@@ -11,7 +11,7 @@ Text Domain:Lalande Personal Injury Law Development
 */
 
 
-@import url("css/_colors.css");
+@import url("css/_color.css");
 @import url("css/_reset.css");
 @import url("css/_header.css");
 @import url("css/_footer.css");
@@ -73,8 +73,8 @@ section ol:last-child, section ul:last-child {margin-bottom: 0;}
 .banner-bg img {width:100%; height:100%; font-family:"object-fit:cover"; object-fit:cover; -o-object-fit:cover; object-position:0 0; -o-object-position:0 0;}
 
 /* Background Bg */
-.background-bg {width: 100%; height: 100%; top: 0; left: 0; position: absolute;  z-index: -1; opacity: 0.4;}
-.background-bg:before {background: radial-gradient(50% 50% at 50% 50%, rgba(5, 23, 25, 0.00) 0%, #051719 100%); content: ""; display: block; width: 100%; height: 100%; left: 0; right: 0; margin: auto; position: absolute; z-index: 1;}
+.background-bg {width: 100%; height: 100%; top: 0; left: 0; position: absolute;  z-index: -1;}
+/* .background-bg:before {background: radial-gradient(50% 50% at 50% 50%, rgba(5, 23, 25, 0.00) 0%, #051719 100%); content: ""; display: block; width: 100%; height: 100%; left: 0; right: 0; margin: auto; position: absolute; z-index: 1;} */
 
 /* Image Cover */
 .pos-relative {position:relative;}
@@ -189,8 +189,8 @@ body ul.selectBox-dropdown-menu li.selectBox-selected a, body ul.selectBox-dropd
 .form-intro h2 {margin: 0 0 16px 0;}
 
 /* Field Width */
-.frm_half {width:calc(50% - 20px); float: left; clear: none!important;}
-.frm_first {margin-right: 40px;}
+.frm_half {width:calc(33.33% - 20px); float: left; clear: none!important;}
+.frm_first {margin-right: 28px;}
 .frm_last {float: right; margin-left: auto;}
 .frm_full {margin-right: 0;}
 
@@ -225,7 +225,7 @@ body ul.selectBox-dropdown-menu li.selectBox-selected a, body ul.selectBox-dropd
 .frm_submit button::before, .frm_submit button::after{background-color: var(--green-900);}
 
 /* Input & Textarea*/
-.frm_forms .frm_form_fields input, .frm_forms .frm_form_fields textarea, .frm_forms .frm_form_fields select {font-family: "DM Sans", sans-serif; font-weight: bold; display: block; outline: 0; border-radius: 0; font-size: 1rem; line-height: 1.25; font-style: normal; vertical-align: middle; -webkit-appearance: none; background-color: rgb(5 23 25 / 80%)!important; color: var(--white)!important; border: 0 none!important; border-bottom:solid 2px var(--lime-500)!important; padding:14px 16px 14px 16px; width: 100%; box-shadow: none; transition: none;}
+.frm_forms .frm_form_fields input, .frm_forms .frm_form_fields textarea, .frm_forms .frm_form_fields select {font-family: "DM Sans", sans-serif; font-weight: bold; display: block; outline: 0; border-radius: 8px; font-size: 1rem; line-height: 1.25; font-style: normal; vertical-align: middle; -webkit-appearance: none; background-color: rgb(5 23 25 / 80%)!important; color: var(--white)!important; border: 0 none!important; border-bottom:solid 2px var(--lime-500)!important; padding:15px 17px 15px 17px; width: 100%; box-shadow: none; transition: none;}
 .frm_forms .frm_form_fields input:focus, .frm_forms .frm_form_fields textarea:focus {box-shadow:none!important;  border: 0 none!important; border-bottom:solid 2px var(--lime-500)!important;}
 .frm_forms .frm_form_fields textarea {min-height: 268px;}
 
