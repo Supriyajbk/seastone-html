@@ -1,5 +1,24 @@
-.contact-section{position: relative; width: 100%; clear: both; background-color: var(--midnight-75); padding: 152px 0 0;}
+.contact-section{position: relative; width: 100%; clear: both; background-color: var(--midnight-75); padding: 152px 0 0; height: 1172px;}
 .contact-main{max-width: 1024px; margin: 0 auto; }
-.contact-cont{text-align: center; }
-.contact-head h1{color: var(--white); line-height: 1.25; }
+.contact-main h1{text-align: center; color: var(--white); line-height: 1.25;}
+
+.contact-info ul.mail-links{gap: 24px; margin: 0 auto 48px; justify-content: center;}
+.contact-info ul > li::before{display: none;}
+.contact-info ul li{margin-bottom: 0;}
+.contact-info ul li a{display: flex; color: var(--white); font-size: 1.125rem; line-height: 1; font-weight: 700; align-items: center;}
+.contact-info ul > li a figure{width: 24px; height: 24px; margin-right: 8px;}
 .contact-info-list{flex: 0 0 calc(33.33% - 20px);}
+
+.contact-form{background-color: var(--white); padding: 40px; border-radius: 16px; margin-bottom: 40px;}
+.contact-text{text-align: center; }
+.contact-text h2{color: var(--white);}
+.contact-text h2 span{color: var(--sapphire);}
+.contact-text h2 span a{color: var(--sapphire); font-size: 2rem; font-weight: 700; line-height: 1.25; letter-spacing: -0.64px;}
+
+
+.frm_forms .frm_form_fields .frm_form_field label, .frm_forms .frm_form_fields .frm_form_field div.frm_primary_label{display: none;}
+.frm_forms .frm_form_fields input, .frm_forms .frm_form_fields textarea, .frm_forms .frm_form_fields select {background-color: var(--sapphire-10)!important;}
+.frm_forms .frm_form_fields input{color: var(--midnight)!important; border: 1px solid var(--cerulean)!important; border-radius: 8px;}
+.frm_forms .frm_form_fields textarea { min-height: 160px; }
+  .frm_forms .frm_form_fields .frm-wrapper .frm_form_field .frm_checkbox label{display: block;}
+  .frm-wrapper .frm_submit button { margin-left: auto !important; background: var(--cerulean); border-radius: 24px; color: var(--white); }

@@ -199,7 +199,8 @@ body ul.selectBox-dropdown-menu li.selectBox-selected a, body ul.selectBox-dropd
 .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field .frm_error { right: 0; width: 100%; display: block; font-size: 12px !important; color: var(--white); background: transparent; padding: 0; margin: 0; border-radius: 0; text-align: right !important; line-height: normal !important; font-weight: 400; top: inherit; position: absolute; }
 
 /* Label */
-.frm_forms .frm_form_fields .frm_form_field label, .frm_forms .frm_form_fields .frm_form_field div.frm_primary_label { font-size: 1rem; line-height: 1.5; padding: 0; text-indent: inherit; font-weight: 500; color: var(--white); z-index: 1;  display: block; margin-bottom: 3px; visibility: visible;}
+.frm_forms .frm_form_fields .frm_form_field label, .frm_forms .frm_form_fields .frm_form_field div.frm_primary_label{display: none;}
+/* .frm_forms .frm_form_fields .frm_form_field label, .frm_forms .frm_form_fields .frm_form_field div.frm_primary_label { font-size: 1rem; line-height: 1.5; padding: 0; text-indent: inherit; font-weight: 500; color: var(--white); z-index: 1;  display: block; margin-bottom: 3px; visibility: visible;} */
 .frm_forms .frm_form_fields .frm_form_field div.frm_primary_label {font-weight: bold; padding: 0 0 10px 0;}
 
 
@@ -225,7 +226,7 @@ body ul.selectBox-dropdown-menu li.selectBox-selected a, body ul.selectBox-dropd
 .frm_submit button::before, .frm_submit button::after{background-color: var(--green-900);}
 
 /* Input & Textarea*/
-.frm_forms .frm_form_fields input, .frm_forms .frm_form_fields textarea, .frm_forms .frm_form_fields select {font-family: "DM Sans", sans-serif; font-weight: bold; display: block; outline: 0; border-radius: 8px; font-size: 1rem; line-height: 1.25; font-style: normal; vertical-align: middle; -webkit-appearance: none; background-color: rgb(5 23 25 / 80%)!important; color: var(--white)!important; border: 0 none!important; border-bottom:solid 2px var(--lime-500)!important; padding:15px 17px 15px 17px; width: 100%; box-shadow: none; transition: none;}
+.frm_forms .frm_form_fields input, .frm_forms .frm_form_fields textarea, .frm_forms .frm_form_fields select {font-family: "DM Sans", sans-serif; font-weight: bold; display: block; outline: 0; border-radius: 8px; font-size: 1rem; line-height: 1.25; font-style: normal; vertical-align: middle; -webkit-appearance: none; background-color: rgb(5 23 25 / 80%)!important; color: var(--white)!important; border: 1px solid var(--cerulean)!important; padding:15px 17px 15px 17px; width: 100%; box-shadow: none; transition: none;}
 .frm_forms .frm_form_fields input:focus, .frm_forms .frm_form_fields textarea:focus {box-shadow:none!important;  border: 0 none!important; border-bottom:solid 2px var(--lime-500)!important;}
 .frm_forms .frm_form_fields textarea {min-height: 268px;}
 
