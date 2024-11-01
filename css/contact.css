@@ -68,6 +68,7 @@
     .contact-form .frm_forms .frm_form_fields .frm_form_field.frm_third {flex: 0 0 calc(33.333333% - 19px)}
     .contact-form .frm_forms .frm_form_fields .frm_form_field.frm_full {flex: 0 0 100%;}
 
+    .contact-footer-btns{flex-direction: column;}
 
   }
 
