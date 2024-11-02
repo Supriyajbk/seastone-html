@@ -131,10 +131,10 @@ button.btn-black:before, button.btn-black:after, .button.btn-black:before, .butt
 input[type="submit"] {background-image: url("../images/search-icon.svg") !important; background-repeat: no-repeat !important; position: absolute; right:16px; top:0; bottom: 0; padding: 0 !important; width: 24px; height: 24px; margin: auto; background-color: transparent !important; border: 0 none; border-radius: 0; z-index: 1;}
 
 
-::-webkit-input-placeholder {color: var(--white); font-family:"DM Sans", sans-serif; opacity: 1; font-size: 1rem; overflow: visible;}
-:-moz-placeholder {color: var(--white); font-family:"DM Sans", sans-serif; opacity: 1; font-size: 1rem; overflow: visible;}
-::-moz-placeholder {color: var(--white)!important; font-family:"DM Sans", sans-serif; opacity: 1; font-size:1rem; overflow: visible;}
-:-ms-input-placeholder {color: var(--white); font-family:"DM Sans", sans-serif; opacity: 1; font-size:1rem; overflow: visible;}
+::-webkit-input-placeholder {color: var(--midnight); font-family:"itc-avant-garde-gothic-pro", sans-serif; opacity: 1; font-size: 1rem; overflow: visible;}
+:-moz-placeholder {color: var(--midnight); font-family:"itc-avant-garde-gothic-pro", sans-serif; opacity: 1; font-size: 1rem; overflow: visible;}
+::-moz-placeholder {color: var(--midnight); font-family:"itc-avant-garde-gothic-pro", sans-serif; opacity: 1; font-size:1rem; overflow: visible;}
+:-ms-input-placeholder {color: var(--midnight); font-family:"itc-avant-garde-gothic-pro", sans-serif; opacity: 1; font-size:1rem; overflow: visible;}
 
 
 embed, iframe, object, video {margin-bottom: 7px; max-width: 100%; border-radius: 0;}
