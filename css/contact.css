@@ -18,19 +18,19 @@
 
 .contact-form{background-color: var(--white); padding: 40px; border-radius: 16px; margin-bottom: 40px;}
 .contact-text{text-align: center; }
-.contact-text h2{color: var(--white);}
-.contact-text h2 span{color: var(--sapphire);}
-.contact-text h2 span a{color: var(--sapphire); font-size: 2rem; font-weight: 700; line-height: 1.25; letter-spacing: -0.64px;}
+.contact-text h2{color: var(--white); font-family: "itc-avant-garde-gothic-pro", sans-serif; font-weight: bold;  font-size: 2rem;}
+/* .contact-text h2 span{color: var(--sapphire);} */
+.contact-text h2 a{color: var(--sapphire); font-size: 2rem; font-weight: 700; line-height: 1.25; letter-spacing: -0.64px; margin-left: 16px; position: relative;}
+.contact-text h2 a:before{position: absolute; content:""; display: block; width: 100%; height: 4px; background-color: var(--sapphire-25); bottom: -4px; left: 0;}
 
-
-.contact-form .frm_forms .frm_form_fields .frm_form_field label, .frm_forms .frm_form_fields .frm_form_field div.frm_primary_label{display: none;}
-.contact-form .frm_forms .frm_form_fields input, .frm_forms .frm_form_fields textarea, .frm_forms .frm_form_fields select {background-color: var(--sapphire-10)!important;}
-.contact-form .frm_forms .frm_form_fields input{color: var(--midnight); border: 1px solid var(--cerulean); border-radius: 8px;}
-.contact-form .frm_forms .frm_form_fields textarea { min-height: 160px; }
- .contact-form .frm_forms .frm_form_fields .frm-wrapper .frm_form_field .frm_checkbox label{display: block; position: relative; padding-left: 20px;}
+/* .contact-form .frm_forms .frm_form_fields .frm_form_field label, .frm_forms .frm_form_fields .frm_form_field div.frm_primary_label{display: none;} */
+/* .contact-form .frm_forms .frm_form_fields input, .frm_forms .frm_form_fields textarea, .frm_forms .frm_form_fields select {background-color: var(--sapphire-10);} */
+/* .contact-form .frm_forms .frm_form_fields input{color: var(--midnight); border: 1px solid var(--cerulean); border-radius: 8px;}
+.contact-form .frm_forms .frm_form_fields textarea { min-height: 160px; } */
+ /* .contact-form .frm_forms .frm_form_fields .frm-wrapper .frm_form_field .frm_checkbox label{display: block; position: relative; padding-left: 20px;} */
  .contact-form .frm-wrapper .frm_submit button { margin-left: auto; background: var(--cerulean); border-radius: 24px; color: var(--white); }
 
- .contact-form .frm_forms .frm_form_fields .frm_form_field:hover{background-color: var(--sunshine); border: 2px solid var(--sunshine)}
+ /* .contact-form .frm_forms .frm_form_fields .frm_form_field input:hover{background-color: var(--sunshine); border-color: var(--sunshine);} */
 
 
 
