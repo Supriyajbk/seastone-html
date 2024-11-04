@@ -46,8 +46,10 @@ body {font-family:"itc-avant-garde-gothic-pro", sans-serif; color:var(--body-tex
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .h1 a, .h2 a, .h3 a, .h4 a, .h5 a, .h6 a {color:var(--heading); text-decoration: none;}
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .h1 a:hover, .h2 a:hover, .h3 a:hover, .h4 a:hover, .h5 a:hover, .h6 a:hover {color:var(--anchor-hover);}
+/*
 h1 span, h2 span, h3 span, h4 span, h5 span, h6 span, .h1 span, .h2 span, .h3 span, .h4 span, .h5 span, .h6 span {position: relative; display: inline; z-index: 1; background: -webkit-linear-gradient(to bottom, transparent 95%, var(--anchor-hover) 90%, var(--anchor-hover) 100%); background: linear-gradient(to bottom, transparent 95%, var(--anchor-hover) 90%, var(--anchor-hover) 100%); background-position: center -6px;}
 h2 span {background: -webkit-linear-gradient(to bottom, transparent 94%, var(--anchor-hover) 90%, var(--anchor-hover) 100%); background: linear-gradient(to bottom, transparent 94%, var(--anchor-hover) 90%, var(--anchor-hover) 100%); background-position: center -5px;}
+*/
 
 
 .h1, .h2, .h3, .h4, .h5, .h6 {display: block; color: var(--heading);}
@@ -204,7 +206,7 @@ body ul.selectBox-dropdown-menu li.selectBox-selected a, body ul.selectBox-dropd
 
 /* Input */
 .frm_forms .frm_form_fields input, .frm_forms .frm_form_fields textarea, .frm_forms .frm_form_fields select {font-family: "itc-avant-garde-gothic-pro", sans-serif; font-weight: 700; display: block; outline:1px solid var(--cerulean)!important; border-radius: 8px; font-size: 1rem; line-height: 100%; font-style: normal; vertical-align: middle; -webkit-appearance: none; background-color: var(--input)!important; color: var(--midnight)!important; border:0 none!important; padding:15px 17px 16px; width: 100%; box-shadow: none; transition: none;}
-body .frm_forms .frm_form_fields input:focus, body .frm_forms .frm_form_fields textarea:focus {box-shadow:none!important;  outline:4px solid rgba(237, 208, 86, 0.50)!important; background-color: var(--input-focus)!important; border:0 none!important; color: var(--midnight)!important;}
+body .frm_forms .frm_form_fields input:focus, body .frm_forms .frm_form_fields textarea:focus, body .frm_forms .frm_form_fields input:hover, body .frm_forms .frm_form_fields textarea:hover {box-shadow:none!important; outline:4px solid rgba(237, 208, 86, 0.50)!important; background-color: var(--input-focus)!important; border:0 none!important; color: var(--midnight)!important;}
 body .frm_forms .frm_form_fields input.input-has-value, body .frm_forms .frm_form_fields textarea.input-has-value {outline:4px solid rgba(83, 196, 201, 0.50)!important; background-color:transparent!important; border:0 none!important; color: var(--cerulean)!important;}
 
 .frm_forms .frm_form_fields textarea {min-height:160px; padding: 17px;}
