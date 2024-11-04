@@ -173,11 +173,21 @@ body ul.selectBox-dropdown-menu li.selectBox-selected a, body ul.selectBox-dropd
 
 
 /*-- common form css starts here --*/
+<<<<<<< HEAD
 .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_fields_container {display:block;}
 .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field .frm_error {right:16px !important; width:100%; display:block; font-size:12px !important; color:#f00 !important; background:transparent; padding:0; margin:0; border-radius:0; text-align:right !important; line-height:normal !important; font-weight:400; top:-9px; position:absolute;}
 .frm_forms .frm_form_fields fieldset {margin:0; padding:0; border:0;}
 .frm_forms .frm_form_fields .frm_form_field{margin-bottom:24px; position: relative; clear: both;}
 .frm_forms .frm_form_fields .frm_form_field.frm_full {clear:both; width: 100%;}
+=======
+.default_form {padding:32px; border-radius: 24px; border: solid 8px var(--input); clear: both; width:100%; margin: 64px 0 17px;}
+body .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_fields_container {display:block;}
+body .frm_forms .frm_form_fields fieldset {margin:0; padding:0; border:0;}
+body .frm_forms .frm_form_fields .frm_form_field{margin-bottom:24px; position: relative; clear: both;}
+body .frm_forms .frm_form_fields .frm_form_field.frm_full {clear:both; width: 100%;}
+.form-intro {clear: both; width: 100%; margin: 0 0 40px 0;}
+.form-intro h2 {margin: 0 0 16px 0;}
+>>>>>>> 58d369347844fe24b6c778f8ea9c5ea63bdc3f07
 
 .frm_forms .frm_form_fields .frm_form_field label, .frm_forms .frm_form_fields .frm_form_field div.frm_primary_label { font-size: 1rem; line-height: 1.4; padding: 0; text-indent: inherit; font-weight: normal; color: var(--midnight); z-index: 1;}
 .frm_forms .frm_form_fields .frm_form_field label.frm_primary_label {font-weight: bold; color: var(--midnight); position: absolute; left: 16px; top: 15px; transition: all ease-in-out 0.3s; visibility: visible;}
@@ -229,12 +239,77 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
 .frm_last {float: right; margin-left: auto;}
 .frm_full {margin-right: 0;}
 
+<<<<<<< HEAD
 /* Success Message */
 .frm_forms .frm_error_style {display: none;}
 .frm_forms .frm_message, .frm_forms .frm_success_style {margin: 0 0 20px 0; padding: 0; background: top; border: 0 none; font-weight: bold; font-size: 1rem; line-height: 1.5;}
 .frm_forms .frm_message p {color: var(--optionaltxt); text-align: center; padding: 0 25px;}
 
 .default_form {border-radius: 16px; background: var(--white); clear: both; width:100%; padding: 40px 39px; margin: 40px 0;}
+=======
+
+/* Error */
+body .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field .frm_error { right: 0; width: 100%; display: block; font-size: 12px !important; color: var(--white); background: transparent; padding: 0; margin: 0; border-radius: 0; text-align: right !important; line-height: normal !important; font-weight: 400; top: inherit; position: absolute; }
+
+/* Label */
+body .frm_forms .frm_form_fields .frm_form_field label, body .frm_forms .frm_form_fields .frm_form_field div.frm_primary_label{display: none;}
+/* body .frm_forms .frm_form_fields .frm_form_field label, body .frm_forms .frm_form_fields .frm_form_field div.frm_primary_label { font-size: 1rem; line-height: 1.5; padding: 0; text-indent: inherit; font-weight: 500; color: var(--white); z-index: 1;  display: block; margin-bottom: 3px; visibility: visible;} */
+body .frm_forms .frm_form_fields .frm_form_field div.frm_primary_label {font-weight: bold; padding: 0 0 10px 0;}
+body .frm_forms .frm_form_fields .frm-wrapper .frm_form_field .frm_checkbox label { display: block; position: relative; padding-left: 28px; }
+
+/* Radio Button */
+body .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm-wrapper .frm_form_field.form-field.frm_required_field.frm_top_container.vertical_radio {margin-right: 10px; width: 75%;}
+body .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field.vertical_radio .frm_error {right: inherit !important; left: 0; text-align: left !important; top: inherit; margin-top: 6px;}
+body .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field.vertical_radio  label {padding-left:29px; display:block; cursor: pointer;}
+body .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field.vertical_radio.frm_other_container label {padding-left:29px; display:block; cursor: pointer;}
+body .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field.vertical_radio input[type="radio"] {position: absolute; left: 0; padding: 0; width: 20px;
+  height: 20px; border: 0 none !important;}
+body .frm_forms.frm_style_formidable-style.with_frm_style .frm_radio input[type="radio"]::before {box-shadow: inset 10px 10px var(--heading); margin: 4px 0 0 4px;}
+body .frm_forms.frm_style_formidable-style.with_frm_style .frm_radio {margin: 0 0 5px 0;}
+body .frm_forms.frm_style_formidable-style.with_frm_style .frm_radio input.frm_other_input:not(.frm_other_full) {width: 100%; margin: 10px 0 0 0;}
+
+body .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field.vertical_radio label{font-size: 0.875rem; color: var(--light-grey); text-transform: none;}
+/* Checkbox */
+body .frm_forms.with_frm_style .frm_checkbox input[type="checkbox"], 
+body .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field.frm_blank_field input[type="checkbox"] {position: absolute; left: 0; width: 20px; height: 20px; cursor: pointer;  outline: none;  -moz-border-radius: 4px; -webkit-border-radius: 4px;  border-radius: 20px; padding: 0 !important; background: var(--cerulean); border: none;}
+body .frm_forms.with_frm_style .frm_checkbox input[type="checkbox"]:checked:before { content: "\f00c"; font-family: "Font Awesome 6 Pro"; display: block; height: 21px; left: 0px; position: absolute; top: 1px; width: 21px; font-weight: 900; color: var(--white); font-size: 12px; transform: none; clip-path: inherit; box-shadow: none; text-align: center; margin: 0; background-image: none!important; margin-top: 2px;}
+body .frm_forms.with_frm_style .frm_checkbox input[type="checkbox"]:before {display: none;}
+
+body .frm_forms.with_frm_style .frm_fields_container .frm_checkbox input[type="checkbox"]:not([disabled]):checked {background-color: var(--cerulean);}
+
+/* Input & Textarea*/
+body .frm_forms .frm_form_fields input, body .frm_forms .frm_form_fields textarea, body .frm_forms .frm_form_fields select {font-family: "itc-avant-garde-gothic-pro", sans-serif; font-weight: bold; display: block; outline: 0; border-radius: 8px; font-size: 1rem; line-height: 1.25; font-style: normal; vertical-align: middle; -webkit-appearance: none;  background-color: var(--sapphire-10);; color: var(--midnight); border: 1px solid var(--cerulean); padding:15px 17px 15px 17px; width: 100%; box-shadow: none; transition: all .5s ease;}
+body .frm_forms .frm_form_fields input:focus, body .frm_forms .frm_form_fields textarea:focus, body .frm_forms .frm_form_fields input:hover:focus, body .frm_forms .frm_form_fields textarea:hover:focus {box-shadow:none!important; background-color: var(--white); border-color: var(--sapphire-50); outline: 2px solid var(--sapphire-50); }
+body .frm_forms .frm_form_fields textarea {min-height: 160px;}
+body .frm_forms .frm_form_fields input:hover, body .frm_forms .frm_form_fields textarea:hover{background-color: var(--sunshine-25); border-color: var(--sunshine); outline: 2px solid var(--sunshine);}
+
+/* Select Box */
+body .frm_forms .frm_form_fields .selectBox-dropdown{background-color: var(--green-900); color: var(--white); padding:15px 46px 15px 16px; font-family: "DM Sans", sans-serif; font-weight: bold; border-top: 0 none; border-left: 0 none; border-right: 0 none; line-height: 1.3; text-transform: none;}
+
+/* Button */
+body .frm_forms .frm_submit{margin:0;}
+body .frm_forms.frm_style_formidable-style.with_frm_style .frm_submit .button, 
+body .frm_forms.frm_style_formidable-style.with_frm_style .frm_submit button,
+body .frm_forms.frm_style_formidable-style.with_frm_style .frm_submit button:active {margin:0; padding:0; vertical-align: middle; cursor: pointer; border: 0 none; border-radius: 0; background-color: var(--lime-500); position: relative; transition: all .3s ease-in-out; -webkit-transition: all .3s ease-in-out; -moz-transition: all .5s ease-in-out; text-align: center; color: var(--heading); font-family: "DM Sans", sans-serif; text-decoration: none; display: inline-block; font-size: 0.875rem; font-weight: bold; line-height: normal; box-shadow: none;}
+body .frm_forms.frm_style_formidable-style.with_frm_style .frm_submit.button:hover, body .frm_forms.frm_style_formidable-style.with_frm_style .frm_submit button:hover { color: var(--white);}
+
+body .frm_forms.frm_style_formidable-style.with_frm_style .frm_submit button span {position: relative; padding: 20px 65px 19px 24px; display: block;}
+body .frm_forms.frm_style_formidable-style.with_frm_style .frm_submit button span:after {background-image: url('./images/navigation-pointer.svg'); background-repeat: no-repeat; content: ""; display: block; position: absolute; right: 0; width: 24px; height: 24px; transition: all .5s ease-in-out; -webkit-transition: all .5s ease-in-out; -moz-transition: all .5s ease-in-out; right: 24px; top: 16px;}
+ body .frm_forms.frm_style_formidable-style.with_frm_style .frm_submit button:hover span:after {background-image: url('./images/navigation-pointer-white.svg'); transition: all .5s ease-in-out; -webkit-transition: all .5s ease-in-out; -moz-transition: all .5s ease-in-out;}
+
+
+
+/* Error & Success Message */
+body .frm_forms .frm_error_style {display: none;}
+body .frm_forms .frm_message, body .frm_forms .frm_success_style {margin: 100px 0 100px; padding: 0; background: top; border: 0 none; font-weight: bold; font-size: 1rem; line-height: 1.5;}
+body .frm_forms .frm_message p {color: var(--white);  padding: 0;}
+
+/* Bottom Button Wrapper */
+.frm-wrapper {width: 100%; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;}
+.frm-wrapper .frm_submit button {margin-left: auto!important;}
+body .frm_forms .frm_form_fields .frm-wrapper .frm_form_field {margin: 0; }
+body .frm_forms .frm_form_fields .frm-wrapper > .frm_form_field .frm_form_field {margin-bottom: 0; width: 100%;}
+>>>>>>> 58d369347844fe24b6c778f8ea9c5ea63bdc3f07
 /*-- common form css ends here --*/
 
 
@@ -345,7 +420,21 @@ position: relative; z-index: 1; text-decoration: none;  background-color: var(--
     
 }
 
+<<<<<<< HEAD
 @media only screen and (max-width:1023px) and (min-width:200px) {    
+=======
+@media only screen and (max-width:1023px) and (min-width:200px) {
+    .h1 {font-size: 2.5rem; line-height: 1.2; margin-bottom:24px;}
+    body .frm_forms .frm_form_fields .frm-wrapper .frm_form_field { margin-bottom: 20px; }
+    .frm-wrapper .frm_submit {width: 100%;}
+    .frm-wrapper .frm_submit button {margin-left: 0!important;}
+    
+    .heading_mobile_menu {padding:15px 40px 14px 16px; display:block; margin:0; border-bottom:1px solid var(--blacktext); background-color:var(--input); position:relative; cursor:pointer; display:block; width:100%; margin-left: auto; font-size: 1rem;  font-weight: bold;}
+    .heading_mobile_menu:after {width:auto; right:20px; top:calc(50% + 2px); transform:translateY(-50%); font-size:18px; color: var(--heading); border:none; font-family:"Font Awesome 6 Pro"; font-weight:600; position:absolute; display:flex; align-items:center; transition:all 0.5s ease-in-out; -webkit-transition:all 0.5s ease-in-out; -moz-transition:all 0.5s ease-in-out; background:none; content:"\f107";}
+    .heading_mobile_menu.active::after {transform:translateY(-50%) rotate(-180deg);}
+    
+    .stars{margin-bottom: 20px;}
+>>>>>>> 58d369347844fe24b6c778f8ea9c5ea63bdc3f07
     body .mfp-iframe-holder .mfp-close {right: 0;}
     .mfp-iframe-holder {padding: 40px;}
 
@@ -364,6 +453,28 @@ position: relative; z-index: 1; text-decoration: none;  background-color: var(--
 
     .sharethis-inline-share-buttons .st-btn {width: 40px; height: 40px !important; line-height: 36px !important; margin: 0 0 0 12px !important;}
 
+<<<<<<< HEAD
+=======
+    body .frm_forms .frm_submit {width: 100%;}
+    body .frm_forms .frm_form_fields textarea { min-height: 107px; height: 107px;}
+    body .frm_forms .frm_submit button span::after{ position: relative!important; display: inline-block!important; left: 0;  top: 7px!important; margin-left: 16px; }
+    body .frm_forms .frm_submit button span {padding: 11px 65px 17px 65px!important;}
+    .frm_half {width:100%; margin-left: 0; margin-right: 0; margin-bottom: 16px!important;} 
+    
+    body body .frm_forms .frm_submit .button, body body .frm_forms .frm_submit button {width: 100%;}
+    body .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm-wrapper .frm_form_field.form-field.frm_required_field.frm_top_container.vertical_radio, 
+    .default_form body .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field.vertical_radio {width: 100%; margin: 0 0 23px 0;}
+    body .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field.vertical_radio label { line-height: 1.25;}
+    body .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field.frm_blank_field input[type="checkbox"] {left: inherit; right: 0; width: 35px; height: 35px; border-radius: 5px; margin: 0;}
+    body .frm_forms .frm_form_fields .frm-wrapper .frm_form_field {margin: 0; width: 100%; min-height: 35px;}
+    body .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field.vertical_radio .frm_error {text-align: right!important;}
+    body .frm_forms .frm_form_fields .frm_form_field label span {display: block;}
+    .frm-wrapper .frm_submit {margin:22px 0 0 0;}
+
+    body .frm_forms.frm_style_formidable-style.with_frm_style .frm_submit button{width: 100%;}
+    body .frm_forms .frm_message, body .frm_forms .frm_success_style {margin: 40px 0 0; }
+
+>>>>>>> 58d369347844fe24b6c778f8ea9c5ea63bdc3f07
     .heading {padding: 0 0 38px;}
     .heading-lt { flex: inherit; width: 60%; flex-grow: 1;}
     .heading-rt {justify-content: flex-start;}

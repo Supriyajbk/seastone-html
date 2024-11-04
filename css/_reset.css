@@ -135,6 +135,10 @@ input[type="submit"] {background-image: url("../images/search-icon.svg") !import
 ::-moz-placeholder {color: var(--midnight); font-family:"itc-avant-garde-gothic-pro", sans-serif; opacity: 1; font-size:1rem; overflow: visible;}
 :-ms-input-placeholder {color: var(--midnight); font-family:"itc-avant-garde-gothic-pro", sans-serif; opacity: 1; font-size:1rem; overflow: visible;}
 
+input:focus::-webkit-input-placeholder{color: var(--sapphire);}
+input:focus:-moz-placeholder{color: var(--sapphire);}
+input:focus::-moz-placeholder{color: var(--sapphire);}
+input:focus::-ms-input-placeholder{color: var(--sapphire);}
 
 embed, iframe, object, video {margin-bottom: 7px; max-width: 100%; border-radius: 0;}
 p > embed, p > iframe, p > object, span > embed, span > iframe, span > object {margin-bottom: 0;}
