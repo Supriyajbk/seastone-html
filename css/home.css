@@ -1,0 +1,4 @@
+@import url("_default-banner.css");
+@import url("_logo-slider.css");
+
+.default-banner-section {background: var(--aeganbg);}
