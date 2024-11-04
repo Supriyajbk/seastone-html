@@ -22,7 +22,7 @@
 .contact-text h2 span{color: var(--sapphire);}
 .contact-text h2 span a{color: var(--sapphire); font-size: 2rem; font-weight: 700; line-height: 1.25; letter-spacing: -0.64px;}
 
-
+/*
 .contact-form .frm_forms .frm_form_fields .frm_form_field label, .frm_forms .frm_form_fields .frm_form_field div.frm_primary_label{display: none;}
 .contact-form .frm_forms .frm_form_fields input, .frm_forms .frm_form_fields textarea, .frm_forms .frm_form_fields select {background-color: var(--sapphire-10)!important;}
 .contact-form .frm_forms .frm_form_fields input{color: var(--midnight); border: 1px solid var(--cerulean); border-radius: 8px;}
@@ -32,7 +32,7 @@
 
  .contact-form .frm_forms .frm_form_fields .frm_form_field:hover{background-color: var(--sunshine); border: 2px solid var(--sunshine)}
 
-
+*/
 
 
   .contact-footer-bg::after{position: absolute; display: block; width: 100%; height:  100%; top: 0; left: 0; background: linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, var(--white) 100%); content:"";}

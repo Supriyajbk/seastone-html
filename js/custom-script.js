@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 jQuery(document).ready(function () {
 
   /* Fixed Header */
@@ -19,7 +18,7 @@ jQuery(document).ready(function () {
       jQuery(this).toggleClass("active");
       jQuery(".mobile_menu").toggleClass("navOpen");
       jQuery(".main_header").toggleClass("menu-open");
-      jQuery("html").toggleClass("no-scroll")
+      jQuery("html").toggleClass("no-scroll");
     });
 
 
@@ -71,79 +70,67 @@ jQuery(document).ready(function () {
     jQuery(".accordion-item .content").not(jQuerycontent).slideUp("slow");
   });
 
-    
-//jQuery(".dynamic-selector").each(function () {
-//    const $prodSlide = jQuery(this);
-//
-//    jQuery(".ds-thumb:first-child").addClass("active");
-//    jQuery(".ds-rt-inner:first-child").addClass("active").show(); 
-//
-//    $prodSlide.find(".ds-thumb").on("click", function (e) {
-//        e.preventDefault();
-//        
-//        jQuery(this).addClass("active").siblings().removeClass("active");
-//        let data = jQuery(this).data("name");
-//        $prodSlide.find(".ds-rt-inner").hide();
-//        const $targetContent = $prodSlide.find('.ds-rt-inner[data-image="' + data + '"]');
-//        $targetContent.fadeIn(800);
-//
-//        if (jQuery(window).width() <= 1023) { 
-//            jQuery('html, body').animate({
-//                scrollTop: $targetContent.offset().top - 80
-//            }, 800);
-//        }
-//    });
-//});
-    
 
-jQuery(".dynamic-selector").each(function () {
-    const $prodSlide = jQuery(this);
+  /* Form */
+  jQuery('.frm_form_field input, .frm_form_field textarea').on('input', function () {
+    var inputLength = jQuery(this).val().length;
+    if (inputLength > 0) {
+      jQuery(this).addClass('input-has-value');
+    } else {
+      jQuery(this).removeClass('input-has-value');
+    }
+  });
 
-    jQuery(".ds-thumb:first-child").addClass("active");
-    jQuery(".ds-rt-inner:first-child").addClass("active").show();
+  jQuery('.frm_form_field input, .frm_form_field textarea').on('blur', function () {
+    var inputValue = jQuery(this).val();
+    if (parseFloat(inputValue) > 0 && inputValue.trim() !== '') {
+      jQuery(this).addClass('highlight');
+    } else {
+      jQuery(this).removeClass('highlight');
+    }
+  });
 
-    $prodSlide.find(".ds-thumb").on("click", function (e) {
-        e.preventDefault();
+  jQuery(".frm_forms .frm_form_fields input, .frm_forms .frm_form_fields textarea").on('focus', function () {
+    jQuery(this).siblings(".frm_form_field").addClass("input-has-value");
+    jQuery(this).parent(".frm_form_field ").removeClass("frm_blank_field");
+    jQuery(this).siblings("label.frm_primary_label").addClass("label-top");
 
-        const $this = jQuery(this);
-        const data = $this.data("name");
-        const $currentContent = $prodSlide.find(".ds-rt-inner:visible");
-        const $targetContent = $prodSlide.find('.ds-rt-inner[data-image="' + data + '"]');
-        const isWideScreen = window.innerWidth > 1023;
+    jQuery(this).siblings(".frm_error").hide();
+  }).on('blur', function () {
+    if (!jQuery(this).val()) {
+      jQuery(this).siblings(".frm_form_field").removeClass("input-has-value");
+      jQuery(this).siblings(".frm_error").show();
+      jQuery(this).parent(".frm_form_field ").addClass("frm_blank_field");
+      jQuery(this).siblings("label.frm_primary_label").removeClass("label-top");
 
-        if ($currentContent[0] !== $targetContent[0]) {
-            $this.addClass("active").siblings().removeClass("active");
+    } else {
+      jQuery(this).siblings(".frm_form_field").addClass("input-has-value");
+      jQuery(this).parent(".frm_form_field ").removeClass("frm_blank_field");
+      jQuery(this).siblings("label.frm_primary_label").addClass("label-top");
 
-            const animateHeightAndFade = function () {
-                jQuery(this).hide();
-                
-                $targetContent.css({ display: 'block', height: 'auto', opacity: 0 });
-                const targetHeight = $targetContent.outerHeight();
+      jQuery(this).siblings(".frm_error").hide();
+    }
+  });
 
-                $targetContent.css({ height: 0 }).animate({ height: targetHeight }, 400, function () {
-                    $targetContent.fadeTo(400, 1);
-                });
-            };
+  jQuery(document).on('change', '.frm_forms .frm_form_fields select', function () {
+    jQuery(this).siblings("label.frm_primary_label").addClass("input-has-value");
+  });
+  jQuery(document).on('change', '.frm_forms .frm_form_fields select', function () {
+    var selval = jQuery(this).val();
+    if (selval == '') {
+      jQuery(this).siblings("label.frm_primary_label").removeClass("input-has-value");
+    } else {
+      jQuery(this).siblings("label.frm_primary_label").addClass("input-has-value");
+    }
+  });
 
-            if (isWideScreen) {
-                $currentContent.fadeTo(400, 0, animateHeightAndFade);
-            } else {
-                $currentContent.fadeOut(400, animateHeightAndFade).promise().done(function () {
-                    jQuery('html, body').animate({ scrollTop: $targetContent.offset().top - 80 }, 400);
-                });
-            }
-        } else if (!isWideScreen) {
-            jQuery('html, body').animate({ scrollTop: $targetContent.offset().top - 80 }, 400);
-        }
-    });
+  function checkForInput(element) {
+    const $label = jQuery(element).siblings('div.frm_error');
+    if (jQuery(element).val().length > 0) {
+      $label.addClass('input-has-value');
+    } else {
+      $label.removeClass('input-has-value');
+    }
+  }
+
 });
-
-
-    
-});
-=======
-jQuery(document).ready(function($){
-    // here $ is shorthand propery use inside block code
-    
-});
->>>>>>> 9f4988a64d4049c4106a263cdf4e28e08466c07c

@@ -15,6 +15,7 @@
     --stone: #2A6472;
     --seafom: #9ED5DD;
     --sunshine: #EDD056;
+    --aegean: #1D5A84;
     --aegean-90: rgb(29 90 132 / 90%);
     --aegean-85: rgb(29 90 132 / 85%);
     --aegean-75: rgb(29 90 132 / 75%);
@@ -27,4 +28,7 @@
     --sapphire-10:  rgb(83 196 201 / 10%);
     --stone-85  :rgb(42 100 114 / 85%);
     --cerulean-85: rgb(63 141 165 / 85%);
-    --seafom-25 : rgb(158 213 221 / 25%);}
+    --seafom-25 : rgb(158 213 221 / 25%);
+    --input:rgba(83, 196, 201, 0.10);
+    --input-focus:rgba(237, 208, 86, 0.15);
+}

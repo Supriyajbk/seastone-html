@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 jQuery(document).ready(function () {
 
 
@@ -131,9 +130,3 @@ jQuery(document).ready(function () {
 
 
 });
-=======
-jQuery(document).ready(function($){
-    // here $ is shorthand propery use inside block code
-    
-});
->>>>>>> 9f4988a64d4049c4106a263cdf4e28e08466c07c
