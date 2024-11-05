@@ -1,4 +1,5 @@
 @import url("_default-banner.css");
 @import url("_logo-slider.css");
+@import url("_cta-module.css");
 
 .default-banner-section {background: var(--aeganbg);}
