@@ -59,7 +59,7 @@
       <figure role="none" class="object-fit"> <img src="images/home-bg@2x.jpg" alt="Background Image" title="Background Image"> </figure>
     </section>
     <!-- end of fixed bg --> 
-    <section class="contact-section relative">
+    <section class="contact-section pos-relative">
       <div class="container">
         <div class="contact-main">
           <div class="contact-head">
@@ -145,12 +145,8 @@
       </section>
     </section>
 
-    <section class="contact-concise-section">
-    <div class="contact-concise-bg background-bg">
-      <picture class="object-fit">
-        <source srcset="images/footer-thumb@2x.jpg" media="(min-width: 768px)">
-        <img src="images/footer-thumb@2x.jpg" alt="Footer Background Image" title="Footer Background Image"> </picture>
-    </div>
+    <section class="contact-concise-section pos-relative">
+   
     <div class="container">
       <div class="contact-concise-main relative">
         <div class="contact-concise-row flex">
@@ -210,11 +206,16 @@
 
 </main>
 
- 
+ </div>
 
 
 <footer id="main_footer" class="contact-footer pos-relative">
- 
+  <div class="contact-footer-bg background-bg">
+    <picture class="object-fit">
+      <source srcset="images/footer-thumb@2x.jpg" media="(min-width: 768px)">
+      <img src="images/footer-thumb@2x.jpg" alt="Footer Background Image" title="Footer Background Image"> </picture>
+  </div>
+  <div class="container">
       <div class="copyrights-main flex">
         <div class="copyrights-text">
           <p>© 2024 Seastone IP. All rights reserved.</p>
@@ -226,11 +227,11 @@
           <li><a href="">Policy Link</a></li>
         </ul>
       </div>
-    </div>
-  </div>
+   </div>
+  
 </footer>
-    </div>
-<!-- end of main -->
+    
+
 <script src="js/jquery-3.6.0.min.js"></script>
 <link rel="stylesheet" href="css/slick.css" media="all"/>
 <script src="js/slick.min.js"></script> 

@@ -17,8 +17,7 @@
 .contact-text h2 a:hover::before{opacity: 1;}
 
 .contact-concise-section{clear: both; width: 100%;}
-.contact-concise-bg::after{position: absolute; display: block; width: 100%; height:  100%; top: 0; left: 0; background: linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, var(--white) 100%); content:"";}
-.contact-concise-main{padding: 0 0 80px;}
+.contact-concise-main{padding: 0 0 80px; margin-top: -171px;}
 .contact-concise-row  { gap: 40px; margin:  0 0 72px; }
 .contact-concise-list { flex: 0 0 calc(33.33% - 27px); text-align: center; }
 .contact-concise-info{max-width: 300px; margin: 0 auto; padding-top: 80px;}
@@ -40,6 +39,10 @@ ul.copyright-links > li::before{display: none;}
 ul.copyright-links > li > a:hover{color: var(--midnight);}
 
 ul.mail-links li a:hover{color: var(--sapphire);}
+
+.contact-footer{clear: both; width: 100%; z-index: 1;}
+.contact-footer-bg::after{position: absolute; display: block; width: 100%; height:  100%; top: 0; left: 0; background: linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, var(--white) 100%); content:"";}
+.contact-footer-bg{min-height: 909px;}
 
   /* media css starts here */
   @media only screen and (min-width: 768px){
