@@ -27,7 +27,7 @@
     .main_header .header-btns .button {padding: 15px 15px 11px 14px;}
    
     ul.main_menu {  margin: 0; font-size: 0;}
-    ul.main_menu > li {margin-left:34px; display: inline-block; margin-bottom: 0;}
+    ul.main_menu > li {margin-left:32px; display: inline-block; margin-bottom: 0;}
     ul.main_menu > li:first-child {margin-left: 0;}
     ul.main_menu > li > a {font-size: 1.125rem; font-weight: 700; line-height:125%; display: inline-block; position: relative; color: var(--white);}
     
@@ -40,7 +40,7 @@
     ul.main_menu li>a:hover,
     ul.main_menu li.current_page_item a > span,  
     ul.main_menu li.current_page_ancestor li.current-page-ancestor a > span  
-    {color: var(--lime-500);}
+    {color: var(--sapphire);}
     
     
     /* Mega Menu */
@@ -70,7 +70,7 @@
     ul.main_menu > li > ul li a {font-size: 1rem; font-weight: normal; color:var(--body-text);}
     ul.main_menu > li > ul li a:hover {color: var(--lime-500);}
     
-    nav.navigation {transition: .4s all ease-in-out;}
+    nav.navigation {transition: .4s all ease-in-out; margin: 10px 0 0 0;}
 
     .menu-image-title-below.menu-image-not-hovered > img, .menu-image-hovered.menu-image-title-below .menu-image-hover-wrapper, .menu-image-title-below .menu-image-hover-wrapper {margin:0 0 15px 0 !important; height: 24px; width: auto; padding: 0;}
     .menu-image-title.menu-image-title-above, .menu-image-title.menu-image-title-below, .menu-image-title-below, .menu-image-title-above, .menu-item a.menu-image-title-above, .menu-item a.menu-image-title-below, .menu-image-title.menu-image-title-above, .menu-image-title.menu-image-title-below {text-align: left; letter-spacing: -0.6px; color: var(--coal); font-weight: 500; line-height: 140%; font-size: 1.25rem;}
