@@ -1,6 +1,5 @@
 @import url("_default-banner.css");
 
 
-.default-banner-section {
-    background: var(--aeganbg);
-  }
+.default-banner-section { background: var(--aeganbg); }
+.intro-section{background-color: var(--white);}
