@@ -17,6 +17,7 @@
 .contact-text h2 a:hover::before{opacity: 1;}
 
 .contact-concise-section{clear: both; width: 100%; z-index: 1;}
+.contact-concise-bg{background-color: var(--white);  z-index: -2;}
 .contact-concise-main{ margin-top: -171px;}
 .contact-concise-row  { gap: 40px; margin:  0 0 72px; }
 .contact-concise-list { flex: 0 0 calc(33.33% - 27px); text-align: center; }
@@ -59,7 +60,7 @@ ul.mail-links li a:hover{color: var(--sapphire);}
 
 
     .contact-concise{margin-top: -171px; float: left;}
-    .contact-concise-bg{height: calc(100% - 171px); top: auto; bottom: 0;}
+    .contact-concise-bg{height: calc(100% - 907px); top: 171px; bottom: auto;}
     .contact-concise-image{min-height: 171px; align-items: flex-end; flex-direction: column;}
     .contact-concise-image picture{margin-top: auto;}
     .contact-concise-btns{flex-direction: column;}
