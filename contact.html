@@ -21,19 +21,35 @@
 <body class="page-template-contact">
 <div id="main">
   <header id="main_header" class="main_header">
-    <div class="container relative">
+    <div class="container">
       <div class="header flex flex-vcenter">
-        <div class="logo"> <a href=""><img src="images/logo.svg" alt="header-logo"></a> </div>
-        <nav class="header_right flex flex-vcenter">
-          <ul class="main_menu flex">
-            <li><a href="">Our Expertise</a></li>
-            <li><a href="">Our People</a></li>
-            <li><a href="">About Us</a></li>
-            <li><a href="">Insights</a></li>
-          </ul>
-          <div class="header_btn flex flex-end"> <a href="" class="header-btn-link"><span>Get in touch</span></a> </div>
-        </nav>
+        <div class="logo"> <span class="logo-pos normal-logo"> <a href="#"><img src="images/logo.svg" alt="Seastone IP Logo" title="Seastone IP Logo"></a> </span> <span class="logo-pos fixed-logo"> <a href="#"><img src="images/logo-sticky.svg" alt="Seastone IP Logo" title="Seastone IP Logo"></a> </span> </div>
+        <div class="toggle_button flex flex-center"><span class="line line1"></span> <span class="line line2"></span> <span class="line line3"></span></div>
+        <div class="header_right mobile_menu flex">
+          <div class="header-btm">
+            <nav class="navigation mobile_main_menu">
+              <ul class="main_menu" role="navigation">
+                <li><a href="#">Our Expertise</a> </li>
+                <li class="menu-item-has-children flex-menu"><a href="#">Our People</a>
+                  <ul class="sub-menu">
+                    <li><a href="#">Breakfast</a></li>
+                    <li><a href="#">Brunch</a></li>
+                    <li><a href="#">Lunch</a></li>
+                    <li><a href="#">Dinner</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item-has-children flex-menu"><a href="#">About Us</a></li>
+                <li><a href="#">Insights</a> </li>
+              </ul>
+            </nav>
+            <div class="header-btns"> <a href="#" class="button reverse">Get in touch</a> </div>
+            <!-- end of header btns --> 
+            
+          </div>
+        </div>
+        <!-- end of header right --> 
       </div>
+      <!-- end of header --> 
     </div>
   </header>
   <!-- end of main header -->
@@ -123,11 +139,13 @@
         </div>
       </div>
     </section>
-    <section class="banner-gradients-section">
-    <div class="banner-gradients"> <span></span> <span></span><span></span></div>
-    </section>
+    <section class="banner-gradients pos-relative">
+      <div class="container">
+<div class="strip"><span></span></div> <div class="strip"><span></span></div><div class="strip"><span></span></div></div>
+</section>
   </main>
 
+  
 
 <footer id="main_footer" class="contact-footer pos-relative">
   <div class="contact-footer-bg background-bg">
