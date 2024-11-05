@@ -5,7 +5,7 @@
 .default-banner-main .default-banner-text h1 {color: var(--white);}
 .default-banner-main .default-banner-text h1 span {position: relative;}
 .default-banner-main .default-banner-text h1 span:after {position: absolute; border-radius: 4px; height: 20px; width: calc(100% + 12px); left:-6px; bottom: 8px; background: var(--sapphire-50); display:block; content: ""; z-index: -1;}
-.default-banner-main .default-banner-text .optional-text {margin-bottom:7px;}
+.default-banner-main .default-banner-text .optional-text {color: var(--sapphire);}
 .default-banner-main .default-banner-text p {font-size:1.25rem; margin-bottom:32px; line-height: 1.4; color:var(--white); letter-spacing: -0.4px; font-weight: normal;}
 
 
