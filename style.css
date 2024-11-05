@@ -242,7 +242,7 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
 /*-- common form css ends here --*/
 
 
-.optional-text {font-size:1rem; color:var(--white-lime); font-weight:500; margin:0 0 25px 0; display:block; line-height: 1.4;}
+.optional-text {font-size:1rem; color:var(--cerulean); font-weight: 700; margin:0 0 24px 0; display:block; line-height: 1.25;}
 .optional-head {font-size:0.875rem; color:var(--green-300); font-weight:500; margin:0 0 9px 0; display:block; line-height: 1.43;}
 
 
@@ -323,7 +323,7 @@ position: relative; z-index: 1; text-decoration: none;  background-color: var(--
     
 }
 @media only screen and (max-width:1400px) {
-    .container, .container-lg {padding:0 20px; max-width:100%;}
+    .container {padding:0 40px; max-width:100%;}
 }
 
 @media only screen and (max-width:1240px)and (min-width:1024px) {
@@ -361,7 +361,7 @@ position: relative; z-index: 1; text-decoration: none;  background-color: var(--
 }
 
 @media only screen and (max-width:767px) and (min-width:200px) {
-    .container, .container-lg {padding:0 24px; max-width:100%;}
+    .container {padding:0 24px; max-width:100%;}
     .breadcrumb, .breadcrumb ul {margin: 0 0 40px 0!important;}
 
     .hide-in-mobile {display:none;}    
