@@ -1,0 +1,5 @@
+.inclusion-section{clear: both; width: 100%; position: relative; background-color: var(--stone-85);}
+.inclusion-main{padding: 161px 0;}
+.inclusion-row{gap: 64px}
+.inclusion-text{flex: 1;}
+.inclusion-image{background-image: url(".images/dot-thumb@2x.png");}
