@@ -1,0 +1,13 @@
+.aegean h2{color: var(--aegean); }
+.stone  h2{color: var(--stone); }
+.cerulean h2{color: var(--cerulean);}
+.sapphire h2{color: var(--sapphire); }
+
+
+
+.featured-section{background-color: var(--white); clear: both; width: 100%;}
+.featured-main{padding: 80px 0;}
+.featured-row{gap: 38px;}
+.featured-list{flex: 0 0 calc(25% - 29px);}
+.featured-list h2{ margin-bottom: 0;}
+.featured-list p{line-height: 1.5;}
