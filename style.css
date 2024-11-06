@@ -176,7 +176,7 @@ body ul.selectBox-dropdown-menu li.selectBox-selected a, body ul.selectBox-dropd
 
 
 /*-- common form css starts here --*/
-.frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_fields_container {display:block;}
+.frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_fields_container {display: flex;}
 .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field .frm_error {right:16px !important; width:100%; display:block; font-size:12px !important; color:#f00 !important; background:transparent; padding:0; margin:0; border-radius:0; text-align:right !important; line-height:normal !important; font-weight:400; top:-9px; position:absolute;}
 .frm_forms .frm_form_fields fieldset {margin:0; padding:0; border:0;}
 .frm_forms .frm_form_fields .frm_form_field{margin-bottom:24px; position: relative; clear: both;}
