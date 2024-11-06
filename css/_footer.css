@@ -77,8 +77,5 @@ footer#main_footer ul.copyright-links > li > a:hover{color: var(--midnight);}
     footer#main_footer .footer_btm .ftr-btm-rt {width: 100%;}
     footer#main_footer .footer_btm .ftr-btm-rt .btn-wrap .button {width: 100%;}
     footer#main_footer .ftr-sm {width: 100%;}
-    footer#main_footer .ftr-sm ul {display: flex; justify-content: space-between; width: 100%; max-width: 343px; margin: 0 auto;}
-    
-    
-  
+    footer#main_footer .ftr-sm ul {display: flex; justify-content: space-between; width: 100%; max-width: 343px; margin: 0 auto;} 
 }
