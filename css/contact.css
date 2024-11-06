@@ -13,7 +13,6 @@
 .contact-text{text-align: center; }
 .contact-text h2{margin-bottom: 0;}
 .contact-text h2 a{position: relative;}
-.contact-text h2 a:before{opacity: 0.25; transition: all 0.5s ease; position: absolute; content:""; display: block; width: 100%; height: 4px; background-color: var(--sapphire); bottom: -4px; left: 0;}
 .contact-text h2 a:hover::before{opacity: 1;}
 
 .contact-concise-section{clear: both; width: 100%; z-index: 2;}
@@ -25,7 +24,7 @@
 .contact-concise-info h3{font-size: 1.5rem; line-height: 1.25; color: var(--midnight); font-weight: 700; margin: 0 0 16px;}
 .contact-concise-info hr{width: 48px; height: 2px; background-color: var(--sapphire); margin: 0 auto 16px;}
 .contact-concise-info p{font-size: 1rem; line-height: 1.25; font-weight: 500; color: var(--heading);  margin-bottom: 16px;}
-.contact-concise-info span{display: block; font-size: 1rem; line-height: 1.25; font-weight: 700; ;}
+.contact-concise-info a{ font-size: 1rem; line-height: 1.25; font-weight: 700; ;}
 .contact-concise-btns a:first-child{margin-bottom: 8px;}
   
 
