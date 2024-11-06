@@ -1,1 +1,13 @@
 .cta-module {position: relative; clear: both; width: 100%; padding: 80px 0; background: var(--white);}
+.cta-module .h1 {margin-bottom: 23px;}
+.cta-module p {font-size: 2rem; font-weight: bold; letter-spacing: -0.64px; color: var(--midnight); line-height: 142%; display: flex;
+  flex-wrap: wrap; gap: 0 17px;}
+.cta-module p:last-child {margin: 0;}
+
+.cta-module.sapphire-bg {background: var(--sapphire);}
+.cta-module.dark-bg {background: var(--midnight);}
+.cta-module.dark-bg .h1, .cta-module.dark-bg p {color: var(--white);}
+
+@media only screen and (max-width:1023px) and (min-width:768px) {
+    .cta-module .h1  {font-size: 3.5rem; line-height: 125%;}
+}

@@ -52,7 +52,7 @@ h2 span {background: -webkit-linear-gradient(to bottom, transparent 94%, var(--a
 */
 
 .h1, .h2, .h3, .h4, .h5, .h6 {display: block; color: var(--heading); font-weight: 700;}
-.h1 {font-size: 4rem; line-height: 125%; margin-bottom: 24px;}
+.h1 {font-size: 4rem; line-height: 125%; margin-bottom: 25px;}
 .h2 {font-size: 3rem; line-height: 125%; margin-bottom: 32px;}
 .h3 {font-size: 2rem; line-height: 125%; margin-bottom: 20px;}
 .h4 {font-size: 1.5rem; line-height: 125%; margin-bottom: 19px;}
@@ -240,7 +240,6 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
 
 
 .optional-text {font-size:1rem; color:var(--cerulean); font-weight: 700; margin:0 0 24px 0; display:block; line-height: 1.25;}
-.optional-head {font-size:0.875rem; color:var(--green-300); font-weight:500; margin:0 0 9px 0; display:block; line-height: 1.43;}
 
 
 /* Heading */
@@ -307,6 +306,26 @@ position: relative; z-index: 1; text-decoration: none;  background-color: var(--
 .fullimg {clear: both; width: 100%;}
 
 .category-main.no-post-found {padding-bottom: 0;}
+
+
+/* LINKS*/
+.fancy-link {color: var(--aegean); position: relative;}
+.fancy-link:hover {color: var(--midnight);}
+.fancy-link:before, .fancy-link:after {content: ""; position: absolute; bottom:2px; left: 50%; transform: translateX(-50%); height: 4px; width: 100%; background: var(--sapphire-25); border-radius: 4px; transition: all 0.4s ease-in-out; display: block;}
+.fancy-link:after {width: 0;}
+.fancy-link:hover:after {width: 100%; background: var(--sapphire);}
+
+.sapphire-bg {background: var(--sapphire);}
+.sapphire-bg .fancy-link {color: var(--midnight);}
+.sapphire-bg .fancy-link:hover {color: var(--midnight);}
+.sapphire-bg .fancy-link:before, .sapphire-bg .fancy-link:after {background: var(--white-60);}
+.sapphire-bg .fancy-link:hover:after {background: var(--sunshine);}
+
+.dark-bg {background: var(--midnight);}
+.dark-bg .fancy-link {color: var(--sapphire);}
+.dark-bg .fancy-link:hover {color: var(--white);}
+.dark-bg .fancy-link:before, .dark-bg .fancy-link:after {background: var(--sapphire-60);}
+.dark-bg .fancy-link:hover:after {background: var(--sunshine);}
 
 #ajax-load-more {width: 100%;}
 
