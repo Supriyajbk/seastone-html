@@ -11,6 +11,16 @@
 .general-default-article-section .default-inner h4 {padding-top: 45px;}
 .default-main {justify-content: space-between;}
 
+/* Cat Wrap */
+.cat-wrap {clear: both; margin: 0 0 15px 0; justify-content: space-between;}
+.cat-wrap ul {margin: 0; font-size: 0;}
+.cat-wrap ul li {margin: 0; margin: 0 21px 18px 0; display: inline-block; line-height: normal; padding: 0 0 0 20px;}
+.cat-wrap ul li:before {content: ""; background: url("../images/stone-one.svg") 0 0 no-repeat; position: absolute; left: 0; display: block; width: 15px; height: 15px; top: 0;}
+.cat-wrap ul li:nth-child(2n):before {background: url("../images/stone-two.svg") 0 0 no-repeat;}
+.cat-wrap ul li a {display: inline-block; color: var(--stone); font-size: 1.125rem; font-weight: 500; line-height: 100%; text-decoration: none; position: relative; z-index: 1;}
+.cat-wrap ul li a:hover {color: var(--midnight);}
+.cat-wrap ul li:hover:before {transform: rotate(-30deg);}
+.cat-wrap ul li:nth-child(2n):hover:before {transform: rotate(30deg);}
 
 /* Sidebar */
 .sidebar {width: calc(100% - 72.5%); margin:0 0 0 6.25%; padding:80px 0 80px 0;}
