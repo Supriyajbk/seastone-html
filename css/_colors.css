@@ -6,6 +6,7 @@
     --white-60: rgb(255 255 255 / 60%);
     --white-75: rgb(255 255 255 / 75%);
     --white-80: rgb(255 255 255 / 80%);
+    --white-90: rgb(255 255 255 / 90%);
     --heading: #1D5A84;
     --body-text: #4D5052;
     --anchor: #1D5A84;
@@ -26,12 +27,13 @@
     --aegean-25: rgb(29 90 132 / 25%);
     --midnight-75: rgb(4 52 76 / 75%);
     --midnight-50: rgb(4 52 76 / 50%);
-    --sapphire-25: rgb(0 200 200 / 25%); 
+    --sapphire-25: rgb(83 196 201 / 25%); 
     --sapphire-50: rgb(83 196 201 / 50%);
     --sapphire-10:  rgb(83 196 201 / 10%);
     --sapphire-60: rgba(83, 196, 201, 60%);
     --stone-85  :rgb(42 100 114 / 85%);
     --cerulean-85: rgb(63 141 165 / 85%);
+    --cerulean-25: rgb(63 141 165 / 25%);
     --seafom-25 : rgb(158 213 221 / 25%);
     --seafom-50 : rgb(158 213 221 / 50%);
     --input:rgba(83, 196, 201, 0.10);
