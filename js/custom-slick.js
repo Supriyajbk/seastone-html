@@ -68,4 +68,23 @@ jQuery(document).ready(function () {
   });
 
 
+
+
+         jQuery(".our-clients-row").slick({
+           slidesToShow: 1,
+           slidesToScroll: 1,
+           arrows: true,
+           prevArrow: '<div class="slick-arrow slick-prev flex flex-center radius-50"><span class="slick-arrows slick-prev-arrow fa-light fa-sharp fa-arrow-right"></span></div>',
+           nextArrow: '<div class="slick-arrow slick-next flex flex-center radius-50"><span class="slick-arrows slick-next-arrow fa-light fa-sharp fa-arrow-right"></span></div>',
+           dots: false,
+           speed: 1000,
+           infinite: false,
+           autoplay: false,
+    
+          
+         });
+   
+    
+
+
 });

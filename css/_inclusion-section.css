@@ -2,4 +2,6 @@
 .inclusion-main{padding: 161px 0;}
 .inclusion-row{gap: 64px}
 .inclusion-text{flex: 1;}
-.inclusion-image{background-image: url(".images/dot-thumb@2x.png");}
+.inclusion-text span{color: var(--sapphire); font-size: 1.5rem; line-height: 1.25; font-weight: 700;}
+.inclusion-text h3{color: var(--white); font-weight: 300; line-height: 1.75;}
+.inclusion-image{flex: 0 0  280px; background-image: url("../images/dot-thumb@2x.png"); background-repeat: no-repeat; background-size: contain; background-position: center;}
