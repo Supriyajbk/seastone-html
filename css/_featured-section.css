@@ -1,17 +1,19 @@
 .aegean h2{color: var(--aegean); }
 .aegean .number{color: var(--aegean); }
+.aegean .featured-icon:before{background-color: var(--aegean);}
 
 .stone  h2{color: var(--stone); }
 .stone  .number{color: var(--stone); }
+.stone .featured-icon:before{background-color: var(--stone);}
 
 .cerulean h2{color: var(--cerulean);}
 .cerulean .number{color: var(--cerulean);}
+.cerulean .featured-icon:before{background-color: var(--cerulean);}
 
 
 .sapphire h2{color: var(--sapphire); }
 .sapphire .number{color: var(--sapphire); }
-
-
+.sapphire .featured-icon:before{background-color: var(--sapphire);}
 
 
 .featured-section{background-color: var(--white); clear: both; width: 100%;}
@@ -22,6 +24,7 @@
 .featured-list p{line-height: 1.5;}
 
 .featured-list h4{font-size: 1.25rem; color: var(--midnight); line-height: 1.25; margin-bottom: 12px;}
-.featured-icon{margin-bottom: 16px; position: relative; width: 65px;}
+.featured-icon{margin-bottom: 16px; position: relative; width: 65px; height: 65px;}
+.featured-icon figure{display: flex; align-items: center; justify-content: center;}
 .featured-icon img{width: 32px; height: 32px; position: relative;}
-.featured-icon::before{position: absolute; display: block; width: 65px;height: 65px; border-radius: 50px; background-color: red; content: "";}
+.featured-icon::before{position: absolute; display: block; width: 65px;height: 65px; border-radius: 50px;  content: "";}
