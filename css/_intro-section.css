@@ -1,4 +1,4 @@
 .intro-section{clear: both; width: 100%; position: relative;}
 .intro-main{padding: 80px 0;}
-.intro-main h2{font-size: 2rem; font-weight: 300; color: var(--midnight); line-height: 3.5rem; padding-right: 320px;}
+.intro-main h2{font-size: 2rem; font-weight: 300; color: var(--midnight); line-height: 1.75; padding-right: 320px;}
 .intro-main h2 strong{color: var(--cerulean);}
