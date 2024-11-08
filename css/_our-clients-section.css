@@ -9,7 +9,7 @@
 .our-author-info span{color: var(--white-50); font-weight: 500; font-size: 0.875rem; line-height: 1.5;}
 
 .clients-stats-row{padding-top: 56px; gap: 40px;}
-.clients-stats-list{flex: 0 0 calc(25% - 30px); color: var(--white); position: relative; padding: 16px 0 0 24px;}
+.clients-stats-list{flex: 0 0 calc(25% - 30px); color: var(--white); position: relative; padding: 16px 0 0 24px; flex-grow: 1;}
 .clients-stats-list::before { position: absolute; content: ""; left: 0; top: 0; display: block; width: 1px; height: 100%; background-color: var(--white); }
 
   .clients-stats-list .number{font-size: 4.5rem; line-height: 1; margin-bottom: 8px; font-weight: 300; }
