@@ -4,23 +4,12 @@
 .general-default-article-section .default-inner {position: relative; width:66.25%; flex-grow: 1; background: var(--white); border-radius: 0px 0px 24px 0px; padding:80px 80px 80px 0;}
 .general-default-article-section .default-inner:before {content: ""; height: calc(100% + 80px); width:1000%; position: absolute; background: var(--white); right:0; z-index: -1; top: -80px; display: block; border-radius: 0px 0px 24px 0px;}
 
-.general-default-article-section .default-inner .default-intro {clear: both; width: 100%; margin: 0 0 64px 0;}
-.general-default-article-section .default-inner .default-intro p {font-size: 1.5rem; line-height:158%; color: var(--aegean); display: block; font-weight: 300;}
+.general-default-article-section .default-inner > p:first-of-type span{font-size: 1.5rem; line-height:158%; color: var(--aegean); display: block; font-weight: 300; margin: 0 0 64px 0; display: block;}
 .general-default-article-section .default-inner h1 {font-size: 3rem; margin-bottom: 31px;}
 .general-default-article-section .default-inner h2 {padding-top: 45px;}
 .general-default-article-section .default-inner h4 {padding-top: 45px;}
 .default-main {justify-content: space-between;}
 
-/* Cat Wrap */
-.cat-wrap {clear: both; margin: 0 0 15px 0; justify-content: space-between;}
-.cat-wrap ul {margin: 0; font-size: 0;}
-.cat-wrap ul li {margin: 0; margin: 0 21px 18px 0; display: inline-block; line-height: normal; padding: 0 0 0 20px;}
-.cat-wrap ul li:before {content: ""; background: url("../images/stone-one.svg") 0 0 no-repeat; position: absolute; left: 0; display: block; width: 15px; height: 15px; top: 0;}
-.cat-wrap ul li:nth-child(2n):before {background: url("../images/stone-two.svg") 0 0 no-repeat;}
-.cat-wrap ul li a {display: inline-block; color: var(--stone); font-size: 1.125rem; font-weight: 500; line-height: 100%; text-decoration: none; position: relative; z-index: 1;}
-.cat-wrap ul li a:hover {color: var(--midnight);}
-.cat-wrap ul li:hover:before {transform: rotate(-30deg);}
-.cat-wrap ul li:nth-child(2n):hover:before {transform: rotate(30deg);}
 
 /* Sidebar */
 .sidebar {width: calc(100% - 72.5%); margin:0 0 0 6.25%; padding:80px 0 80px 0;}
@@ -38,6 +27,34 @@
 
 .side-bucket .menu-bucket ul li::after{position: absolute; content: "\f105"; display: block; font-family: "Font Awesome 6 Pro"; color: var(--lime-500); top:10px; font-size: 13.5px; font-weight: 900; right:20px;}
 .side-bucket .menu-bucket ul li.active:after, .sidebar .side-bucket .menu-bucket ul li:hover:after{left: 19px; right: auto;}
+
+
+.single-testimonial {padding:0 0 0 79px; position: relative; margin:46px 0 23px; clear: both; width: 100%; overflow: hidden;}
+.single-testimonial:before {content: "" ; width: 39px; height: 100vh;  background:repeating-linear-gradient(90deg, var(--seafom), var(--seafom) 5px, #FFFFFF 5px, #FFFFFF 11px, var(--seafom) 11px,  var(--seafom) 15px,  #FFFFFF 15px, #FFFFFF 21px,  var(--seafom) 21px, var(--seafom) 24px, #FFFFFF 24px, #FFFFFF 30px, var(--seafom) 30px,  var(--seafom) 32px, #FFFFFF 32px,  #FFFFFF 38px,  var(--seafom) 38px, var(--seafom) 39px,  #FFFFFF 39px, #FFFFFF 45px); background-size: 39px 100%; background-repeat: no-repeat;  display: block; position: absolute; top: 0; left: 0;}
+.single-testimonial p {font-size: 1.5rem; line-height: 175%; color: var(--midnight); margin-bottom: 20px; font-weight: 300; position: relative;}
+.single-testimonial p strong {font-weight: 700; color: var(--cerulean);}
+.single-testimonial .author {align-items: center; gap:16px;}
+.single-testimonial .author-thumb {width: 72px; height: 72px;}
+.single-testimonial .author-thumb img {border-radius: 50%;}
+.single-testimonial .author-txt {width: calc(100% - 88px); font-size: 0;}
+.single-testimonial .author-txt span {display: block;}
+.single-testimonial .author-txt .author-name {font-size: 1.125rem; font-weight: 700; letter-spacing: -0.36px; color: var(--stone);}
+.single-testimonial .author-txt .author-pos {font-size: 0.875rem; font-weight: 500; line-height: 150%; opacity: 0.5;}
+
+
+.cta-button {position: relative; clear: both; width: 100%; padding: 42px 0 16px; background: var(--white);}
+.cta-button .h1 {margin-bottom: 23px;}
+.cta-button .h2 {font-size: 2.5rem;}
+.cta-button p {font-size:2rem; font-weight: 700; letter-spacing: -0.64px; color: var(--midnight); line-height: 142%; display: flex;
+  flex-wrap: wrap; gap: 0 17px;}
+.cta-button p:last-child {margin: 0;}
+
+.cta-short {position: relative; clear: both; width: 100%; padding: 80px 0; background: var(--white);}
+.cta-short .h1 {margin-bottom: 23px;}
+.cta-short .h2 {font-size: 2.5rem;}
+.cta-short p {font-size: 1.75rem; font-weight: 700; letter-spacing: -0.56px; color: var(--midnight); line-height: 142%; display: flex;
+  flex-wrap: wrap; gap: 0 17px;}
+.cta-short p:last-child {margin: 0;}
 
 /* Default Thumb */
 .default-thumb {margin:19px 0 19px 0; position: relative; clear: both; width: 100%;}
