@@ -1,11 +1,11 @@
-.single-testimonial {padding:0 0 0 79px; position: relative; margin:46px 0 23px; clear: both; width: 100%; overflow: hidden;}
+.single-testimonial {padding:0 0 0 79px; position: relative; margin:62px 0 62px; clear: both; width: 100%; overflow: hidden;}
 .single-testimonial:before {content: "" ; width: 39px; height: 100vh;  background:repeating-linear-gradient(90deg, var(--seafom), var(--seafom) 5px, #FFFFFF 5px, #FFFFFF 11px, var(--seafom) 11px,  var(--seafom) 15px,  #FFFFFF 15px, #FFFFFF 21px,  var(--seafom) 21px, var(--seafom) 24px, #FFFFFF 24px, #FFFFFF 30px, var(--seafom) 30px,  var(--seafom) 32px, #FFFFFF 32px,  #FFFFFF 38px,  var(--seafom) 38px, var(--seafom) 39px,  #FFFFFF 39px, #FFFFFF 45px); background-size: 39px 100%; background-repeat: no-repeat;  display: block; position: absolute; top: 0; left: 0;}
-.single-testimonial p {font-size: 1.5rem; line-height: 175%; color: var(--midnight); margin-bottom: 20px; font-weight: 300; position: relative;}
+.single-testimonial p {font-size: 1.5rem; line-height: 175%; color: var(--midnight); margin-bottom: 24px; font-weight: 300; position: relative;}
 .single-testimonial p strong {font-weight: 700; color: var(--cerulean);}
 .single-testimonial .author {align-items: center; gap:16px;}
 .single-testimonial .author-thumb {width: 72px; height: 72px;}
 .single-testimonial .author-thumb img {border-radius: 50%;}
 .single-testimonial .author-txt {width: calc(100% - 88px); font-size: 0;}
 .single-testimonial .author-txt span {display: block;}
-.single-testimonial .author-txt .author-name {font-size: 1.125rem; font-weight: 700; letter-spacing: -0.36px; color: var(--stone);}
-.single-testimonial .author-txt .author-pos {font-size: 0.875rem; font-weight: 500; line-height: 150%; opacity: 0.5;}
+.single-testimonial .author-txt .author-name {font-size: 1.125rem; font-weight: 700; letter-spacing: -0.36px; color: var(--stone); line-height: normal;}
+.single-testimonial .author-txt .author-pos {font-size: 0.875rem; font-weight: 500; line-height: 148%; opacity: 0.5;}
