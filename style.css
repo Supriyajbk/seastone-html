@@ -84,7 +84,7 @@ img.mobile {display:none;}
 
 
 /* Video/video popup */
-.video-wrap {margin:64px 0 28px 0; position: relative; clear: both; overflow: hidden; z-index: 1;}
+.video-wrap {margin:62px 0 28px 0; position: relative; clear: both; overflow: hidden; z-index: 1;}
 .video-caption {font-size:0.875rem; font-weight: 500; line-height: 150%;  width:100%; padding:48px 24px 24px 24px; color: rgb(77, 80, 82, 0.75); background:var(--seafom-25); border-radius:16px; margin-top: -24px; z-index: -1; position: relative;}
 .video-wrap .video-thumbnail > img {border-radius: 16px; min-height:432px;}
 
