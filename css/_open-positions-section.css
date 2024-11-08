@@ -1,9 +1,9 @@
 .open-positions-section{position: relative; width: 100%; clear: both; background-color: var(--white-90);}
-.open-positions-main{padding: 90px 0;}
+.open-positions-main{padding: 80px 0;}
 .open-positions-row{gap: 80px;}
 .open-positions-list{margin-bottom: 24px;}
-.open-positions-left{flex: 0 0 352px;}
-.open-positions-right{flex: 0 0 calc(100% - 432px);}
+.open-positions-left{flex: 0 0 352px; }
+.open-positions-right{flex: 0 0 calc(100% - 432px); flex-grow: 1;}
 .open-positions-left .optional-text{margin-bottom: 20px;}
 .open-positions-left h4{font-weight: 300; color: var(--midnight); line-height: 1.75; margin-bottom: 40px;}
 .open-positions-left h4 strong{color: var(--cerulean);}
@@ -11,15 +11,50 @@
 .open-positions-title{flex: 1;}
 .open-positions-title h6{margin-bottom: 6px; color: var(--midnight)}
 
-.open-positions-sub-category{gap: 26px; margin-left: 10px; line-height: 1.5; }
-.open-positions-sub-category li{line-height: 1.5; font-size: 0.875rem; margin-bottom: 0;}
+.open-positions-sub-category{gap: 0 26px; margin-left: 10px; line-height: 1.5; }
+.open-positions-sub-category li{line-height: 1.5; font-size: 0.875rem; margin-bottom: 2px;}
 .open-positions-sub-category > li:before{left: -10px; width: 6px ; height: 6px; top: 6px;}
 .open-position-button{width: fit-content;}
-@media only screen and (min-width: 1024px){
 
 
 
+
+@media only screen and (min-width: 1400px){
+    .open-positions-main{padding: 90px 0;}
+
+}
+
+
+@media only screen and (max-width: 1199px) and (min-width: 1024px) {
+    .open-positions-row{gap: 64px;}
+    .open-positions-right{flex: 0 0 calc(100% - 416px);}
+    .open-positions-sub-category li{margin-bottom: 4px;}
 
 
 }
+
+@media only screen and (max-width: 1023px) and (min-width: 200px) {
+    .open-positions-row{display: block;}
+    .open-positions-left .optional-text { margin-bottom: 16px; }
+    .open-positions-list:last-child{margin-bottom: 0;}
+    .open-positions-right{margin-bottom: 40px;}
+    .open-positions-sub-category li {margin-bottom: 4px;}
+
+
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+
+
+}
+
+@media only screen and (max-width: 767px) and (min-width: 200px) {
+    .open-positions-main { padding: 64px 0; }
+    .open-positions-left h4 {font-size: 1.25rem;}
+    .open-positions-list{display: block;}
+    .open-positions-title{margin-bottom: 16px;}
+
+
+}
+
 
