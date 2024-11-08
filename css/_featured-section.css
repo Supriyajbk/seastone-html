@@ -28,3 +28,18 @@
 .featured-icon figure{display: flex; align-items: center; justify-content: center;}
 .featured-icon img{width: 32px; height: 32px; position: relative;}
 .featured-icon::before{position: absolute; display: block; width: 65px;height: 65px; border-radius: 50px;  content: "";}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:767px) and (min-width: 200px) {
+    .featured-main{padding: 64px 0 64px;}
+
+
+
+}

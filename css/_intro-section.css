@@ -3,23 +3,28 @@
 .intro-main h2{font-size: 2rem; font-weight: 300; color: var(--midnight); line-height: 1.75;}
 .intro-main h2 strong{color: var(--cerulean);}
 .intro-text{padding: 0 320px 0 0; position: relative;}
-.intro-text::before{content: "";
-    width: 90px;
-    height: 100%;
- 
-    background-size: 39px 100%;
-    background-repeat: no-repeat;
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;}
 
-    .intro-text::before{background: repeating-linear-gradient(90deg,
-    var(--sunshine) 1px,  var(--sunshine) 2px, transparent 2px, transparent 14px,
-    var(--sapphire-50) 14px, var(--sapphire-50) 15px, transparent 15px,transparent 27px, 
-    var(--sapphire-60) 27px, var(--sapphire-60) 28px, transparent 28px, transparent 40px,
-     var(--sapphire-70) 40px, var(--sapphire-70) 42px, transparent 42px, transparent 54px,
-      var(--sapphire-80) 54px, var(--sapphire-80) 57px, transparent 57px, transparent  69px,
-      var(--sapphire-90) 69px, var(--sapphire-90) 73px, transparent 73px, transparent 85px,
-      var(--sapphire) 85px, var(--sapphire) 90px, transparent 90px, transparent 102px);
-  }
+
+@media only screen and (max-width: 1279px) and (min-width: 1024px) {
+    
+    .intro-text { padding: 0 155px 0 0;}
+    
+    
+    
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+    
+    .intro-text { padding: 0 130px 0 0;}
+    
+    
+    
+}
+@media only screen and (max-width:767px) and (min-width: 200px) {
+    .intro-main{padding: 64px 0 194px;}
+    .intro-text{padding: 0;}
+    .intro-main h2{font-size: 1.5rem; margin-bottom: 30px;}
+
+
+
+}
