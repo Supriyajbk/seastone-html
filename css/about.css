@@ -4,6 +4,7 @@
 @import url("_our-clients-section.css");
 @import url("_inclusion-section.css");
 @import url("_cta-module.css");
+@import url("_open-positions-section.css");
 
 .default-banner-section { background: var(--aeganbg); }
 .intro-section{background-color: var(--white); }
