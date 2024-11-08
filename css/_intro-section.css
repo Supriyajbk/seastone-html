@@ -21,9 +21,9 @@
     
 }
 @media only screen and (max-width:767px) and (min-width: 200px) {
-    .intro-text:before{background: repeating-linear-gradient(180deg, var(--sunshine) 1px, var(--sunshine) 2px, transparent 2px, transparent 14px, var(--sapphire-50) 14px, var(--sapphire-50) 15px, transparent 15px,transparent 27px, var(--sapphire-60) 27px, var(--sapphire-60) 28px, transparent 28px, transparent 40px, var(--sapphire-70) 40px, var(--sapphire-70) 42px, transparent 42px, transparent 54px, var(--sapphire-80) 54px, var(--sapphire-80) 57px, transparent 57px, transparent 69px, var(--sapphire-90) 69px, var(--sapphire-90) 73px, transparent 73px, transparent 85px, var(--sapphire) 85px, var(--sapphire) 90px, transparent 90px, transparent 102px);}
-    .intro-main{padding: 64px 0;}
+    .intro-main{padding: 64px 0 194px;}
     .intro-text{padding: 0;}
+    .intro-main h2{font-size: 1.5rem; margin-bottom: 30px;}
 
 
 
