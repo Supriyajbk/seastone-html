@@ -1,19 +1,19 @@
-.aegean h2{color: var(--aegean); }
-.aegean .number{color: var(--aegean); }
-.aegean .featured-icon:before{background-color: var(--aegean);}
+.featured-section .aegean h2{color: var(--aegean); }
+.featured-section .aegean .number{color: var(--aegean); }
+.featured-section .aegean .featured-icon:before{background-color: var(--aegean);}
 
-.stone  h2{color: var(--stone); }
-.stone  .number{color: var(--stone); }
-.stone .featured-icon:before{background-color: var(--stone);}
+.featured-section .stone  h2{color: var(--stone); }
+.featured-section .stone  .number{color: var(--stone); }
+.featured-section .stone .featured-icon:before{background-color: var(--stone);}
 
-.cerulean h2{color: var(--cerulean);}
-.cerulean .number{color: var(--cerulean);}
-.cerulean .featured-icon:before{background-color: var(--cerulean);}
+.featured-section .cerulean h2{color: var(--cerulean);}
+.featured-section .cerulean .number{color: var(--cerulean);}
+.featured-section .cerulean .featured-icon:before{background-color: var(--cerulean);}
 
 
-.sapphire h2{color: var(--sapphire); }
-.sapphire .number{color: var(--sapphire); }
-.sapphire .featured-icon:before{background-color: var(--sapphire);}
+.featured-section .sapphire h2{color: var(--sapphire); }
+.featured-section .sapphire .number{color: var(--sapphire); }
+.featured-section .sapphire .featured-icon:before{background-color: var(--sapphire);}
 
 
 .featured-section{background-color: var(--white); clear: both; width: 100%;}
