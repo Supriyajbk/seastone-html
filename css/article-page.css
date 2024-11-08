@@ -18,14 +18,24 @@
 
 /* Sidebar */
 .sidebar {width: calc(100% - 72.5%); margin:0 0 0 6.25%; padding:80px 0 80px 0;}
+.sidebar .cta-bucket {clear: both; width: 100%;}
 .sidebar .cta-bucket .optional-text {color: var(--aegean); margin: 0 0 20px 0;}
 .sidebar .cta-bucket p {font-size: 1.5rem; line-height: 175%; color: var(--stone); font-weight: 300; margin-bottom: 15px;} 
 .sidebar .cta-bucket p strong {color: var(--cerulean);}
-
-
-
-
-
+.sidebar .team-member-buckets {clear: both; width: 100%;}
+.sidebar .team-member-buckets .btn-full {margin: 48px 0 0 0;}
+.sidebar .tm-grid {clear: both; width: 100%; margin: 47px 0 0 0;}
+.sidebar .tm-grid .tm-thumb {clear: both; width: 128px; margin: 0 0 25px 0;}
+.sidebar .tm-grid .tm-content .h5 {line-height: 125%; margin: 0 0 6px 0;}
+.sidebar .tm-grid .tm-content .h5 a {color: var(--midnight);}
+.sidebar .tm-grid .tm-content .h5 a:hover {color: var(--aegean);}
+.sidebar .tm-grid .tm-content .tm-pos {font-size: 1.25rem; line-height: 20px; color: var(--aegean);}
+.sidebar .tm-grid .tm-contact figure {display: none;}
+.sidebar .tm-grid .tm-contact span {display: block; margin: 0 0 4px 0;}
+.sidebar .tm-grid .tm-contact {margin: 14px 0 0 0; clear: both; width: 100%;}
+.sidebar .tm-grid .tm-contact .tm-location {color: var(--cerulean); font-weight: 700; line-height: 123%; font-size: 1.125rem;}
+.sidebar .tm-grid .tm-contact .tm-mail {line-height: 125%;}
+.sidebar .tm-grid .tm-contact .tm-ph {line-height: 125%;}
 
 
 
