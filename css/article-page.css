@@ -2,7 +2,7 @@
 @import url("_cta-module.css");
 
 .general-article-section {float: left; width: 100%; background: var(--white-90); position: relative; z-index: 1;}
-.general-article-section .article-inner {position: relative; width:66.25%; flex-grow: 1; background: var(--white); border-radius: 0px 0px 24px 0px; padding:80px 6.25% 80px 0;}
+.general-article-section .article-inner {position: relative; width:66.25%; flex-grow: 1; background: var(--white); border-radius: 0px 0px 24px 0px; padding:80px 6.25% 78px 0;}
 .general-article-section .article-inner:before {content: ""; height: calc(100% + 80px); width:1000%; position: absolute; background: var(--white); right:0; z-index: -1; top: -80px; display: block; border-radius: 0px 0px 24px 0px;}
 
 .general-article-section .article-inner > p:first-of-type span{font-size: 1.5rem; line-height:158%; color: var(--aegean); display: block; font-weight: 300; margin: 0 0 64px 0; display: block;}
@@ -10,6 +10,10 @@
 .general-article-section .article-inner h2 {padding-top: 45px;}
 .general-article-section .article-inner h4 {padding-top: 45px;}
 .general-article-main {justify-content: space-between;}
+
+.general-article-section .article-inner .video-wrap {margin: 62px 0 19px 0;}
+.general-article-section .article-inner .single-testimonial {margin:62px 0 19px;}
+.general-article-section .article-inner .cta-short:last-of-type {padding-bottom: 0;}
 
 
 /* Sidebar */
@@ -28,7 +32,9 @@
 
 /*-- media css starts here --*/
 
-@media only screen and (min-width: 1200px){
+@media only screen and (max-width: 1199px) and (min-width: 1024px) {
+    .general-article-section .article-inner {padding: 80px 40px 80px 0;}
+    .sidebar {margin: 0 0 0 40px;}
 }
 
 @media only screen and (min-width: 1024px){
