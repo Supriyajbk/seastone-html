@@ -254,13 +254,14 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
 
 
 
-.readmore {position: relative; display: inline-flex; font-size:1.125rem; color: var(--midnight); font-weight: 700; z-index: 1; flex-wrap: wrap; align-items: center; flex-direction: column; justify-content: center;}
-.readmore i {font-size:21px; color: var(--aegean);}
-.readmore:before, .readmore:after {right:0; content: "\f054"; font-family: "Font Awesome 6 Pro"; font-weight: 400; transition: all .3s ease-in-out; position: absolute; display: flex; align-items: center; flex-wrap: wrap; font-size:21px; line-height: 1; top: 0; bottom: 0; opacity: 0;}
+.readmore {position: relative; display: inline-flex; font-size:1.125rem; color: var(--midnight); font-weight: bold; line-height: 1; z-index: 1; flex-wrap: wrap; align-items: center; flex-direction: column; min-height: 32px; justify-content: center;}
+.readmore.white {color: var(--white);}
+.readmore i {font-size:21px;}
+.readmore:before, .readmore:after {right:0; content: "\f054"; font-family: "Font Awesome 6 Pro"; font-weight: 400; transition: all .3s ease-in-out; position: absolute; display: flex; align-items: center; flex-wrap: wrap; font-size:21px; line-height: 1; top: 0; bottom: 0;}
 .readmore:hover {color: var(--heading);}
-.readmore:hover i {color: var(--sapphire);}
-.readmore:hover:before {padding-right: 10px; color: var(--cerulean); opacity: 1;}
-.readmore:hover:after {padding-right: 19px; color: var(--aegean); opacity: 1;}
+.readmore:hover:before {padding-right: 10px; color: var(--cere);}
+.readmore:hover:after {padding-right: 19px; color: var(--sapphire);}
+.fullimg {clear: both; width: 100%;}
 
 .category-main.no-post-found {padding-bottom: 0;}
 

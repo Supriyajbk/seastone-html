@@ -133,4 +133,9 @@ jQuery(document).ready(function () {
     }
   }
 
+    
+jQuery('.more-insights-grid').hover(function() {
+    jQuery('.more-link').parent().toggleClass('toggled');
+  });    
+    
 });
