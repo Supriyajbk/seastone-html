@@ -26,7 +26,7 @@
 .featured-list h4{font-size: 1.25rem; color: var(--midnight); line-height: 1.25; margin-bottom: 12px;}
 .featured-icon{margin-bottom: 16px; position: relative; width: 65px; height: 65px;}
 .featured-icon figure{display: flex; align-items: center; justify-content: center;}
-.featured-icon img{width: 32px; height: 32px; position: relative;}
+.featured-icon img{width: 32px; height: 32px; position: relative; object-fit: contain;}
 .featured-icon::before{position: absolute; display: block; width: 65px;height: 65px; border-radius: 50px;  content: "";}
 
 

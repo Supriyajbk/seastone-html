@@ -5,9 +5,14 @@
 .inclusion-text span{color: var(--sapphire); font-size: 1.5rem; line-height: 1.25; font-weight: 700;}
 .inclusion-text h3{color: var(--white); font-weight: 300; line-height: 1.75; margin-bottom: 0;}
 .inclusion-image{flex: 0 0  280px;  background-size: contain; background-position: center;}
+.inclusion-image img{object-fit: contain;}
 
 
+@media only screen and (max-width:1199px) and (min-width: 1024px) {
+    .inclusion-main{padding: 96px 0;}
 
+
+}
 
 @media only screen and (max-width:1023px) and (min-width: 200px) {
 .inclusion-main{padding: 96px 0;}
@@ -22,7 +27,7 @@
 
 .inclusion-text h3{font-size: 1.5rem; line-height: 1.75;}
 
-
+.inclusion-image { width: inherit; }
 
 
 }
