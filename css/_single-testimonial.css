@@ -1,5 +1,5 @@
 .single-testimonial {padding:0 0 0 79px; position: relative; margin:62px 0 62px; clear: both; width: 100%; overflow: hidden;}
-.single-testimonial:before {content: "" ; width: 39px; height: 100vh;  background:repeating-linear-gradient(90deg, var(--seafom), var(--seafom) 5px, #FFFFFF 5px, #FFFFFF 11px, var(--seafom) 11px,  var(--seafom) 15px,  #FFFFFF 15px, #FFFFFF 21px,  var(--seafom) 21px, var(--seafom) 24px, #FFFFFF 24px, #FFFFFF 30px, var(--seafom) 30px,  var(--seafom) 32px, #FFFFFF 32px,  #FFFFFF 38px,  var(--seafom) 38px, var(--seafom) 39px,  #FFFFFF 39px, #FFFFFF 45px); background-size: 39px 100%; background-repeat: no-repeat;  display: block; position: absolute; top: 0; left: 0;}
+.single-testimonial:before {content: "" ; width: 39px; height: 100vh;  background:repeating-linear-gradient(90deg, var(--seafom), var(--seafom) 5px, transparent 5px, transparent 11px, var(--seafom) 11px,  var(--seafom) 15px,  transparent 15px, transparent 21px,  var(--seafom) 21px, var(--seafom) 24px, transparent 24px, transparent 30px, var(--seafom) 30px,  var(--seafom) 32px, transparent 32px,  transparent 38px,  var(--seafom) 38px, var(--seafom) 39px,  transparent 39px, transparent 45px); background-size: 39px 100%; background-repeat: no-repeat;  display: block; position: absolute; top: 0; left: 0;}
 .single-testimonial p {font-size: 1.5rem; line-height: 175%; color: var(--midnight); margin-bottom: 24px; font-weight: 300; position: relative;}
 .single-testimonial p strong {font-weight: 700; color: var(--cerulean);}
 .single-testimonial .author {align-items: center; gap:16px;}
@@ -9,3 +9,13 @@
 .single-testimonial .author-txt span {display: block;}
 .single-testimonial .author-txt .author-name {font-size: 1.125rem; font-weight: 700; letter-spacing: -0.36px; color: var(--stone); line-height: normal;}
 .single-testimonial .author-txt .author-pos {font-size: 0.875rem; font-weight: 500; line-height: 148%; opacity: 0.5;}
+
+@media only screen and (max-width:767px) and (min-width:200px) {
+    .single-testimonial {padding: 87px 0 0 0;}
+    .single-testimonial p {font-size: 1.25rem;}
+    .single-testimonial::before {width: 100vw; height: 56px; background: repeating-linear-gradient(0deg, var(--sapphire), var(--sapphire) 5px, transparent 5px, 
+  transparent 13px, var(--sapphire) 13px, var(--sapphire) 17px, transparent 17px, transparent 25px, var(--sapphire) 25px, var(--sapphire) 28px, transparent 28px, 
+  transparent 36px, var(--sapphire) 36px, var(--sapphire) 38px, transparent 38px, transparent 46px, var(--sapphire) 46px, var(--sapphire) 47px, transparent 47px, 
+  transparent 55px); top: 0;}
+
+}

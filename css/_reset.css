@@ -26,7 +26,7 @@ blockquote, q {-webkit-hyphens: none; -moz-hyphens: none; -ms-hyphens: none; hyp
 blockquote {padding:0 0 0 79px; position: relative; margin:46px 0 23px; overflow: hidden;}
 blockquote p {font-size: 1.5rem; line-height: 175%; color: var(--midnight); margin-bottom: 20px; font-weight: 300; position: relative;}
 blockquote p strong {font-weight: 700; color: var(--cerulean);}
-blockquote:before {content: "" ; width: 39px; height: 100vh;  background:repeating-linear-gradient(90deg, var(--seafom), var(--seafom) 5px, #FFFFFF 5px, #FFFFFF 11px, var(--seafom) 11px,  var(--seafom) 15px,  #FFFFFF 15px, #FFFFFF 21px,  var(--seafom) 21px, var(--seafom) 24px, #FFFFFF 24px, #FFFFFF 30px, var(--seafom) 30px,  var(--seafom) 32px, #FFFFFF 32px,  #FFFFFF 38px,  var(--seafom) 38px, var(--seafom) 39px,  #FFFFFF 39px, #FFFFFF 45px); background-size: 39px 100%; background-repeat: no-repeat;  display: block; position: absolute; top: 0; left: 0;}
+blockquote:before {content: "" ; width: 39px; height: 100vh;  background:repeating-linear-gradient(90deg, var(--seafom), var(--seafom) 5px, transparent 5px, transparent 11px, var(--seafom) 11px,  var(--seafom) 15px,  transparent 15px, transparent 21px,  var(--seafom) 21px, var(--seafom) 24px, transparent 24px, transparent 30px, var(--seafom) 30px,  var(--seafom) 32px, transparent 32px,  transparent 38px,  var(--seafom) 38px, var(--seafom) 39px,  transparent 39px, transparent 45px); background-size: 39px 100%; background-repeat: no-repeat;  display: block; position: absolute; top: 0; left: 0;}
 
 small {font-size: small;}
 big {font-size: 125%;}
@@ -174,5 +174,11 @@ img.alignnone {margin:37px 0 38px; display: block; clear: both;}
 
 
 @media only screen and (max-width: 767px) and (min-width: 200px) {
-	
+    ol > li::before {line-height: 24px;}
+    blockquote {padding: 87px 0 0 0;}
+    blockquote p {font-size: 1.25rem;}
+    blockquote::before {width: 100vw; height: 56px; background: repeating-linear-gradient(0deg, var(--sapphire), var(--sapphire) 5px, transparent 5px, 
+  transparent 13px, var(--sapphire) 13px, var(--sapphire) 17px, transparent 17px, transparent 25px, var(--sapphire) 25px, var(--sapphire) 28px, transparent 28px, 
+  transparent 36px, var(--sapphire) 36px, var(--sapphire) 38px, transparent 38px, transparent 46px, var(--sapphire) 46px, var(--sapphire) 47px, transparent 47px, 
+  transparent 55px); top: 0;}
 }

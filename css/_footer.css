@@ -22,7 +22,7 @@ footer#main_footer .footer_rt .footer-address:before {content: ""; background: v
 
 footer#main_footer .footer_rt .footer-address .locator {clear: both; width: 30px; text-align: center; position: relative; font-weight: 700; color: var(--midnight); font-size: 0.75rem; text-transform: uppercase; line-height: 30px; height: 40px; margin: 0 0 22px 0;}
 footer#main_footer .footer_rt .footer-address .locator i {font-size: 40px; position: absolute; left: 0; line-height: 40px; z-index: -1; color: var(--cerulean-25); text-transform: uppercase;}
-footer#main_footer .footer_rt .footer-address.on .locator i {color: var(--cerulean-25);}
+footer#main_footer .footer_rt .footer-address.bc .locator i {color: var(--cerulean-25);}
 footer#main_footer .footer_rt .footer-address.on .locator i {color: var(--sapphire-25);}
 footer#main_footer .footer_rt .footer-address.ab .locator i {color: var(--sunshine-50);}
 footer#main_footer .footer_rt .footer-address h6 {margin: 0 0 1px 0; color: var(--cerulean);}
