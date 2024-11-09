@@ -12,7 +12,7 @@
 /* Hover */
 .more-insights-grid .more-inights-cnt .h5 a:hover {text-decoration: underline; text-decoration-color: var(--sapphire);}
 .more-insights-grid:has(.more-inights-cnt .h5 a:hover, .more-inights-cnt .readmore:hover) {outline: 6px solid rgba(83, 196, 201, 0.20); }
-.more-insights-grid.toggled {}
+.more-insights-grid .more-inights-cnt.toggled .h5 a{text-decoration: underline; text-decoration-color: var(--sapphire);}
 
 
 

@@ -268,7 +268,7 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
 /* LINKS*/
 .fancy-link {color: var(--aegean); position: relative; text-decoration: none;}
 .fancy-link:hover {color: var(--midnight);}
-.fancy-link:before, .fancy-link:after {content: ""; position: absolute; bottom:2px; left: 50%; transform: translateX(-50%); height: 4px; width: 100%; background: var(--sapphire-25); border-radius: 4px; transition: all 0.4s ease-in-out; display: block;}
+.fancy-link:before, .fancy-link:after {content:""; position: absolute; bottom:2px; left: 50%; transform: translateX(-50%); height: 4px; width: 100%; background: var(--sapphire-25); border-radius: 4px; transition: all 0.4s ease-in-out; display: block;}
 .fancy-link:after {width: 0;}
 .fancy-link:hover:after {width: 100%; background: var(--sapphire);}
 

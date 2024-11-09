@@ -134,8 +134,8 @@ jQuery(document).ready(function () {
   }
 
     
-jQuery('.more-insights-grid').hover(function() {
-    jQuery('.more-link').parent().toggleClass('toggled');
-  });    
+jQuery('.more-inights-cnt .more-link, .more-inights-cnt .h5').hover(function() {
+    jQuery(this).closest('.more-inights-cnt').toggleClass('toggled');
+  }); 
     
 });
