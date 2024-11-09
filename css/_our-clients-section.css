@@ -1,5 +1,5 @@
 .our-clients-section{position: relative; width: 100%; clear: both; background-color: var(--aegean-90);}
-.our-clients-main{padding: 80px 0 72px;}
+.our-clients-main{padding: 88px 0 80px;}
 .our-clients-main .optional-text{font-size: 1.5rem; color: var(--seafom); font-weight: 700; margin: 0 0 65px 0; letter-spacing: -0.48px;}
 .our-clients-info h3{color: var(--white); font-size: 2.5rem; line-height: 1.65; font-weight: 300; margin-bottom: 40px;}
 
@@ -16,5 +16,14 @@
   .clients-stats-list p{font-size: 1.5rem; line-height: 1.5; font-weight: 300;}
 
 
-  .our-clients-row .slick-arrow{top: -108px; bottom: inherit; border-radius: 50%; background: no-repeat; border: 1px solid var(--white);}
+  .our-clients-row .slick-arrow{top: -104px; bottom: inherit; border-radius: 50%; background: no-repeat; border: 1px solid var(--white);}
   .our-clients-row .slick-arrow.slick-prev{right: 64px; left: auto;}
+
+
+  @media only screen and (max-width: 1023px) and (min-width:768px){
+    .clients-stats-list{flex: 0 0 calc(50% - 30px);}
+
+
+  }
+
+
