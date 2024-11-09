@@ -207,9 +207,9 @@
 
     
     html.no-scroll {overflow: hidden;}
-    
-    .menu-image-title-below.menu-image-not-hovered > img, .menu-image-hovered.menu-image-title-below .menu-image-hover-wrapper, .menu-image-title-below .menu-image-hover-wrapper {padding-bottom: 0; margin: 0 16px 0 0!important; width: 24px; height: auto; display: inline-block;}
-    .menu-image-title.menu-image-title-above, .menu-image-title.menu-image-title-below, .menu-image-title-below, .menu-image-title-above, .menu-item a.menu-image-title-above, .menu-item a.menu-image-title-below, .menu-image-title.menu-image-title-above, .menu-image-title.menu-image-title-below {text-align: left; display: inline-block;}
+
+    .main_header .logo {margin: 0 auto;}
+    .no-banner .main_header .header {min-height: 64px; padding: 12px 0;}
     
     
 }

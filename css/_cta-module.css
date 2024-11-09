@@ -11,3 +11,14 @@
 @media only screen and (max-width:1023px) and (min-width:768px) {
     .cta-module .h1  {font-size: 3.5rem; line-height: 125%;}
 }
+
+
+@media only screen and (max-width:767px) and (min-width:200px) {
+    .cta-module {padding: 64px 0 60px;}
+    .cta-module .h1 {font-size: 2rem; line-height: 125%; margin-bottom: 32px;}
+    .cta-module p {line-height:125%; margin-bottom: 30px;}
+}
+
+@media only screen and (max-width:480px) { 
+    .cta-module p a {margin-top: 8px;}
+}
