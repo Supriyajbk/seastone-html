@@ -1,16 +1,18 @@
 .more-insights{clear: both; width: 100%; background: var(--white-90); padding: 80px 0; position: relative; z-index: 1;}
 .more-insights-main { display: flex; flex-wrap: wrap;}
-.more-insights-grid {width:31.25%; position: relative; z-index: 1; overflow: hidden; background: var(--white); border-radius: 16px;}
-.more-insights-grid {display: flex; flex-wrap: wrap;  height: 100%; }
+.more-insights-grid {width:31.25%; position: relative; z-index: 1; overflow: hidden; background: var(--white); border-radius: 16px; outline: 6px solid transparent; transition: outline 0.3s ease;}
 .more-insights-grid .more-inights-thumb {border-radius: 16px 16px 0 0; height: 225px; overflow: hidden;}
 .more-insights-grid .more-inights-thumb a {display: block;}
-.more-insights-grid .more-inights-cnt {padding: 32px 32px 33px; display: block; clear: both; width: 100%;}
+.more-insights-grid .more-inights-cnt {padding: 33px 32px 34px; display: block; clear: both; width: 100%;}
 .more-insights-grid .more-inights-cnt .h5 {line-height: 150%; margin: 0;}
 .more-insights-grid .more-inights-cnt .h5 a {color: var(--midnight); display: inline-block;}
 .more-insights-grid .more-inights-cnt .readmore {margin: auto 0 0 auto;}
+.more-insights-grid .more-inights-cnt .more-link {margin-left: auto; margin-top: auto; line-height: 0;}
 
 /* Hover */
 .more-insights-grid .more-inights-cnt .h5 a:hover {text-decoration: underline; text-decoration-color: var(--sapphire);}
+.more-insights-grid:has(.more-inights-cnt .h5 a:hover, .more-inights-cnt .readmore:hover) {outline: 6px solid rgba(83, 196, 201, 0.20); }
+.more-insights-grid.toggled {}
 
 
 
