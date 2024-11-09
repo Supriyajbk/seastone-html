@@ -6,16 +6,11 @@
 .more-insights-grid .more-inights-thumb a {display: block;}
 .more-insights-grid .more-inights-cnt {padding: 32px 32px 33px; display: block; clear: both; width: 100%;}
 .more-insights-grid .more-inights-cnt .h5 {line-height: 150%; margin: 0;}
-.more-insights-grid .more-inights-cnt .h5 a {color: var(--midnight);}
+.more-insights-grid .more-inights-cnt .h5 a {color: var(--midnight); display: inline-block;}
 .more-insights-grid .more-inights-cnt .readmore {margin: auto 0 0 auto;}
 
 /* Hover */
-.more-insights-grid a:hover .h4{color: var(--lime-500);}
-.more-insights-grid a:hover .more-inights-thumb {transform: scale(1.1);}
-.more-inights-cnt span.readmore{display: inline-flex;}
-.more-insights-main .btn-center {margin-top: 48px;}
-.more-insights-main #more-blog:first-of-type {margin: 0;}
-.more-insights-main #more-blog {display: block; margin-top: 24px;}
+.more-insights-grid .more-inights-cnt .h5 a:hover {text-decoration: underline; text-decoration-color: var(--sapphire);}
 
 
 

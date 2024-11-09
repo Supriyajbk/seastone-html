@@ -256,10 +256,11 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
 
 .readmore {position: relative; display: inline-flex; font-size:1.125rem; color: var(--midnight); font-weight: bold; line-height: 1; z-index: 1; flex-wrap: wrap; align-items: center; flex-direction: column; min-height: 32px; justify-content: center;}
 .readmore.white {color: var(--white);}
-.readmore:before, .readmore:after {right:0; content: "\f054"; font-family: "Font Awesome 6 Pro"; font-weight: 400; transition: all .3s ease-in-out; position: absolute; display: flex; align-items: center; flex-wrap: wrap; font-size: 1rem; line-height: 1; top: 0; bottom: 0;}
+.readmore i {font-size:21px;}
+.readmore:before, .readmore:after {right:0; content: "\f054"; font-family: "Font Awesome 6 Pro"; font-weight: 400; transition: all .3s ease-in-out; position: absolute; display: flex; align-items: center; flex-wrap: wrap; font-size:21px; line-height: 1; top: 0; bottom: 0;}
 .readmore:hover {color: var(--heading);}
-.readmore:hover:before {padding-right: 5px}
-.readmore:hover:after {padding-right: 10px}
+.readmore:hover:before {padding-right: 10px}
+.readmore:hover:after {padding-right: 19px}
 .fullimg {clear: both; width: 100%;}
 
 .category-main.no-post-found {padding-bottom: 0;}
