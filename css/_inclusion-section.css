@@ -1,7 +1,28 @@
 .inclusion-section{clear: both; width: 100%; position: relative; background-color: var(--stone-85);}
 .inclusion-main{padding: 161px 0;}
 .inclusion-row{gap: 64px}
-.inclusion-text{flex: 1;}
+.inclusion-text{flex-grow: 1; flex: 0 0 calc(100% - 344px);}
 .inclusion-text span{color: var(--sapphire); font-size: 1.5rem; line-height: 1.25; font-weight: 700;}
-.inclusion-text h3{color: var(--white); font-weight: 300; line-height: 1.75;}
+.inclusion-text h3{color: var(--white); font-weight: 300; line-height: 1.75; margin-bottom: 0;}
 .inclusion-image{flex: 0 0  280px;  background-size: contain; background-position: center;}
+
+
+
+
+@media only screen and (max-width:1023px) and (min-width: 200px) {
+.inclusion-main{padding: 96px 0;}
+.inclusion-row{display: block;}
+.inclusion-text{margin-bottom: 40px;}
+.inclusion-image{width: 280px;}
+.inclusion-text span {margin: 0 0 21px 0;}
+
+}
+
+@media only screen and (max-width:767px) and (min-width: 200px) {
+
+.inclusion-text h3{font-size: 1.5rem; line-height: 1.75;}
+
+
+
+
+}
