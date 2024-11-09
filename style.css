@@ -141,11 +141,12 @@ body .mfp-iframe-holder button.mfp-close::before{left:0;}
 .slick-arrow.slick-disabled {pointer-events:none; opacity: 0.2;}
 
 
-ul.slick-dots {margin:0; padding-top:48px; padding-bottom: 0; display:flex; justify-content:center; flex-wrap:wrap; width: 100%;}
-ul.slick-dots li {margin:0 4.5px 9px!important; display:inline-block; font-size:0; line-height:0;}
+ul.slick-dots {margin:0; gap: 8px; padding-top:48px; padding-bottom: 0; display:flex; justify-content:center; flex-wrap:wrap; width: 100%;}
+ul.slick-dots li {margin:0; display:inline-block; font-size:0; line-height:0;}
 ul.slick-dots li::before, ul.slick-dots li button:before, ul.slick-dots li button:after {display:none;}
-ul.slick-dots li button {width:8px; height:8px; min-width:0; padding:0; font-size:0; line-height:0; border:0 none; background:var(--anchor-hover); border-radius: 50%;}
-ul.slick-dots li.slick-active button {background:var(--white);}
+ul.slick-dots li button {width:8px; height:8px; min-width:0; padding:0; font-size:0; line-height:0; border:0 none; background:var(--white-50); border-radius: 50%;}
+ul.slick-dots li.slick-active button {background:var(--white); width: 16px; border-radius: 4px;}
+ul.slick-dots li button:hover{background: var(--white); outline: 0;}
 
 #blog_list{margin: 0;}
 .btn-center{position: relative; z-index: 1; width: 100%; text-align: center;}
