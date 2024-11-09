@@ -68,7 +68,7 @@ jQuery(document).ready(function () {
   });
 
 
-
+/* our clients slider */
 
          jQuery(".our-clients-row").slick({
            slidesToShow: 1,
@@ -81,7 +81,14 @@ jQuery(document).ready(function () {
            infinite: false,
            autoplay: false,
     
-          
+           responsive: [
+            {
+              breakpoint: 767,
+              settings: {
+                dots: true
+              }
+            },
+          ]
          });
    
     
