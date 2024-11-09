@@ -175,4 +175,10 @@ img.alignnone {margin:37px 0 38px; display: block; clear: both;}
 
 @media only screen and (max-width: 767px) and (min-width: 200px) {
     ol > li::before {line-height: 24px;}
+    blockquote {padding: 87px 0 0 0;}
+    blockquote p {font-size: 1.25rem;}
+    blockquote::before {width: 100vw; height: 56px; background: repeating-linear-gradient(0deg, var(--sapphire), var(--sapphire) 5px, transparent 5px, 
+  transparent 13px, var(--sapphire) 13px, var(--sapphire) 17px, transparent 17px, transparent 25px, var(--sapphire) 25px, var(--sapphire) 28px, transparent 28px, 
+  transparent 36px, var(--sapphire) 36px, var(--sapphire) 38px, transparent 38px, transparent 46px, var(--sapphire) 46px, var(--sapphire) 47px, transparent 47px, 
+  transparent 55px); top: 0;}
 }

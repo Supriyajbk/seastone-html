@@ -1,12 +1,19 @@
 @import url("_single-testimonial.css");
+@import url("_more-insights.css");
 @import url("_cta-module.css");
 
 .general-article-section {float: left; width: 100%; background: var(--white-90); position: relative; z-index: 1;}
 .general-article-section .article-inner {position: relative; width:66.25%; flex-grow: 1; background: var(--white); border-radius: 0px 0px 24px 0px; padding:80px 6.25% 78px 0;}
 .general-article-section .article-inner:before {content: ""; height: calc(100% + 80px); width:1000%; position: absolute; background: var(--white); right:0; z-index: -1; top: -80px; display: block; border-radius: 0px 0px 24px 0px;}
 
-.general-article-section .article-inner > p:first-of-type span{font-size: 1.5rem; line-height:158%; color: var(--aegean); display: block; font-weight: 300; margin: 0 0 64px 0; display: block;}
-.general-article-section .article-inner h1 {font-size: 3rem; margin-bottom: 31px;}
+.general-article-section .article-inner > p:first-of-type span{font-size: 1.5rem; line-height:158%; color: var(--aegean); display: block; font-weight: 300; margin: 0 0 64px 0;}
+
+.general-article-section .article-inner .cat-wrap {clear: both; margin: 0 0 15px 0; justify-content: space-between;}
+.general-article-section .article-inner .cat-wrap ul li {margin: 0 21px 18px 0; display: inline-block; line-height: normal; padding: 0 0 0 20px;}
+.general-article-section .article-inner .cat-wrap ul li:before {width: 15px; height: 15px; background-size: 15px 15px!important;}
+.general-article-section .article-inner .cat-wrap ul li a {font-size: 1.125rem; line-height: 100%;}
+
+.general-article-section .article-inner h1 {font-size: 3rem; margin-bottom: 32px;}
 .general-article-section .article-inner h2 {padding-top: 45px;}
 .general-article-section .article-inner h4 {padding-top: 45px;}
 .general-article-main {justify-content: space-between;}
@@ -64,6 +71,8 @@
     .general-article-section .article-inner::before {height: calc(100% + 80px); width: calc(100% + 80px); border-radius: 0; left: -40px;}
     
     .sidebar {width: 100%; margin: 0;}
+    .sidebar .tm-grid .tm-content .tm-pos {font-size: 1.125rem;}
+
 }
 
 
@@ -77,18 +86,18 @@
     .general-article-section .article-inner .single-testimonial {margin: 40px 0 20px;}
     
     
-    .sidebar {padding: 64px 0 80px 0;}
-    .sidebar .tm-grid {display: flex; flex-wrap: wrap; align-items: center; margin:32px 0 0 0;}
+    .sidebar {padding: 64px 0 64px 0;}
+    .sidebar .team-member-buckets {padding: 7px 0 0 0;}
+    .sidebar .tm-grid {display: flex; flex-wrap: wrap; align-items: center; margin:36px 0 0 0;}
     .sidebar .tm-grid .tm-thumb {width: 120px; margin: 0 24px 0 0;}
     .sidebar .tm-grid .tm-content {display: flex; flex-wrap: wrap; width: calc(100% - 144px); align-items: center;}
-    .sidebar .tm-grid .tm-content .tm-pos {font-size: 1.125rem;}
     .sidebar .tm-grid .tm-content .h5 {margin: 0 0 4px 0;}
 
     .sidebar .tm-grid .tm-contact .tm-location {display: none;}
     .sidebar .tm-grid .tm-contact {font-size: 0; margin: 0; line-height: normal;}
     .sidebar .tm-grid .tm-contact span {display: inline-block; margin:4px 8px 0 0}
     .sidebar .tm-grid .tm-contact figure {display: block; width: 48px; height: 48px; border-radius: 50%; border: 2px solid var(--cerulean); padding: 10px; margin: 0 auto; text-align: center;}
-    
+    .sidebar .tm-grid .tm-contact a:hover figure {border: 2px solid var(--midnight); }
     
     
 }

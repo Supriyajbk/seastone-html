@@ -19,19 +19,7 @@ Text Domain:Seastone IP
 
 
 /* Keyframe Animations */
-@keyframes bounceAlpha {
-0% {opacity: 1; transform: translateX(0px) scale(1);}
-25%{opacity: 0; transform:translateX(10px) scale(1);}
-26%{opacity: 0; transform:translateX(-10px) scale(1);}
-55% {opacity: 1; transform: translateX(0px) scale(1);}
-}
 
-@keyframes bounceAlphadown {
-0% {opacity: 1; transform: translateY(0px) scale(1);}
-25%{opacity: 0; transform:translateY(10px) scale(1);}
-26%{opacity: 0; transform:translateY(-10px) scale(1);}
-55% {opacity: 1; transform: translateY(0px) scale(1);}
-}
 
 /*-- customized styles starts here --*/
 body {font-family:"itc-avant-garde-gothic-pro", sans-serif; color:var(--body-text); font-size:1rem; line-height:175%; font-weight:500; font-style:normal; overflow-x:hidden; background:var(--white); height:100%; display:flex; flex-direction:column; -webkit-overflow-scrolling: touch; padding: 0;}
@@ -43,14 +31,11 @@ body {font-family:"itc-avant-garde-gothic-pro", sans-serif; color:var(--body-tex
 .container-md {max-width:1060px; margin:0 auto; width:100%;}
 .btn {display:block;}
 .btn-wrap {width:100%; clear:both; font-size: 0; display: flex; flex-wrap: wrap; gap:12px;}
-
+.optional-text {font-size:1rem; color:var(--cerulean); font-weight: 700; margin:0 0 24px 0; display:block; line-height: 1.25;}
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .h1 a, .h2 a, .h3 a, .h4 a, .h5 a, .h6 a {color:var(--heading); text-decoration: none;}
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .h1 a:hover, .h2 a:hover, .h3 a:hover, .h4 a:hover, .h5 a:hover, .h6 a:hover {color:var(--anchor-hover);}
-/*
-h1 span, h2 span, h3 span, h4 span, h5 span, h6 span, .h1 span, .h2 span, .h3 span, .h4 span, .h5 span, .h6 span {position: relative; display: inline; z-index: 1; background: -webkit-linear-gradient(to bottom, transparent 95%, var(--anchor-hover) 90%, var(--anchor-hover) 100%); background: linear-gradient(to bottom, transparent 95%, var(--anchor-hover) 90%, var(--anchor-hover) 100%); background-position: center -6px;}
-h2 span {background: -webkit-linear-gradient(to bottom, transparent 94%, var(--anchor-hover) 90%, var(--anchor-hover) 100%); background: linear-gradient(to bottom, transparent 94%, var(--anchor-hover) 90%, var(--anchor-hover) 100%); background-position: center -5px;}
-*/
+
 
 .h1, .h2, .h3, .h4, .h5, .h6 {display: block; color: var(--heading); font-weight: 700;}
 .h1 {font-size: 4rem; line-height: 125%; margin-bottom: 25px;}
@@ -118,12 +103,12 @@ body .mfp-iframe-holder button.mfp-close::before{left:0;}
 .default-thumb figure figcaption:after {content: "\f03e"; display: block; position: absolute; width: 18px; height: 12px; left: 12px; font-family: "Font Awesome 6 Pro"; top: 14px; font-weight: normal; font-size: 1rem; color: var(--green); line-height: 12px;}
 
 /* Cat Wrap */
-.cat-wrap {clear: both; margin: 0 0 15px 0; justify-content: space-between;}
-.cat-wrap ul {margin: 0; font-size: 0;}
-.cat-wrap ul li {margin: 0; margin: 0 21px 18px 0; display: inline-block; line-height: normal; padding: 0 0 0 20px;}
-.cat-wrap ul li:before {content: ""; background: url("images/stone-one.svg") 0 0 no-repeat; position: absolute; left: 0; display: block; width: 15px; height: 15px; top: 0;}
-.cat-wrap ul li:nth-child(2n):before {background: url("images/stone-two.svg") 0 0 no-repeat;}
-.cat-wrap ul li a {display: inline-block; color: var(--stone); font-size: 1.125rem; font-weight: 500; line-height: 100%; text-decoration: none; position: relative; z-index: 1;}
+.cat-wrap {clear: both; margin: 0; justify-content: space-between;}
+.cat-wrap ul {margin: 0; font-size: 0; line-height: normal;}
+.cat-wrap ul li {margin:22px 15px 0 0; display: inline-block; line-height: normal; padding: 0 0 0 16px;}
+.cat-wrap ul li:before {content: ""; background: url("images/stone-one.svg") 0 0 no-repeat; position: absolute; left: 0; display: block; width: 12px; height: 12px; top: 0;  background-size: 12px 12px;}
+.cat-wrap ul li:nth-child(2n):before {background: url("images/stone-two.svg") 0 0 no-repeat; background-size: 12px 12px;}
+.cat-wrap ul li a {display: inline-block; color: var(--stone); font-size: 0.875rem; font-weight: 500; line-height: 100%; text-decoration: none; position: relative; z-index: 1;}
 .cat-wrap ul li a:hover {color: var(--midnight);}
 .cat-wrap ul li:hover:before {transform: rotate(-30deg);}
 .cat-wrap ul li:nth-child(2n):hover:before {transform: rotate(30deg);}
@@ -244,13 +229,13 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
 /*-- common form css ends here --*/
 
 
-.optional-text {font-size:1rem; color:var(--cerulean); font-weight: 700; margin:0 0 24px 0; display:block; line-height: 1.25;}
+
 
 
 /* Heading */
-.heading {clear: both; padding: 0 0 41px; width: 100%; justify-content: space-between; align-items: center; display: flex;}
+.heading {clear: both; padding: 0 0 40px; width: 100%; justify-content: space-between; align-items: center; display: flex;}
 .heading-lt {flex-grow: 1; width: 70%;}
-.heading-lt h2 {margin: 0;}
+.heading-lt h2 {margin: 0; font-size: 2rem; color: var(--midnight);}
 .heading-rt{  display: flex; justify-content: flex-end; flex-grow: 1;}
 
 .heading-rt {flex-grow: 1;  width: 30%;}
@@ -269,12 +254,12 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
 
 
 
-.readmore {position: relative; display: inline-flex; font-size:1.125rem; padding: 0 4px 0 0; color: var(--midnight); font-weight: bold; line-height: 1; z-index: 1; flex-wrap: wrap; align-items: center; flex-direction: column; min-height: 32px; justify-content: center;}
+.readmore {position: relative; display: inline-flex; font-size:1.125rem; color: var(--midnight); font-weight: bold; line-height: 1; z-index: 1; flex-wrap: wrap; align-items: center; flex-direction: column; min-height: 32px; justify-content: center;}
 .readmore.white {color: var(--white);}
-.readmore:before {right: -14px; content: "\f061"; font-family: "Font Awesome 6 Pro"; font-weight: 300; transition: all .3s ease-in-out; position: absolute; display: flex; align-items: center; flex-wrap: wrap; font-size: 1rem; line-height: 1; top: 0; bottom: 0;}
+.readmore:before, .readmore:after {right:0; content: "\f054"; font-family: "Font Awesome 6 Pro"; font-weight: 400; transition: all .3s ease-in-out; position: absolute; display: flex; align-items: center; flex-wrap: wrap; font-size: 1rem; line-height: 1; top: 0; bottom: 0;}
 .readmore:hover {color: var(--heading);}
-.readmore:hover:before {width:100%; height: 100%;}
-
+.readmore:hover:before {padding-right: 5px}
+.readmore:hover:after {padding-right: 10px}
 .fullimg {clear: both; width: 100%;}
 
 .category-main.no-post-found {padding-bottom: 0;}
@@ -355,12 +340,13 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
 
 }
 
-@media only screen and (max-width:767px) and (min-width:200px) {
+@media only screen and (max-width:767px) and (min-width:200px) {    
     .container {padding:0 24px; max-width:100%;}
     .hide-in-mobile {display:none;}    
 
     .video-thumbnail iframe{min-height: 197px!important;}    
-    
+    .video-wrap .video-thumbnail > img {min-height: 192px;}
+
     body .mfp-image-holder .mfp-close, body .mfp-iframe-holder .mfp-close {right: 0px;}
     body .mfp-container { padding-left: 20px; padding-right: 20px; }
 
@@ -370,8 +356,8 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
 
     
     .category-main.no-post-found {text-align: center;}    
-    table {margin: 10px 0 10px;}
 
+/*
     .frm_forms .frm_form_fields .frm-wrapper .frm_form_field.frm_form_field.vertical_radio {width: 100%; padding: 0; margin-bottom: 20px;}
     .frm_forms.with_frm_style .frm_checkbox input[type="checkbox"], 
     .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field input[type="checkbox"] { width: 28px; height: 28px; cursor: pointer;  outline: none!important;  -moz-border-radius: 50%; -webkit-border-radius: 50%;  border-radius: 50%; padding: 0 !important; background: var(--cerulean)!important; border: 0 none !important;}
@@ -382,6 +368,7 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
 
     .frm_forms .frm_submit .button{width: 100%;}
     .frm_forms.with_frm_style .frm_checkbox input[type="checkbox"]:checked::before {top: 4px; left: 4px; font-size: 14px;}
+*/
 
 
     .color-line::before{background: repeating-linear-gradient(180deg, var(--sunshine) 1px, var(--sunshine) 2px, transparent 2px, transparent 14px, var(--sapphire-50) 14px, var(--sapphire-50) 15px, transparent 15px,transparent 27px, var(--sapphire-60) 27px, var(--sapphire-60) 28px, transparent 28px, transparent 40px, var(--sapphire-70) 40px, var(--sapphire-70) 42px, transparent 42px, transparent 54px, var(--sapphire-80) 54px, var(--sapphire-80) 57px, transparent 57px, transparent 69px, var(--sapphire-90) 69px, var(--sapphire-90) 73px, transparent 73px, transparent 85px, var(--sapphire) 85px, var(--sapphire) 90px, transparent 90px, transparent 102px); width: 100%; height: 90px; bottom: -130px; top: inherit;}
@@ -399,7 +386,6 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
     .cta-short .h2 {font-size: 2rem; line-height: 125%; margin-bottom: 32px;}
     .cta-short p {line-height:125%; margin-bottom: 30px;}
     
-    .video-wrap .video-thumbnail > img {min-height: 192px;}
 
     
     
