@@ -133,9 +133,17 @@ jQuery(document).ready(function () {
     }
   }
 
-    
-jQuery('.more-inights-cnt .more-link, .more-inights-cnt .h5').hover(function() {
-    jQuery(this).closest('.more-inights-cnt').toggleClass('toggled');
-  }); 
-    
+
+  if (jQuery(window).width() >= 1024) {
+    jQuery('.more-inights-cnt .more-link, .more-inights-cnt .h5').hover(function () {
+      jQuery(this).closest('.more-insights-grid').toggleClass('toggled');
+    });
+  }
+
+  if (jQuery(window).width() >= 1024) {
+    jQuery('.heading-rt .readmore').hover(function () {
+      jQuery(this).closest('.heading-rt').siblings().toggleClass('minusleft');
+    });
+  }
+
 });

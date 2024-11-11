@@ -108,6 +108,7 @@ body .mfp-iframe-holder button.mfp-close::before{left:0;}
 .cat-wrap ul li {margin:22px 15px 0 0; display: inline-block; line-height: normal; padding: 0 0 0 16px;}
 .cat-wrap ul li:before {content: ""; background: url("images/stone-one.svg") 0 0 no-repeat; position: absolute; left: 0; display: block; width: 12px; height: 12px; top: 0;  background-size: 12px 12px;}
 .cat-wrap ul li:nth-child(2n):before {background: url("images/stone-two.svg") 0 0 no-repeat; background-size: 12px 12px;}
+.cat-wrap ul li:last-child {margin-right: 0;}
 .cat-wrap ul li a {display: inline-block; color: var(--stone); font-size: 0.875rem; font-weight: 500; line-height: 100%; text-decoration: none; position: relative; z-index: 1;}
 .cat-wrap ul li a:hover {color: var(--midnight);}
 .cat-wrap ul li:hover:before {transform: rotate(-30deg);}
@@ -235,7 +236,8 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
 
 /* Heading */
 .heading {clear: both; padding: 0 0 40px; width: 100%; justify-content: space-between; align-items: center; display: flex;}
-.heading-lt {flex-grow: 1; width: 70%;}
+.heading-lt {flex-grow: 1; width: 70%; transition: all .3s ease-in-out;}
+.heading-lt.minusleft {transform: translateX(-30px);}
 .heading-lt h2 {margin: 0; font-size: 2rem; color: var(--midnight);}
 .heading-rt{  display: flex; justify-content: flex-end; flex-grow: 1;}
 
@@ -254,14 +256,36 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
 .fluid-section {flex: 0 0 100vw; margin-left: calc(-50vw + 50%);}
 
 
+.readmore {position: relative; display:flex; font-size:1.125rem; color: var(--midnight); font-weight: 700; z-index: 1; flex-wrap: wrap; align-items: center; gap: 4px;}
+.readmore span {top: -1px; position: relative; display: inline-block;}
+.readmore span i {font-size:1rem; color: var(--sapphire); line-height:1;}
+.readmore span:before, .readmore span:after {right:0; content: "\f054"; font-family: "Font Awesome 6 Pro"; font-weight: 400; transition: all .3s ease-in-out; position: absolute; font-size:1rem; line-height:1; top: -2px; bottom: 0; opacity: 0; height: 18px; width: 11px; margin: auto; display: block;}
+.readmore:hover {color: var(--heading); gap:16px;}
+.readmore:hover span i {color: var(--sapphire);}
+.readmore:hover span:before { color: var(--cerulean); opacity: 1; transform: translateX(-5px)}
+.readmore:hover span:after {color: var(--aegean); opacity: 1; transform: translateX(-11px)}
 
-.readmore {position: relative; display: inline-flex; font-size:1.125rem; color: var(--midnight); font-weight: 700; z-index: 1; flex-wrap: wrap; align-items: center; flex-direction: column; justify-content: center;}
-.readmore i {font-size:21px; color: var(--aegean);}
-.readmore:before, .readmore:after {right:0; content: "\f054"; font-family: "Font Awesome 6 Pro"; font-weight: 400; transition: all .3s ease-in-out; position: absolute; display: flex; align-items: center; flex-wrap: wrap; font-size:21px; line-height: 1; top: 0; bottom: 0; opacity: 0;}
-.readmore:hover {color: var(--heading);}
-.readmore:hover i {color: var(--sapphire);}
-.readmore:hover:before {padding-right: 10px; color: var(--cerulean); opacity: 1;}
-.readmore:hover:after {padding-right: 19px; color: var(--aegean); opacity: 1;}
+/* Only Arrow */
+.more-link {margin: auto 0 0 auto; line-height: 0;}
+.more-link .readmore {position: relative; display:flex; z-index: 1; flex-wrap: wrap; align-items: center; gap: 0;}
+.more-link .readmore span {top: -1px; position: relative; display: inline-block;}
+.more-link .readmore span i {font-size:1.3rem; color: var(--aegean); line-height:1;}
+.more-link .readmore span:before, .more-link .readmore span:after {right:0; content: "\f054"; font-family: "Font Awesome 6 Pro"; font-weight: 400; transition: all .3s ease-in-out; position: absolute; font-size:1.3rem; line-height:1; top: -2px; bottom: 0; opacity: 0; height: 18px; width: 11px; margin: auto; display: block;}
+.more-link .readmore:hover {gap:0;}
+.more-link .readmore:hover span i {color: var(--sapphire);}
+.more-link .readmore:hover span:before { color: var(--cerulean); opacity: 1; transform: translateX(-12px);}
+.more-link .readmore:hover span:after {color: var(--aegean); opacity: 1; transform: translateX(-22px);}
+
+.cat-wrapper .cat-wrap {width: 91%;}
+.cat-wrapper .more-link {width: calc(100% - 91%); justify-content: flex-end; display: flex; flex-wrap: wrap; margin-bottom: -5px;}
+
+/* Hover */
+.toggled {outline: 6px solid rgba(83, 196, 201, 0.20)!important;}
+.toggled .h5 a{text-decoration: underline; text-decoration-color: var(--sapphire);}
+.toggled .more-link .readmore span i {color: var(--sapphire);}
+.toggled .more-link .readmore span:before {color: var(--cerulean); opacity: 1; transform: translateX(-12px)}
+.toggled .more-link .readmore span:after {color: var(--aegean); opacity: 1; transform: translateX(-22px)}
+
 
 .category-main.no-post-found {padding-bottom: 0;}
 
@@ -299,38 +323,22 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
 @media only screen and (min-width:1024px) {
     .hide-in-desktop {display:none;}
     .desktop-hide {display:none!important;}
-   
-    
-    
 }
+
 @media only screen and (max-width:1400px) {
     .container {padding:0 40px; max-width:100%;}
 }
 
-@media only screen and (max-width:1240px)and (min-width:1024px) {
-}
+@media only screen and (max-width:1240px)and (min-width:1024px) {}
 
+@media only screen and (min-width:1200px) {}
 
-@media only screen and (min-width:1200px) {
-
-}
-
-@media only screen and (max-width: 1199px) and (min-width: 1024px) {
-    
-}
+@media only screen and (max-width: 1199px) and (min-width: 1024px) {}
 
 
 @media only screen and (max-width:1023px) and (min-width:768px) {
-    .hide-in-tab, .hide-in-tablet {display:none;}
-
-    .heading-lt {width: 50%;}
-    .heading-rt {width: calc(100% - 50%);}    
-
-
+    .hide-in-tab, .hide-in-tablet {display:none;} 
     
-}
-
-@media only screen and (max-width:1023px) and (min-width:200px) {    
 }
 
 
@@ -351,7 +359,6 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
     body .mfp-image-holder .mfp-close, body .mfp-iframe-holder .mfp-close {right: 0px;}
     body .mfp-container { padding-left: 20px; padding-right: 20px; }
 
-    .heading {padding: 0 0 38px;}
     .heading-lt { flex: inherit; width: 60%; flex-grow: 1;}
     .heading-rt {justify-content: flex-start;}
 
@@ -376,6 +383,10 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
     
     
     .cat-wrap {margin: 0 0 14px 0;}
+    .cat-wrap ul li {margin: 19px 15px 0 0;}
+    .cat-wrapper .more-link {display: none;}
+    .cat-wrapper .cat-wrap {margin: 0;}
+    
     
     .default-thumb figure {height: 49.2vw;}
     
@@ -395,9 +406,7 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
 @media only screen and (max-width:480px) {   
     img.alignnone, img.alignleft, img.aligncenter {margin:39px 0 36px 0; width:100%}
     img.alignright {margin:14px 0 36px 0; width: 100%;}
+    
     .cta-button p a {margin-top: 4px;}
     .cta-short p a {margin-top: 8px;}
-    
-    
-
 }

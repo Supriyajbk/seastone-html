@@ -67,6 +67,7 @@
 }
 
 @media only screen and (max-width: 1023px) and (min-width: 200px) {
+    .general-article-section {background: var(--white-80);}
     .general-article-section .article-inner {width: 100%; padding-right: 0;}
     .general-article-section .article-inner::before {height: calc(100% + 80px); width: calc(100% + 80px); border-radius: 0; left: -40px;}
     
