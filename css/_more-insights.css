@@ -9,7 +9,6 @@
 .more-insights-grid .more-inights-cnt .h5 a:hover {text-decoration: underline; text-decoration-color: var(--sapphire);}
 
 
-
 @media only screen and (min-width: 1024px) {
   .more-insights-main {gap: 80px 3.125%;}
   
@@ -38,4 +37,6 @@
     .more-insights-grid .more-inights-thumb {margin-bottom: 16px; height: 28.72vw; border-radius:8px;}
     .more-insights .btn-full {margin: 40px 0 0 0;}
     
+    .cat-wrapper .more-link {display: none;}
+    .cat-wrap ul li {margin:19px 15px 0 0;}
 }

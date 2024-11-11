@@ -3,8 +3,10 @@
 @import url("_cta-module.css");
 
 .general-article-section {float: left; width: 100%; background: var(--white-90); position: relative; z-index: 1;}
-.general-article-section .article-inner {position: relative; width:66.25%; flex-grow: 1; background: var(--white); border-radius: 0px 0px 24px 0px; padding:80px 6.25% 78px 0;}
+.general-article-section .article-inner {position: relative; width:calc(100% - 432px); flex-grow: 1; background: var(--white); border-radius: 0px 0px 24px 0px; padding:80px 6.25% 78px 0;}
 .general-article-section .article-inner:before {content: ""; height: calc(100% + 80px); width:1000%; position: absolute; background: var(--white); right:0; z-index: -1; top: -80px; display: block; border-radius: 0px 0px 24px 0px;}
+.general-article-section .article-inner:only-child:before {right: -40px;}
+.general-article-section .article-inner:only-child {padding-right: 0;}
 
 .general-article-section .article-inner > p:first-of-type span{font-size: 1.5rem; line-height:158%; color: var(--aegean); display: block; font-weight: 300; margin: 0 0 64px 0;}
 
@@ -24,11 +26,18 @@
 
 
 /* Sidebar */
-.sidebar {width: calc(100% - 72.5%); margin:0 0 0 6.25%; padding:80px 0 80px 0;}
+.sidebar {width: 352px; margin:0 0 0 6.25%; padding:80px 0 80px 0;}
 .sidebar .cta-bucket {clear: both; width: 100%;}
 .sidebar .cta-bucket .optional-text {color: var(--aegean); margin: 0 0 20px 0;}
 .sidebar .cta-bucket p {font-size: 1.5rem; line-height: 175%; color: var(--stone); font-weight: 300; margin-bottom: 15px;} 
 .sidebar .cta-bucket p strong {color: var(--cerulean);}
+.sidebar .cta-bucket .readmore {gap:0; display: inline-block;}
+.sidebar .cta-bucket .readmore span {margin-left:16px; transition: all 0.3s ease-in-out;}
+.sidebar .cta-bucket .readmore span::before {opacity: 1; transform: translateX(-5px); color: var(--cerulean);}
+.sidebar .cta-bucket .readmore span::after {color: var(--aegean); opacity: 1; transform: translateX(-11px);}
+.sidebar .cta-bucket .readmore:hover span::before {transform: translateX(0); opacity: 0;}
+.sidebar .cta-bucket .readmore:hover span::after {transform: translateX(0); opacity: 0;}
+
 .sidebar .team-member-buckets {clear: both; width: 100%;}
 .sidebar .team-member-buckets .btn-full {margin: 48px 0 0 0;}
 .sidebar .tm-grid {clear: both; width: 100%; margin: 47px 0 0 0;}
