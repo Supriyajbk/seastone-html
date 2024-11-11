@@ -2,14 +2,14 @@ jQuery(document).ready(function () {
   
   /* Insights Slider */
   if (jQuery(window).width() <= 767) {
-    jQuery(".recent-insights-main").slick({
+    jQuery(".more-insights-main").slick({
       slidesToShow: 1,
       slidesToScroll: 1,
       draggable: true,
       swipeToSlide: true,
       infinite: false,
       speed: 1000,
-      dots: true,
+      dots: false,
       arrows: false,
       variableWidth: true,
       touchThreshold: 50,

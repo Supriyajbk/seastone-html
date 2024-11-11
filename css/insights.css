@@ -1,6 +1,9 @@
-.more-insights{clear: both; width: 100%; background: var(--white-90); padding: 80px 0; position: relative; z-index: 1;}
-.more-insights-main { display: flex; flex-wrap: wrap;}
-.more-insights-grid {width:31.25%; position: relative; z-index: 1; overflow: hidden; background: var(--white); border-radius: 16px; outline: 6px solid transparent; transition: outline 0.3s ease;}
+@import url("_cta-module.css");
+
+.insights{clear: both; width: 100%; background: var(--white-90); padding: 80px 0; position: relative; z-index: 1;}
+.insights-main { display: flex; flex-wrap: wrap;}
+.more-insights-grid {width:31.25%; position: relative; z-index: 1; overflow: hidden; background: var(--white); border-radius: 16px; outline: 6px solid transparent; transition: outline 0.3s ease; margin: 0 0 3.125% 3.125%;}
+.more-insights-grid:nth-child(3n+1) {margin-left: 0;}
 .more-insights-grid .more-inights-thumb {border-radius: 16px 16px 0 0; height: 225px; overflow: hidden;}
 .more-insights-grid .more-inights-thumb a {display: flex; height: 100%;}
 .more-insights-grid .more-inights-cnt {padding: 33px 32px 34px; display: block; clear: both; width: 100%;}
@@ -11,14 +14,14 @@
 
 
 @media only screen and (min-width: 1024px) {
-  .more-insights-main {gap: 80px 3.125%;}
+  .insights-main {}
   
 
 }
 @media only screen and (max-width: 1199px) and (min-width: 1024px) {
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
-    .more-insights-main{gap: 32px;}
+    .insights-main{gap: 32px;}
     .more-insights-grid {padding: 16px; display: flex; flex-wrap: wrap; width: 100%; align-items: center;}
     .more-insights-grid .more-inights-thumb {border-radius: 8px; width: 328px; margin: 0 32px 0 0; height: 176px;}
     .more-insights-grid .more-inights-cnt {width: calc(100% - 360px); padding: 0 16px 0 0; margin: -3px 0 0 0;}
@@ -28,10 +31,9 @@
 
 
 @media only screen and (max-width: 767px) and (min-width: 200px) {
-    .more-insights {padding: 64px 0;}
-    .more-insights .heading-rt {display: none;}
-    .more-insights-main {display: block;}
-    .more-insights-main .slick-list {overflow: visible;}
+    .insights {padding: 64px 0;}
+    .insights-main {display: block;}
+    .insights-main .slick-list {overflow: visible;}
     .more-insights-grid {width: 256px; padding:16px 16px 17px 16px; margin-right: 16px;}
     .more-insights-grid .more-inights-cnt .h5 {font-size: 1rem; line-height: 150%; }
     .more-insights-grid .more-inights-cnt {padding: 0;}
