@@ -22,7 +22,7 @@
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
     .insights-main{gap: 32px;}
-    .more-insights-grid {padding: 16px; display: flex; flex-wrap: wrap; width: 100%; align-items: center;}
+    .more-insights-grid {padding: 16px; display: flex; flex-wrap: wrap; width: 100%; align-items: center; margin: 0;}
     .more-insights-grid .more-inights-thumb {border-radius: 8px; width: 328px; margin: 0 32px 0 0; height: 176px;}
     .more-insights-grid .more-inights-cnt {width: calc(100% - 360px); padding: 0 16px 0 0; margin: -3px 0 0 0;}
 
