@@ -150,7 +150,9 @@ ul.slick-dots li.slick-active button {background:var(--white); width: 16px; bord
 ul.slick-dots li button:hover{background: var(--white); outline: 0;}
 
 #blog_list{margin: 0;}
-.btn-center{position: relative; z-index: 1; width: 100%; text-align: center;}
+.btn-center{position: relative; z-index: 1; width: 100%; text-align: center; margin: 24px 0 0 0; display: flex; justify-content: center; align-items: center; clear: both;}
+.btn-center .button {min-width: 400px; margin: 0 40px;}
+.btn-center:before, .btn-center:after {content: ""; height: 2px; width: 100%; display:inline-block; vertical-align: middle; background: var(--sapphire);}
 
 /* Custom Selectbox */
 select.selectBox {display:none!important;}
@@ -268,16 +270,16 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
 /* Only Arrow */
 .more-link {margin: auto 0 0 auto; line-height: 0;}
 .more-link .readmore {position: relative; display:flex; z-index: 1; flex-wrap: wrap; align-items: center; gap: 0;}
-.more-link .readmore span {top: -1px; position: relative; display: inline-block;}
-.more-link .readmore span i {font-size:1.3rem; color: var(--aegean); line-height:1;}
-.more-link .readmore span:before, .more-link .readmore span:after {right:0; content: "\f054"; font-family: "Font Awesome 6 Pro"; font-weight: 400; transition: all .3s ease-in-out; position: absolute; font-size:1.3rem; line-height:1; top: -2px; bottom: 0; opacity: 0; height: 18px; width: 11px; margin: auto; display: block;}
+.more-link .readmore span {display: inline-block;}
+.more-link .readmore span i {font-size:1.3rem; color: var(--aegean); line-height:1; position: relative;}
+.more-link .readmore span:before, .more-link .readmore span:after {right:0; content: "\f054"; font-family: "Font Awesome 6 Pro"; font-weight: 400; transition: all .3s ease-in-out; position: absolute; font-size:1.3rem; line-height:1; top:0; bottom: 0; opacity: 0; height: 20.8px; width: 11px; margin: auto; display: block;}
 .more-link .readmore:hover {gap:0;}
-.more-link .readmore:hover span i {color: var(--sapphire);}
+.more-link .readmore:hover span i {color: var(--sapphire); height:20.8px;}
 .more-link .readmore:hover span:before { color: var(--cerulean); opacity: 1; transform: translateX(-12px);}
 .more-link .readmore:hover span:after {color: var(--aegean); opacity: 1; transform: translateX(-22px);}
 
-.cat-wrapper .cat-wrap {width: 91%;}
-.cat-wrapper .more-link {width: calc(100% - 91%); justify-content: flex-end; display: flex; flex-wrap: wrap; margin-bottom: -5px;}
+.cat-wrapper .cat-wrap {width: 85%;}
+.cat-wrapper .more-link {width: calc(100% - 85%); justify-content: flex-end; display: flex; flex-wrap: wrap; margin-bottom: -5px;}
 
 /* Hover */
 .toggled {outline: 6px solid rgba(83, 196, 201, 0.20)!important;}
@@ -338,6 +340,7 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
 
 @media only screen and (max-width:1023px) and (min-width:768px) {
     .hide-in-tab, .hide-in-tablet {display:none;} 
+    .btn-center {margin: 64px 0 0 0;}
     
 }
 
@@ -354,16 +357,11 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
     .hide-in-mobile {display:none;}    
 
     .video-thumbnail iframe{min-height: 197px!important;}    
-    .video-wrap .video-thumbnail > img {min-height: 192px;}
+    .video-wrap .video-thumbnail > img {min-height: 197px;}
 
     body .mfp-image-holder .mfp-close, body .mfp-iframe-holder .mfp-close {right: 0px;}
     body .mfp-container { padding-left: 20px; padding-right: 20px; }
 
-    .heading-lt { flex: inherit; width: 60%; flex-grow: 1;}
-    .heading-rt {justify-content: flex-start;}
-
-    
-    .category-main.no-post-found {text-align: center;}    
 
     .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_fields_container{display: block;}
     body .frm_forms .frm_submit .button, body .frm_forms .frm_submit button {width: 100%;}
@@ -373,12 +371,13 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
     .with_frm_style .vertical_radio .frm_checkbox{margin-bottom: 12px;}
     .frm_forms.with_frm_style .frm_checkbox label {padding-left: 40px; line-height: 1;}
     .frm_forms .frm_form_fields .frm-wrapper .frm_form_field {padding: 0;}
+    
+    
     .color-line::before{background: repeating-linear-gradient(180deg, var(--sunshine) 1px, var(--sunshine) 2px, transparent 2px, transparent 14px, var(--sapphire-50) 14px, var(--sapphire-50) 15px, transparent 15px,transparent 27px, var(--sapphire-60) 27px, var(--sapphire-60) 28px, transparent 28px, transparent 40px, var(--sapphire-70) 40px, var(--sapphire-70) 42px, transparent 42px, transparent 54px, var(--sapphire-80) 54px, var(--sapphire-80) 57px, transparent 57px, transparent 69px, var(--sapphire-90) 69px, var(--sapphire-90) 73px, transparent 73px, transparent 85px, var(--sapphire) 85px, var(--sapphire) 90px, transparent 90px, transparent 102px); width: 100%; height: 90px; bottom: -130px; top: inherit;}
     
     
     .cat-wrap {margin: 0 0 14px 0;}
-    .cat-wrap ul li {margin: 19px 15px 0 0;}
-    .cat-wrapper .more-link {display: none;}
+    .cat-wrap ul li {margin: 21px 15px 0 0;}
     .cat-wrapper .cat-wrap {margin: 0;}
     
     
@@ -392,7 +391,8 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
     .cta-short .h2 {font-size: 2rem; line-height: 125%; margin-bottom: 32px;}
     .cta-short p {line-height:125%; margin-bottom: 30px;}
     
-
+    .btn-center {margin: 40px 0 0 0;}
+    .btn-center .button {min-width:214px; margin: 0 8px;}
     
     
 }

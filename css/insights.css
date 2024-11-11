@@ -1,5 +1,9 @@
 @import url("_cta-module.css");
 
+.inights-top-container {clear: both; width: 100%; padding: 80px 0; background: var( --aegean-80);}
+.inisights-bottom {clear: both; gap:3.125%;}
+.inisights-bottom .more-insights-grid {margin: 0;}
+
 .insights{clear: both; width: 100%; background: var(--white-90); padding: 80px 0; position: relative; z-index: 1;}
 .insights-main { display: flex; flex-wrap: wrap;}
 .more-insights-grid {width:31.25%; position: relative; z-index: 1; overflow: hidden; background: var(--white); border-radius: 16px; outline: 6px solid transparent; transition: outline 0.3s ease; margin: 0 0 3.125% 3.125%;}
@@ -25,19 +29,24 @@
     .more-insights-grid {padding: 16px; display: flex; flex-wrap: wrap; width: 100%; align-items: center; margin: 0;}
     .more-insights-grid .more-inights-thumb {border-radius: 8px; width: 328px; margin: 0 32px 0 0; height: 176px;}
     .more-insights-grid .more-inights-cnt {width: calc(100% - 360px); padding: 0 16px 0 0; margin: -3px 0 0 0;}
-
-
 }
+
+
 
 
 @media only screen and (max-width: 767px) and (min-width: 200px) {
     .insights {padding: 64px 0;}
     .insights-main {display: block;}
-    .insights-main .slick-list {overflow: visible;}
-    .more-insights-grid {width: 256px; padding:16px 16px 17px 16px; margin-right: 16px;}
-    .more-insights-grid .more-inights-cnt .h5 {font-size: 1rem; line-height: 150%; }
-    .more-insights-grid .more-inights-cnt {padding: 0;}
-    .more-insights-grid .more-inights-thumb {margin-bottom: 16px; height: 28.72vw; border-radius:8px;}
+    .more-insights-grid {width: 100%; margin: 0 0 24px 0;}
+    .more-insights-grid .more-inights-thumb {height: 49.235vw;}
+    .more-insights-grid .more-inights-cnt {padding: 32px 32px 34px;}
     .more-insights .btn-full {margin: 40px 0 0 0;}
     
+    
+}
+
+@media only screen and (max-width: 767px) and (min-width:680px) {
+    .insights-main {justify-content: space-between; display: flex; flex-wrap: wrap;}
+    .more-insights-grid .more-inights-thumb {height:auto;}
+     .more-insights-grid {width: 48.25%; margin: 0 0 25px 0;}
 }
