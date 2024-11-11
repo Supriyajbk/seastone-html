@@ -169,7 +169,7 @@ body ul.selectBox-dropdown-menu li.selectBox-selected a, body ul.selectBox-dropd
 
 /*-- common form css starts here --*/
 .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_fields_container {display: flex;}
-.frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field .frm_error {right:16px !important; width:100%; display:block; font-size:12px !important; color:#f00 !important; background:transparent; padding:0; margin:0; border-radius:0; text-align:right !important; line-height:normal !important; font-weight:400; top:-9px; position:absolute;}
+.frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field .frm_error {right:0 !important; width:100%; display:block; font-size:12px !important; color:#f00 !important; background:transparent; padding:0; margin:0; border-radius:0; text-align:right !important; line-height:normal !important; font-weight:400; top: auto; bottom: -19px; position:absolute;}
 .frm_forms .frm_form_fields fieldset {margin:0; padding:0; border:0;}
 .frm_forms .frm_form_fields .frm_form_field{margin-bottom:24px; position: relative; clear: both;}
 .frm_forms .frm_form_fields .frm_form_field.frm_full {clear:both; width: 100%;}
@@ -187,9 +187,9 @@ body ul.selectBox-dropdown-menu li.selectBox-selected a, body ul.selectBox-dropd
 
 /* Checkbox */
 .frm_forms.with_frm_style .frm_checkbox input[type="checkbox"], 
-.frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field input[type="checkbox"] {position: absolute; left: 0; width: 20px; height: 20px; cursor: pointer;  outline: none!important;  -moz-border-radius: 50%; -webkit-border-radius: 50%;  border-radius: 50%; padding: 0 !important; background: var(--cerulean)!important; border: 0 none !important;}
+.frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field input[type="checkbox"] {position: absolute; left: 0; width: 20px!important; height: 20px!important; cursor: pointer;  outline: none!important;  -moz-border-radius: 50%; -webkit-border-radius: 50%;  border-radius: 50%; padding: 0 !important; background: var(--cerulean)!important; border: 0 none !important;}
 .frm_forms.with_frm_style .frm_checkbox input[type="checkbox"]:checked:before { content: "\f00c"; font-family: "Font Awesome 6 Pro"; display: block; height: 20px; left: 0px; position: absolute; top: 0; width: 20px; font-weight: 900; color: var(--white); font-size: 10px; transform: none; clip-path: inherit; box-shadow: none; text-align: center; margin: 0; line-height: 20px;}
-.frm_forms.with_frm_style .frm_checkbox input[type="checkbox"]:before {display: none;}
+.frm_forms.with_frm_style .frm_checkbox input[type="checkbox"]:before {display: none; background-image: none!important;}
 .frm_forms.with_frm_style .frm_checkbox label {padding-left:28px; display:block; cursor: pointer;}
 
 
@@ -206,7 +206,7 @@ body .frm_forms .frm_form_fields input.input-has-value, body .frm_forms .frm_for
 /* Form Button */
 .frm_forms .frm_submit{margin:0;}
 body .frm_forms .frm_submit .button, body .frm_forms .frm_submit button {margin:0; padding:15px 15px 11px 14px; vertical-align: middle; cursor: pointer; border-radius: 300px; background-color: var(--cerulean); position: relative; transition: all .3s ease-in-out; -webkit-transition: all .3s ease-in-out; -moz-transition: all .5s ease-in-out; text-align: center; color: var(--white); font-family: "itc-avant-garde-gothic-pro", sans-serif; text-decoration: none; display: inline-block; font-size: 1.125rem; font-weight: 700; line-height: 100%; border: 2px solid transparent;}
-body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:hover, body .frm_forms .frm_submit button:focus {color: var(--midnight)!important; background-color: var(--sunshine)!important; outline: 4px solid rgba(237, 208, 86, 0.50)!important;}
+body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:hover, body .frm_forms .frm_submit button:focus {color: var(--midnight)!important; background-color: var(--sunshine)!important; outline: 4px solid rgba(237, 208, 86, 0.50)!important; border: transparent}
 
 
 .frm-wrapper {width: 100%; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;}
@@ -365,20 +365,14 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
     
     .category-main.no-post-found {text-align: center;}    
 
-/*
-    .frm_forms .frm_form_fields .frm-wrapper .frm_form_field.frm_form_field.vertical_radio {width: 100%; padding: 0; margin-bottom: 20px;}
-    .frm_forms.with_frm_style .frm_checkbox input[type="checkbox"], 
-    .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field input[type="checkbox"] { width: 28px; height: 28px; cursor: pointer;  outline: none!important;  -moz-border-radius: 50%; -webkit-border-radius: 50%;  border-radius: 50%; padding: 0 !important; background: var(--cerulean)!important; border: 0 none !important;}
-    .frm_forms.with_frm_style .frm_checkbox label { padding-left: 40px;}
-    .frm_forms .frm_form_fields .frm-wrapper .frm_form_field {width: 100%;}
-    .frm_forms .frm_submit { width: 100%; }
-    .frm_forms.frm_style_formidable-style.with_frm_style .frm_submit button { width: 100%; }
-
-    .frm_forms .frm_submit .button{width: 100%;}
-    .frm_forms.with_frm_style .frm_checkbox input[type="checkbox"]:checked::before {top: 4px; left: 4px; font-size: 14px;}
-*/
-
-
+    .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_fields_container{display: block;}
+    body .frm_forms .frm_submit .button, body .frm_forms .frm_submit button {width: 100%;}
+    .frm-wrapper .frm_submit {width: 100%;}
+    .frm_forms.with_frm_style .frm_checkbox input[type="checkbox"], .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field input[type="checkbox"] {width: 28px!important; height: 28px!important;}
+    .frm_forms.with_frm_style .frm_checkbox input[type="checkbox"]:checked::before {position: absolute!important; top: 4px; font-size: 14px;}
+    .with_frm_style .vertical_radio .frm_checkbox{margin-bottom: 12px;}
+    .frm_forms.with_frm_style .frm_checkbox label {padding-left: 40px; line-height: 1;}
+    .frm_forms .frm_form_fields .frm-wrapper .frm_form_field {padding: 0;}
     .color-line::before{background: repeating-linear-gradient(180deg, var(--sunshine) 1px, var(--sunshine) 2px, transparent 2px, transparent 14px, var(--sapphire-50) 14px, var(--sapphire-50) 15px, transparent 15px,transparent 27px, var(--sapphire-60) 27px, var(--sapphire-60) 28px, transparent 28px, transparent 40px, var(--sapphire-70) 40px, var(--sapphire-70) 42px, transparent 42px, transparent 54px, var(--sapphire-80) 54px, var(--sapphire-80) 57px, transparent 57px, transparent 69px, var(--sapphire-90) 69px, var(--sapphire-90) 73px, transparent 73px, transparent 85px, var(--sapphire) 85px, var(--sapphire) 90px, transparent 90px, transparent 102px); width: 100%; height: 90px; bottom: -130px; top: inherit;}
     
     

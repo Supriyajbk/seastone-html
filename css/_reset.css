@@ -130,10 +130,10 @@ button.subtle:focus, .button.subtle:focus, button.subtle:active, .button.subtle:
 input[type="submit"] {background-image: url("../images/search-icon.svg") !important; background-repeat: no-repeat !important; position: absolute; right:16px; top:0; bottom: 0; padding: 0 !important; width: 24px; height: 24px; margin: auto; background-color: transparent !important; border: 0 none; border-radius: 0; z-index: 1;}
 
 
-::-webkit-input-placeholder {color: var(--midnight); font-family:"itc-avant-garde-gothic-pro", sans-serif; opacity: 1; font-size: 1rem; overflow: visible;}
-:-moz-placeholder {color: var(--midnight); font-family:"itc-avant-garde-gothic-pro", sans-serif; opacity: 1; font-size: 1rem; overflow: visible;}
-::-moz-placeholder {color: var(--midnight); font-family:"itc-avant-garde-gothic-pro", sans-serif; opacity: 1; font-size:1rem; overflow: visible;}
-:-ms-input-placeholder {color: var(--midnight); font-family:"itc-avant-garde-gothic-pro", sans-serif; opacity: 1; font-size:1rem; overflow: visible;}
+::-webkit-input-placeholder {color: var(--midnight)!important; font-family:"itc-avant-garde-gothic-pro", sans-serif; opacity: 1!important; font-size: 1rem!important; overflow: visible;}
+:-moz-placeholder {color: var(--midnight)!important; font-family:"itc-avant-garde-gothic-pro", sans-serif; opacity: 1!important; font-size: 1rem!important; overflow: visible;}
+::-moz-placeholder {color: var(--midnight)!important; font-family:"itc-avant-garde-gothic-pro", sans-serif; opacity: 1!important; font-size:1rem!important; overflow: visible;}
+:-ms-input-placeholder {color: var(--midnight)!important; font-family:"itc-avant-garde-gothic-pro", sans-serif; opacity: 1!important; font-size:1rem!important; overflow: visible;}
 
 /*
 input:focus::-webkit-input-placeholder{color: var(--sapphire);}

@@ -151,15 +151,12 @@ body.page-template-contact #main_footer .background-bg{top: inherit; z-index: 1;
     .contact-concise-btns{gap: 12px;}
     .contact-concise-btns .button{flex: 0 0 47%;}
 
-    /* .contact-footer-bg { min-height: 1547px; }
-    .copyrights-main{display: block;}
-    .copyrights-text{text-align: center; margin-bottom: 8px;}
-    ul.copyright-links {justify-content: center;} */
 
 
 
     .banner-gradients span{display: block; width: 100%; height: 64px; position: relative; }
-    .frm-wrapper{display: block;}
+  
+    footer#main_footer .footer{z-index: 2;}
 
   }
 
