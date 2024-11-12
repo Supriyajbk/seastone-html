@@ -2,7 +2,9 @@
 .intro-main{padding: 80px 0; position: relative;}
 .intro-main h2{font-size: 2rem; font-weight: 300; color: var(--midnight); line-height: 1.75;}
 .intro-main h2 strong{color: var(--cerulean);}
-.intro-text{padding: 0 320px 0 0; position: relative;}
+.intro-text{padding: 0 148px 0 0; position: relative;}
+.intro-section.row-reverse .intro-text{padding:  0 0 0 148px;}
+.intro-section.row-reverse .color-line:before{left: 0; right: inherit;}
 
 .intro-section.white-text h2{color: var(--white);}
 .intro-section.white-text h2 strong{color: var(--white);}
