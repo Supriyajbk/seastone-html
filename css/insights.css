@@ -4,6 +4,16 @@
 .insights-wrap {clear: both; margin: 88px 0 0 0; width: 100%;}
 .insights-top {gap: 40px;}
 .insights-top-lt {width: calc(100% - 440px); flex-grow: 1; min-height: 490px;}
+.insight-big {display: flex; flex-wrap: wrap; width: 100%; height: 100%;}
+.insight-big-txt {position: relative; z-index: 1; padding: 160px 32px 32px 32px; color: var(--white); margin-top: auto;}
+.insight-big-txt h1 {font-size: 2rem; line-height: 125%; color: var(--white);}
+.insight-big-txt h1 a {color: var(--white);}
+.insight-big-txt h1 a:hover {color: var(--sapphire);}
+.insight-big-txt {}
+
+.newsletter {clear: both; width: 100%; border-radius: 16px; padding: 40px; background: var(--midnight); color: var(--white);}
+.newsletter .optional-text {color:var(--sapphire); margin: 0 0 20px 0;}
+.newsletter .h3 {color: var(--white); font-weight: 300; line-height: 175%;}
 
 .insight-big-thumb {width: 100%;}
 .insight-big-thumb:before {background: linear-gradient(0deg, #03344C 0%, rgba(3, 52, 76, 0.00) 100%); content: ""; display: block; width: 100%; height: 64%; position: absolute; left: 0; bottom: 0; border-radius: 0 0 16px 16px;}
