@@ -1,6 +1,6 @@
 .bio-section{position: relative; width: 100%; clear: both;}
 .bio-section .container-lg{padding: 0;}
-.bio-main{gap: 80px;}
+.bio-main{gap:0 80px;}
 .bio-article-inner{flex: 0 0 60%; flex-grow: 1; padding: 80px 0 0 80px;}
 .bio-aside{flex: 0 0 calc(100% - 66.7%); position: relative;}
 .bio-article-inner h1{font-size: 2rem; line-height: 1.6; font-weight: 300; color: var(--midnight); margin-bottom: 40px;}
@@ -33,7 +33,9 @@
 .ready-to-text ul > li::before{display: none;}
 .ready-to-text ul{margin-left: 0;}
 .ready-to-text ul li a{font-size: 1.125rem; font-weight: 700; color: var(--midnight); text-decoration: none;}
-.ready-to-text::before { position: absolute; display: block; content: ""; width: 338px; height: 338px; background-image: url("../images/rings@2x.png"); background-repeat: no-repeat; top: -135px; left: -243px; z-index: -1; background-size: contain; }
+/* .ready-to-text::before { position: absolute; display: block; content: ""; width: 338px; height: 338px; background-image: url("../images/rings@2x.png"); background-repeat: no-repeat; top: -135px; left: -243px; z-index: -1; background-size: contain; } */
+
+.ready-to-work-main::after { position: absolute; display: block; content: ""; width: 338px; height: 338px; background-image: url("../images/rings@2x.png"); background-repeat: no-repeat; top: 0; left: -243px; z-index: -1; background-size: contain; }
 
 
 .bio-team-info {  position: absolute; bottom: 0; top: auto; left: 0; z-index: 1; width: 100%; height: auto; }
@@ -77,10 +79,16 @@ span.link-text::before{display: none;}
     .bio-article-inner{padding: 80px 0 0 ;}
 
     .bio-team-cont{padding: 24px;}
-    .bio-team-btns .button{font-size: 1rem; padding: 15px 16px;}
+    .bio-team-btns .button{font-size: 1rem; padding: 26px 0px; line-height: 0; }
+    .bio-article-inner{padding: 64px 24px 64px;}
+    .bio-article-inner h1 {font-size: 1.5rem;}
 
+    .download-button .button { background-color: transparent; border: 2px solid var(--cerulean); color: var(--midnight); }
 
-
+    .bio-article-info.links-main ul > li {
+        width: 100%;
+        display: inline-block;
+      }
 
 }
 
