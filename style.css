@@ -245,10 +245,6 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
 
 /*-- common form css ends here --*/
 
-
-
-
-
 /* Heading */
 .heading {clear: both; padding: 0 0 40px; width: 100%; justify-content: space-between; align-items: center; display: flex;}
 .heading-lt {flex-grow: 1; width: 70%; transition: all .3s ease-in-out;}
