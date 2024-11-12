@@ -144,31 +144,61 @@ jQuery(document).ready(function () {
     jQuery('.heading-rt .readmore').hover(function () {
       jQuery(this).closest('.heading-rt').siblings().toggleClass('minusleft');
     });
-  }
+  } 
+});
 
+jQuery(function() {
+  function setupSticky() {
+    let isDesktop = jQuery(window).width() >= 1024;
+    let $aside = jQuery('.bio-aside-wrap');
+    let $footer = jQuery('#main_footer');
+    let $header = jQuery('.main_header');
 
+    // Calculate positions and heights for sticky limits
+    let top = $aside.offset().top - parseFloat($aside.css('marginTop').replace(/auto/, 0));
+    let footTop = $footer.offset().top - parseFloat($footer.css('marginTop').replace(/auto/, 0));
+    let headerHeight = $header.outerHeight();
+    let maxY = footTop - $aside.outerHeight() + headerHeight;
 
- jQuery(function() {
-    var top = jQuery('.bio-aside-wrap').offset().top - parseFloat(jQuery('.bio-aside-wrap').css('marginTop').replace(/auto/, 0));
-    var footTop = jQuery('#main_footer').offset().top - parseFloat($('#main_footer').css('marginTop').replace(/auto/, 0));
-  
-    var maxY = footTop - jQuery('.bio-aside-wrap').outerHeight() -  jQuery(".main_header").outerHeight();
-  
-    jQuery(window).scroll(function(evt) {
-      var y = jQuery(this).scrollTop() + jQuery(".main_header").outerHeight();
+    // Set margin and top offset for mobile layout
+    if (!isDesktop) {
+      $aside.css({
+        marginTop: `-${headerHeight}px`,
+        top: `${headerHeight}px`
+      });
+    } else {
+      $aside.removeAttr('style'); // Reset styles for desktop
+    }
+
+    jQuery(window).scroll(function() {
+      var y = parseInt(jQuery(this).scrollTop() + (isDesktop ? headerHeight : 0));
+
       if (y > top) {
         if (y < maxY) {
-          jQuery('.bio-aside-wrap').addClass('fixed').removeAttr('style');
+          $aside.addClass('sticky').removeAttr('style');
         } else {
-          jQuery('.bio-aside-wrap').removeClass('fixed').css({
-            position: 'absolute',
+          $aside.removeClass('sticky').css({
+            position: isDesktop ? 'absolute' : 'relative',
             top: (maxY - top) + 'px'
           });
         }
       } else {
-        jQuery('.bio-aside-wrap').removeClass('fixed');
+        $aside.removeClass('sticky');
+        if (!isDesktop) {
+          $aside.css({
+            marginTop: `-${headerHeight}px`,
+            top: `${headerHeight}px`
+          });
+        }
       }
     });
+  }
+
+  // Initial setup
+  setupSticky();
+
+  // Re-setup on resize
+  jQuery(window).resize(function() {
+    setupSticky();
   });
-  
 });
