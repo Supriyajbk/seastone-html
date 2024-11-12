@@ -245,6 +245,7 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
 .dark-bg input:focus :-ms-input-placeholder {color: var(--sunshine)!important; font-family:"itc-avant-garde-gothic-pro", sans-serif; opacity: 1!important; font-size:1rem!important; overflow: visible;}
 
 .dark-bg .frm_forms .frm_form_fields input, .dark-bg .frm_forms .frm_form_fields textarea, .dark-bg .frm_forms .frm_form_fields select {outline: 1px solid var(--sapphire) !important;}
+.dark-bg .frm_forms .frm_submit {margin: 28px 0 0 0;}
 
 /*-- common form css ends here --*/
 
@@ -296,6 +297,10 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
 
 .cat-wrapper .cat-wrap {width: 85%;}
 .cat-wrapper .more-link {width: calc(100% - 85%); justify-content: flex-end; display: flex; flex-wrap: wrap; margin-bottom: -5px;}
+
+.cat-wrapper.read-half .cat-wrap {width: 60%;}
+.cat-wrapper.read-half .read-link {width: calc(100% - 60%); justify-content: flex-end; display: flex; flex-wrap: wrap; margin-bottom: -5px;}
+.cat-wrapper.read-half .read-link {}
 
 /* Hover */
 .toggled {outline: 6px solid rgba(83, 196, 201, 0.20)!important;}
