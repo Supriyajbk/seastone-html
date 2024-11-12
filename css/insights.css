@@ -34,6 +34,18 @@
 .more-insights-grid .more-inights-cnt .h5 a {color: var(--midnight); display: inline-block; transition: underline 0.3s ease;}
 .more-insights-grid .more-inights-cnt .h5 a:hover {text-decoration: underline; text-decoration-color: var(--sapphire);}
 
+.dark-bg ::-webkit-input-placeholder {color: var(--white)!important; font-family:"itc-avant-garde-gothic-pro", sans-serif; opacity: 1!important; font-size: 1rem!important; overflow: visible;}
+.dark-bg :-moz-placeholder {color: var(--white)!important; font-family:"itc-avant-garde-gothic-pro", sans-serif; opacity: 1!important; font-size: 1rem!important; overflow: visible;}
+.dark-bg ::-moz-placeholder {color: var(--white)!important; font-family:"itc-avant-garde-gothic-pro", sans-serif; opacity: 1!important; font-size:1rem!important; overflow: visible;}
+.dark-bg :-ms-input-placeholder {color: var(--white)!important; font-family:"itc-avant-garde-gothic-pro", sans-serif; opacity: 1!important; font-size:1rem!important; overflow: visible;}
+
+.dark-bg input:focus::-webkit-input-placeholder {color: var(--sunshine)!important; font-family:"itc-avant-garde-gothic-pro", sans-serif; opacity: 1!important; font-size: 1rem!important; overflow: visible;}
+.dark-bg input:focus :-moz-placeholder {color: var(--sunshine)!important; font-family:"itc-avant-garde-gothic-pro", sans-serif; opacity: 1!important; font-size: 1rem!important; overflow: visible;}
+.dark-bg input:focus::-moz-placeholder {color: var(--sunshine)!important; font-family:"itc-avant-garde-gothic-pro", sans-serif; opacity: 1!important; font-size:1rem!important; overflow: visible;}
+.dark-bg input:focus :-ms-input-placeholder {color: var(--sunshine)!important; font-family:"itc-avant-garde-gothic-pro", sans-serif; opacity: 1!important; font-size:1rem!important; overflow: visible;}
+
+.dark-bg .frm_forms .frm_form_fields input, .dark-bg .frm_forms .frm_form_fields textarea, .dark-bg .frm_forms .frm_form_fields select {outline: 1px solid var(--sapphire) !important;}
+
 
 
 @media only screen and (min-width: 1024px) {

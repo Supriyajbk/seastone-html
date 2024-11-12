@@ -314,6 +314,7 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
 .dark-bg .fancy-link:before, .dark-bg .fancy-link:after {background: var(--sapphire-60);}
 .dark-bg .fancy-link:hover:after {background: var(--sunshine);}
 
+
 #ajax-load-more {width: 100%;}
 
 /* Locator */
