@@ -6,7 +6,7 @@
 .default-banner-main .default-banner-text h1 span {position: relative;}
 .default-banner-main .default-banner-text h1 span:after {position: absolute; border-radius: 4px; height: 20px; width: calc(100% + 12px); left:-6px; bottom: 7px; background: var(--sapphire-50); display:block; content: ""; z-index: -1;}
 .default-banner-main .default-banner-text .optional-text {color: var(--sapphire); margin: 0  0 22px 0;}
-.default-banner-main .default-banner-text p {font-size:1.25rem; margin-bottom:32px; line-height: 1.4; color:var(--white); letter-spacing: -0.4px; font-weight: normal;}
+.default-banner-main .default-banner-text p {font-size:1.25rem; margin: 30px 0 32px; line-height: 1.75; color:var(--white);  font-weight: 500;}
 
 
 .banner-gradients .strip span{display: block; width: 100%; font-size: 2rem; line-height:17px; font-weight: 700; color: var(--white);}
@@ -18,7 +18,7 @@
 /*-- media starts here --*/
 
 @media only screen and (min-width: 1024px){
-    
+    .default-banner-text p{max-width: 720px;}
 
 
 }
