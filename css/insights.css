@@ -1,8 +1,17 @@
 @import url("_cta-module.css");
 
-.inights-top-container {clear: both; width: 100%; padding: 80px 0; background: var( --aegean-80);}
-.inisights-bottom {clear: both; gap:3.125%;}
-.inisights-bottom .more-insights-grid {margin: 0;}
+.insights-top-container {clear: both; width: 100%; padding: 80px 0; background: var( --aegean-80);}
+.insights-wrap {clear: both; margin: 88px 0 0 0; width: 100%;}
+.insights-top {gap: 40px;}
+.insights-top-lt {width: calc(100% - 440px); flex-grow: 1; min-height: 490px;}
+
+.insight-big-thumb {width: 100%;}
+.insight-big-thumb:before {background: linear-gradient(0deg, #03344C 0%, rgba(3, 52, 76, 0.00) 100%); content: ""; display: block; width: 100%; height: 64%; position: absolute; left: 0; bottom: 0; border-radius: 0 0 16px 16px;}
+.insight-big-thumb figure img {border-radius: 16px;}
+.insights-top-rt {width: 400px; flex-grow: 1;}
+
+.insights-bottom {clear: both; gap:3.125%;}
+.insights-bottom .more-insights-grid {margin: 0;}
 
 .insights{clear: both; width: 100%; background: var(--white-90); padding: 80px 0; position: relative; z-index: 1;}
 .insights-main { display: flex; flex-wrap: wrap;}
