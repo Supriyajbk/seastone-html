@@ -211,7 +211,7 @@ body .frm_forms .frm_form_fields input.input-has-value, body .frm_forms .frm_for
 /* Form Button */
 .frm_forms .frm_submit{margin:0;}
 body .frm_forms .frm_submit .button, body .frm_forms .frm_submit button {margin:0; padding:15px 15px 11px 14px; vertical-align: middle; cursor: pointer; border-radius: 300px; background-color: var(--cerulean); position: relative; transition: all .3s ease-in-out; -webkit-transition: all .3s ease-in-out; -moz-transition: all .5s ease-in-out; text-align: center; color: var(--white); font-family: "itc-avant-garde-gothic-pro", sans-serif; text-decoration: none; display: inline-block; font-size: 1.125rem; font-weight: 700; line-height: 100%; border: 2px solid transparent;}
-body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:hover, body .frm_forms .frm_submit button:focus {color: var(--midnight)!important; background-color: var(--sunshine)!important; outline: 4px solid rgba(237, 208, 86, 0.50)!important; border: transparent}
+body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:hover, body .frm_forms .frm_submit button:focus {color: var(--midnight)!important; background-color: var(--sunshine)!important; outline: 4px solid rgba(237, 208, 86, 0.50)!important; border:  2px solid transparent}
 
 
 .frm-wrapper {width: 100%; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;}
@@ -233,6 +233,19 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
 .frm_forms .frm_message p {color: var(--optionaltxt); text-align: center; padding: 0 25px;}
 
 .default_form {border-radius: 16px; background: var(--white); clear: both; width:100%; padding: 40px 39px; margin: 40px 0;}
+
+
+.dark-bg ::-webkit-input-placeholder {color: var(--white)!important; font-family:"itc-avant-garde-gothic-pro", sans-serif; opacity: 1!important; font-size: 1rem!important; overflow: visible;}
+.dark-bg :-moz-placeholder {color: var(--white)!important; font-family:"itc-avant-garde-gothic-pro", sans-serif; opacity: 1!important; font-size: 1rem!important; overflow: visible;}
+.dark-bg ::-moz-placeholder {color: var(--white)!important; font-family:"itc-avant-garde-gothic-pro", sans-serif; opacity: 1!important; font-size:1rem!important; overflow: visible;}
+.dark-bg :-ms-input-placeholder {color: var(--white)!important; font-family:"itc-avant-garde-gothic-pro", sans-serif; opacity: 1!important; font-size:1rem!important; overflow: visible;}
+.dark-bg input:focus::-webkit-input-placeholder {color: var(--sunshine)!important; font-family:"itc-avant-garde-gothic-pro", sans-serif; opacity: 1!important; font-size: 1rem!important; overflow: visible;}
+.dark-bg input:focus :-moz-placeholder {color: var(--sunshine)!important; font-family:"itc-avant-garde-gothic-pro", sans-serif; opacity: 1!important; font-size: 1rem!important; overflow: visible;}
+.dark-bg input:focus::-moz-placeholder {color: var(--sunshine)!important; font-family:"itc-avant-garde-gothic-pro", sans-serif; opacity: 1!important; font-size:1rem!important; overflow: visible;}
+.dark-bg input:focus :-ms-input-placeholder {color: var(--sunshine)!important; font-family:"itc-avant-garde-gothic-pro", sans-serif; opacity: 1!important; font-size:1rem!important; overflow: visible;}
+
+.dark-bg .frm_forms .frm_form_fields input, .dark-bg .frm_forms .frm_form_fields textarea, .dark-bg .frm_forms .frm_form_fields select {outline: 1px solid var(--sapphire) !important;}
+
 /*-- common form css ends here --*/
 
 
@@ -314,6 +327,24 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
 .dark-bg .fancy-link:before, .dark-bg .fancy-link:after {background: var(--sapphire-60);}
 .dark-bg .fancy-link:hover:after {background: var(--sunshine);}
 
+<<<<<<< HEAD
+=======
+/* Text Arrows */
+.sapphire-bg .readmore, .readmore.sapphire{color: var(--midnight);}
+.sapphire-bg .readmore span i, .readmore.sapphire span i{color: var(--white);}
+.sapphire-bg .readmore:hover, .readmore.sapphire:hover{color: var(--midnight);}
+.sapphire-bg .readmore:hover span i, .readmore.sapphire:hover span i{color: var(--sunshine);}
+.sapphire-bg .readmore:hover span:before, .readmore.sapphire:hover span:before{color: var(--sunshine-80);}
+.sapphire-bg .readmore:hover span:after, .readmore.sapphire:hover span:after{color: var(--sunshine-60);}
+
+.dark-bg .readmore, .readmore.dark{color: var(--white);}
+.dark-bg .readmore span i, .readmore.dark span i{color: var(--sapphire);}
+.dark-bg .readmore:hover, .readmore.dark:hover{color: var(--white);}
+.dark-bg .readmore:hover span i, .readmore.dark:hover span i{color: var(--sunshine);}
+.dark-bg .readmore:hover span:before, .readmore.dark:hover span:before{color: var(--sunshine-80);}
+.dark-bg .readmore:hover span:after, .readmore.dark:hover span:after{color: var(--sunshine-60);}
+
+>>>>>>> 23c225c095c8f433ba082a6ff87d635d45cda887
 
 #ajax-load-more {width: 100%;}
 

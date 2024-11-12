@@ -120,9 +120,9 @@ body.page-template-contact #main_footer .background-bg{top: inherit; z-index: 1;
     .contact-concise-logo { margin: 0 auto 64px; }
     .contact-concise-title{margin:  0 auto 0; font-size: 2rem; max-width: 570px;}
 
-    
+    .contact-text h2 a{display: inline-block;}
     footer#main_footer { padding: 62px 0 80px; }
-
+    body.page-template-contact #main_footer .background-bg { min-height: 802px; }
 
   }
 
@@ -141,7 +141,7 @@ body.page-template-contact #main_footer .background-bg{top: inherit; z-index: 1;
     ul.mail-links > li{flex: 0 0 47%;}
 
     .contact-text h2{color: var(--white); font-family: "itc-avant-garde-gothic-pro", sans-serif; font-weight: bold;  font-size: 1.75rem;}
-    .contact-text h2 a{color: var(--sapphire); font-size: 2rem; font-weight: 700; line-height: 1.25; letter-spacing: -0.64px;}
+    .contact-text h2 a{color: var(--sapphire); font-size: 1.75rem; font-weight: 700; line-height: 1.25; letter-spacing: -0.64px; display:inline-block;}
 
     .contact-concise-main { padding: 64px 0 0; margin-top: 0; }
     .contact-concise-row{margin: 0 0 64px;}
@@ -150,12 +150,12 @@ body.page-template-contact #main_footer .background-bg{top: inherit; z-index: 1;
     .contact-concise-info{max-width: inherit; padding-top: 0;}
     .contact-concise-info p{margin: 0 48px 24px;}
     .contact-concise-info hr{display: none;}
-    .contact-concise-title{font-size: 1.25rem; margin-bottom: 64px;}
+    .contact-concise-title{font-size: 1.25rem; }
     .contact-concise-btns{gap: 12px;}
     .contact-concise-btns .button{flex: 0 0 47%;}
 
 
-    .contact-concise-bg{height: calc(100% - 1547px); top: 171px; min-height: 342px; bottom: auto;}
+    .contact-concise-bg{height: calc(100% - 1547px); top: 0; min-height: 342px; bottom: auto;}
     body.page-template-contact #main_footer .background-bg{min-height: 1547px;}
 
 
