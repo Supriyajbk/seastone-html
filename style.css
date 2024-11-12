@@ -114,6 +114,9 @@ body .mfp-iframe-holder button.mfp-close::before{left:0;}
 .cat-wrap ul li:hover:before {transform: rotate(-30deg);}
 .cat-wrap ul li:nth-child(2n):hover:before {transform: rotate(30deg);}
 
+.cat-wrap.white li a {color: var(--white);} 
+.cat-wrap.white li a:hover {color: var(--sapphire);} 
+
 /* CTA Button */
 .cta-button {position: relative; clear: both; width: 100%; padding: 42px 0 16px; background: var(--white);}
 .cta-button .h1 {margin-bottom: 23px;}
@@ -242,6 +245,7 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
 .dark-bg input:focus :-ms-input-placeholder {color: var(--sunshine)!important; font-family:"itc-avant-garde-gothic-pro", sans-serif; opacity: 1!important; font-size:1rem!important; overflow: visible;}
 
 .dark-bg .frm_forms .frm_form_fields input, .dark-bg .frm_forms .frm_form_fields textarea, .dark-bg .frm_forms .frm_form_fields select {outline: 1px solid var(--sapphire) !important;}
+.dark-bg .frm_forms .frm_submit {margin: 28px 0 0 0;}
 
 /*-- common form css ends here --*/
 
@@ -263,7 +267,7 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
 .fluid-width {width: 100vw!important; left: 50%; position: relative; margin-left: -50vw;}
 .full_width{width: 100% !important; max-width: 100% !important; margin-left: 0 !important; margin-right: 0 !important; float: none !important; display: block !important; padding-left: 0 !important; padding-right: 0 !important; left: 0 !important;}
 .btn-full{width: 100%;}
-.btn-full .button {width: 100%;}
+.btn-full .button, .btn-full button {width: 100%;}
 .fluid-section {flex: 0 0 100vw; margin-left: calc(-50vw + 50%);}
 
 
@@ -289,6 +293,10 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
 
 .cat-wrapper .cat-wrap {width: 85%;}
 .cat-wrapper .more-link {width: calc(100% - 85%); justify-content: flex-end; display: flex; flex-wrap: wrap; margin-bottom: -5px;}
+
+.cat-wrapper.read-half .cat-wrap {width: 60%;}
+.cat-wrapper.read-half .read-link {width: calc(100% - 60%); justify-content: flex-end; display: flex; flex-wrap: wrap; margin-bottom: -5px;}
+.cat-wrapper.read-half .read-link {}
 
 /* Hover */
 .toggled {outline: 6px solid rgba(83, 196, 201, 0.20)!important;}
@@ -320,6 +328,8 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
 .dark-bg .fancy-link:before, .dark-bg .fancy-link:after {background: var(--sapphire-60);}
 .dark-bg .fancy-link:hover:after {background: var(--sunshine);}
 
+<<<<<<< HEAD
+=======
 /* Text Arrows */
 .sapphire-bg .readmore, .readmore.sapphire{color: var(--midnight);}
 .sapphire-bg .readmore span i, .readmore.sapphire span i{color: var(--white);}
@@ -335,6 +345,7 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
 .dark-bg .readmore:hover span:before, .readmore.dark:hover span:before{color: var(--sunshine-80);}
 .dark-bg .readmore:hover span:after, .readmore.dark:hover span:after{color: var(--sunshine-60);}
 
+>>>>>>> 23c225c095c8f433ba082a6ff87d635d45cda887
 
 #ajax-load-more {width: 100%;}
 
