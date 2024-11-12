@@ -3,7 +3,7 @@
 .more-insights-grid {width:31.25%; position: relative; z-index: 1; overflow: hidden; background: var(--white); border-radius: 16px; outline: 6px solid transparent; transition: outline 0.3s ease;}
 .more-insights-grid .more-inights-thumb {border-radius: 16px 16px 0 0; height: 225px; overflow: hidden;}
 .more-insights-grid .more-inights-thumb a {display: flex; height: 100%;}
-.more-insights-grid .more-inights-cnt {padding: 33px 32px 34px; display: block; clear: both; width: 100%;}
+.more-insights-grid .more-inights-cnt {padding: 33px 32px 34px; display: flex; clear: both; width: 100%; flex-wrap: wrap; align-items: stretch;}
 .more-insights-grid .more-inights-cnt .h5 {line-height: 150%; margin: 0;}
 .more-insights-grid .more-inights-cnt .h5 a {color: var(--midnight); display: inline-block; transition: underline 0.3s ease;}
 .more-insights-grid .more-inights-cnt .h5 a:hover {text-decoration: underline; text-decoration-color: var(--sapphire);}
