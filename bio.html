@@ -153,9 +153,11 @@
                   <div class="bio-aside-wrap">
                     <div class="bio-aside-inner pos-relative">
                       <div class="bio-team-img">
-                          <figure class="object-fit" role="none">
-                              <img src="images/team-member@2x.jpg" alt="team memeber" title=" team member">
-                          </figure>
+                          <picture class="object-fit">
+                            <source srcset="images/team-member@2x.jpg" media="(min-width: 1440px)">
+                            <source srcset="images/team-member@2x.jpg" media="(min-width: 768px)">
+                              <img src="images/team-member-mob@2x.jpg" alt="team memeber" title=" team member">
+                          </picture>
                       </div>
                       <div class="bio-team-info">
                         <div class="bio-team-cont">
