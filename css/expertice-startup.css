@@ -5,5 +5,7 @@
 
 
 .default-banner-section { background: var(--aeganbg); }
+.intro-main{padding: 160px 0;}
 .intro-section.aegean-bg{background-color: var(--aegean-85);}
+.intro-section.stone-bg{background-color: var(--stone-85);}
 .intro-section .optional-text{color: var(--seafom);}

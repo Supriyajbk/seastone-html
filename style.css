@@ -347,6 +347,13 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
 .dark-bg .readmore:hover span:after, .readmore.dark:hover span:after{color: var(--sunshine-60);}
 
 
+.white-text .readmore, .readmore.white{color: var(--white);}
+.white-text .readmore span i, .readmore.white span i{color: var(--sapphire);}
+.white-text .readmore:hover, .readmore.white:hover{color: var(--white);}
+.white-text .readmore:hover span i, .readmore.white:hover span i{color: var(--sunshine);}
+.white-text .readmore:hover span:before, .readmore.white:hover span:before{color: var(--sunshine-80);}
+.white-text .readmore:hover span:after, .readmore.white:hover span:after{color: var(--sunshine-60);}
+
 #ajax-load-more {width: 100%;}
 
 /* Locator */

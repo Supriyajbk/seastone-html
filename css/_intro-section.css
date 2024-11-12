@@ -5,7 +5,6 @@
 .intro-text{padding: 0 320px 0 0; position: relative;}
 
 .intro-section.white-text h2{color: var(--white);}
-.intro-section.white-text .optional-text{color: var(--white);}
 .intro-section.white-text h2 strong{color: var(--white);}
 @media only screen and (max-width: 1279px) and (min-width: 1024px) {
     
