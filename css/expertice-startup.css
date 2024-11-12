@@ -1,6 +1,9 @@
 @import url("_default-banner.css");
-
+@import url("_intro-section.css");
+@import url("_featured-section.css");
 
 
 
 .default-banner-section { background: var(--aeganbg); }
+.intro-section.aegean-bg{background-color: var(--aegean-85);}
+.intro-section .optional-text{color: var(--seafom);}

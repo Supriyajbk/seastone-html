@@ -1,5 +1,5 @@
 .featured-section .aegean h2{color: var(--aegean); }
-.featured-section .aegean .number{color: var(--aegean); }
+.featured-section .aegean .number{background-color: var(--aegean); }
 .featured-section .aegean .featured-icon:before{background-color: var(--aegean);}
 
 .featured-section .stone  h2{color: var(--stone); }
@@ -29,7 +29,11 @@
 .featured-icon img{width: 32px; height: 32px; position: relative; object-fit: contain;}
 .featured-icon::before{position: absolute; display: block; width: 65px;height: 65px; border-radius: 50px;  content: "";}
 
+.featured-head{padding: 0 320px 72px 0;}
+.featured-head h2{font-size: 2rem; font-weight: 300; color: var(--midnight); line-height: 1.75; margin-bottom: 0;}
+.featured-head h2 strong{color: var(--cerulean);}
 
+.featured-list .number{ width: 64px; height: 64px; }
 
 
 @media only screen and (max-width:1279px) and (min-width: 200px) {
