@@ -293,8 +293,8 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
 .more-link .readmore:hover span:after {color: var(--aegean); opacity: 1; transform: translateX(-22px);}
 
 .cat-wrapper {min-height: 26px;}
-.cat-wrapper .cat-wrap {width: 85%; flex-grow: 1;}
-.cat-wrapper .more-link {width: calc(100% - 85%); justify-content: flex-end; display: flex; flex-wrap: wrap; margin-bottom: -5px;}
+.cat-wrapper .cat-wrap {width: 87.3%; flex-grow: 1;}
+.cat-wrapper .more-link {width: calc(100% - 87.3%); justify-content: flex-end; display: flex; flex-wrap: wrap; margin-bottom: -5px;}
 .cat-wrapper .more-link:only-child {justify-content: flex-start;}
 
 .cat-wrapper.read-half .cat-wrap {width: 60%; flex-grow: 1;}
@@ -375,7 +375,11 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
     .container {padding:0 40px; max-width:100%;}
 }
 
-@media only screen and (max-width:1240px)and (min-width:1024px) {}
+@media only screen and (max-width:1279px)and (min-width:1024px) {
+    .more-link .readmore:hover span:before {transform: translateX(-9px);}
+.more-link .readmore:hover span:after {transform: translateX(-16px);}
+    
+}
 
 @media only screen and (min-width:1200px) {}
 
@@ -421,7 +425,7 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
     
     
     .cat-wrap {margin: 0 0 14px 0;}
-    .cat-wrap ul li {margin: 21px 15px 0 0;}
+    .cat-wrap ul li {margin: 11px 15px 0 0;}
     .cat-wrapper .cat-wrap {margin: 0;}
     
     
