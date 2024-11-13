@@ -145,8 +145,9 @@ jQuery(document).ready(function () {
       jQuery(this).closest('.heading-rt').siblings().toggleClass('minusleft');
     });
   } 
-});
+}); 
 
+<<<<<<< HEAD
 /*
 jQuery(function() {
   function setupSticky() {
@@ -204,3 +205,5 @@ jQuery(function() {
   });
 });*/
 
+=======
+>>>>>>> 6c69f3e8e194c891e6aaf5cc2f5d94cce2f5e9d8

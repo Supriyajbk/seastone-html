@@ -1,3 +1,46 @@
 .expertise-section{position: relative; width: 100%; clear: both;}
-.expertise-lt{padding: 80px 0; background-color: var(--white-90);}
-.expertise-rt{padding: 80px 0;}
+.expertise-lt{padding: 80px 80px 80px 0; background-color: var(--white-90); flex: 0 0 428px; position: relative;}
+.expertise-rt{padding: 80px 0 80px 80px; background-color: var(--white); flex: 1; position: relative;}
+.expertise-lt:before{position: absolute; display: block; content: ""; left: -100vw; width: 100vw; background-color: var(--white-90); top: 0; right: 0; height: 100%;}
+.expertise-rt:before{position: absolute; display: block; content: ""; right: -100vw; width: 1000%; background-color: var(--white); top: 0; left: 0; height: 100%; z-index: -1;}
+.expertise-rt:only-child:before{left: -100vw;}
+.expertise-lt h3{color: var(--midnight);}
+
+ul.expertise-links{margin-left: 0;}
+ul.expertise-links li{background-color: var(--white); padding: 11px 12px 7px 12px; border-radius: 12px; width: 100%; margin-bottom: 28px;}
+ul.expertise-links li::before{display: none;}
+ul.expertise-links li a{text-decoration: none;}
+ul.expertise-links li .readmore span { top: 0; position: absolute; display: inline-block; right: 0; margin-left: 10px; }
+ul.expertise-links li:active{outline: 4px solid var(--sapphire);}
+ul.expertise-links li:hover{outline: 4px solid var(--sunshine-50); transition: 0.2s all ease;}
+.expertise-text{padding-bottom: 64px;}
+
+
+.accordion-header { background-color: var(--seafom-25); padding: 15px 16px 11px;margin-bottom: 16px;  border-radius: 12px;}
+.accordion-header h4{font-size: 1.125rem; margin-bottom: 0;}
+.accordion-header span{right: 0; position: absolute; margin-left: 10px;}
+.accordion-header .readmore:hover{color: var(--midnight);}
+
+.readmore span.vtl{top: 1px;}
+.readmore span.vtl i{font-size: 1.25rem;}
+ .readmore span.vtl:before{transform: translatey(5px); color: var(--sapphire)}
+.readmore span.vtl:after, .readmore span.vtl:before{width: 20px; height: 20px;font-size: 1.25rem; content: "\f078"}
+.readmore:hover span.vtl:after{transform: translatey(-11px); }
+.readmore:hover span.vtl i{color: var(--cerulean);}
+
+.accordion-content{padding: 16px 16px 20px 16px; border: 4px solid var(--seafom-25); border-radius: 12px;}
+.accordion-desc{padding: 0 16px;}
+.accordion-desc h4{margin-bottom: 24px; font-size: 1.125rem;}
+.accordion-desc p{margin-bottom: 22px;}
+.accordion-header:hover {background-color: var(--sunshine-40); transition: all  0.3s ease-in-out;}
+/* .accordion-header::after {
+    background-image: url(dist/assets/faq-plus-icon91a2654b38d8548830f1.svg);
+    content: "";
+    height: 24px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    transform: rotate(0deg);
+    transition: 0.5s all ease;
+    width: 24px;
+  } */
