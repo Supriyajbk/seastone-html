@@ -147,6 +147,7 @@ jQuery(document).ready(function () {
   } 
 });
 
+<<<<<<< HEAD
 /*
 jQuery(function() {
   function setupSticky() {
@@ -203,3 +204,6 @@ jQuery(function() {
     setupSticky();
   });
 });*/
+=======
+
+>>>>>>> 2e99015f1be86d44562d6ca0c51b88ec499b58ca
