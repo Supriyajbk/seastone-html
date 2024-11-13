@@ -135,8 +135,8 @@ jQuery(document).ready(function () {
 
 
   if (jQuery(window).width() >= 1024) {
-    jQuery('.more-inights-cnt .more-link, .more-inights-cnt .h5').hover(function () {
-      jQuery(this).closest('.more-insights-grid').toggleClass('toggled');
+    jQuery('.more-inights-cnt .more-link, .more-inights-cnt .h5, .more-blog-cnt .more-link, .more-blog-cnt .h5').hover(function () {
+      jQuery(this).closest('.more-insights-grid, .more-blog-grid').toggleClass('toggled');
     });
   }
 
@@ -147,6 +147,7 @@ jQuery(document).ready(function () {
   } 
 });
 
+/*
 jQuery(function() {
   function setupSticky() {
     let isDesktop = jQuery(window).width() >= 1024;
@@ -201,4 +202,4 @@ jQuery(function() {
   jQuery(window).resize(function() {
     setupSticky();
   });
-});
+});*/
