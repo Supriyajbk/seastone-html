@@ -72,7 +72,7 @@ img.mobile {display:none;}
 .video-wrap {margin:62px 0 62px 0; position: relative; clear: both; overflow: hidden; z-index: 1;}
 .video-caption {font-size:0.875rem; font-weight: 500; line-height: 150%;  width:100%; padding:48px 24px 24px 24px; color: rgb(77, 80, 82, 0.75); background:var(--seafom-25); border-radius:16px; margin-top: -24px; z-index: -1; position: relative;}
 .video-wrap .video-thumbnail > img {border-radius: 16px; min-height:432px;}
-
+.video-wrap .video-thumbnail figure > img {border-radius: 16px;}
 
 .video-thumbnail{position: relative;}
 .video-thumbnail.video_post {position: relative;width: 100%; }
@@ -90,8 +90,8 @@ img.mobile {display:none;}
 .iframe-container {overflow: hidden; padding-top: 56.25%; /* 16:9*/ position: relative;}
 .iframe-container iframe {border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%;}
 
-body .mfp-image-holder .mfp-close, body .mfp-iframe-holder .mfp-close {padding-right: 0; width: 40px;height: 40px; opacity: 1;line-height: 40px; top: -45px; background-color: transparent; right: -45px; display: flex; align-items: center; justify-content: center;}
-body .mfp-image-holder .mfp-close:hover, body .mfp-iframe-holder .mfp-close:hover {opacity: 0.8}
+body .mfp-image-holder .mfp-close, body .mfp-iframe-holder .mfp-close {padding-right: 0; width: 40px;height: 40px; opacity: 1;line-height: 40px; top: -45px; background-color: var(--cerulean); right: -45px; display: flex; align-items: center; justify-content: center; border-radius: 6px;}
+body .mfp-image-holder .mfp-close:hover, body .mfp-iframe-holder .mfp-close:hover {background-color: var(--sunshine); color: var(--midnight);}
 body .mfp-close:after {display: none;}
 body .mfp-iframe-holder button.mfp-close::before{left:0;} 
 
@@ -427,7 +427,8 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
     .cat-wrap {margin: 0 0 14px 0;}
     .cat-wrap ul li {margin: 11px 15px 0 0;}
     .cat-wrapper .cat-wrap {margin: 0;}
-    
+    .cat-wrapper.read-half .cat-wrap {width: 100%;}
+    .cat-wrapper.read-half .read-link {width: 100%; justify-content: flex-start; margin: 22px 0 0 0;}
     
     .default-thumb figure {height: 49.2vw;}
     
@@ -441,6 +442,8 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
     
     .btn-center {margin: 40px 0 0 0;}
     .btn-center .button {min-width:214px; margin: 0 8px;}
+    
+    
     
     
 }

@@ -135,8 +135,8 @@ jQuery(document).ready(function () {
 
 
   if (jQuery(window).width() >= 1024) {
-    jQuery('.more-inights-cnt .more-link, .more-inights-cnt .h5').hover(function () {
-      jQuery(this).closest('.more-insights-grid').toggleClass('toggled');
+    jQuery('.more-inights-cnt .more-link, .more-inights-cnt .h5, .more-blog-cnt .more-link, .more-blog-cnt .h5').hover(function () {
+      jQuery(this).closest('.more-insights-grid, .more-blog-grid').toggleClass('toggled');
     });
   }
 
@@ -147,4 +147,63 @@ jQuery(document).ready(function () {
   } 
 });
 
+<<<<<<< HEAD
+/*
+jQuery(function() {
+  function setupSticky() {
+    let isDesktop = jQuery(window).width() >= 1024;
+    let $aside = jQuery('.bio-aside-wrap');
+    let $footer = jQuery('#main_footer');
+    let $header = jQuery('.main_header');
 
+    // Calculate positions and heights for sticky limits
+    let top = $aside.offset().top - parseFloat($aside.css('marginTop').replace(/auto/, 0));
+    let footTop = $footer.offset().top - parseFloat($footer.css('marginTop').replace(/auto/, 0));
+    let headerHeight = $header.outerHeight();
+    let maxY = footTop - $aside.outerHeight() + headerHeight;
+
+    // Set margin and top offset for mobile layout
+    if (!isDesktop) {
+      $aside.css({
+        marginTop: `-${headerHeight}px`,
+        top: `${headerHeight}px`
+      });
+    } else {
+      $aside.removeAttr('style'); // Reset styles for desktop
+    }
+
+    jQuery(window).scroll(function() {
+      var y = parseInt(jQuery(this).scrollTop() + (isDesktop ? headerHeight : 0));
+
+      if (y > top) {
+        if (y < maxY) {
+          $aside.addClass('sticky').removeAttr('style');
+        } else {
+          $aside.removeClass('sticky').css({
+            position: isDesktop ? 'absolute' : 'relative',
+            top: (maxY - top) + 'px'
+          });
+        }
+      } else {
+        $aside.removeClass('sticky');
+        if (!isDesktop) {
+          $aside.css({
+            marginTop: `-${headerHeight}px`,
+            top: `${headerHeight}px`
+          });
+        }
+      }
+    });
+  }
+
+  // Initial setup
+  setupSticky();
+
+  // Re-setup on resize
+  jQuery(window).resize(function() {
+    setupSticky();
+  });
+});*/
+=======
+
+>>>>>>> 2e99015f1be86d44562d6ca0c51b88ec499b58ca
