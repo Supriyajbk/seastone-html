@@ -2,7 +2,7 @@ jQuery(document).ready(function () {
   
   /* Insights Slider */
   if (jQuery(window).width() <= 767) {
-    jQuery(".more-insights-main").slick({
+    jQuery(".more-insights-main, .insights-bottom-rt").slick({
       slidesToShow: 1,
       slidesToScroll: 1,
       draggable: true,
