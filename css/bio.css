@@ -94,13 +94,9 @@ body.page-template-bio{overflow: clip;}
     .bio-article-info.links-main ul {display: block;}
     .ready-to-work-bg{margin-top: 24px;}
     .ready-to-work-main {margin-top: 0; padding: 40px 24px;}
-    .ready-to-work-main{width: calc(100% + 219px); left: -219px; overflow: hidden; background-color: transparent;}
+    .ready-to-work-main{width: calc(100% + 243px); left: -219px; overflow: hidden; background-color: transparent;}
     .ready-to-work-main::after{left: 219px;}
     .ready-to-text{padding-left: 195px;}
     .ready-to-work-main::before{left: 34px;}
     .bio-aside-wrap{top: 0; z-index: 1; }
 }
-
-
-
-
