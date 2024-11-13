@@ -21,17 +21,18 @@
 .bio-article-info.links-main ul > li a{color: var(--midnight); font-size: 1.125rem;  font-weight: 700; text-decoration: none; display: inline-block;}
 .bio-article-info.links-main ul > li::before{display: none;}
 
-.ready-to-work-main{background-color: var(--seafom-10); padding: 99px 80px 97px 0; margin-top: 120px;}
+.ready-to-work-main{padding: 99px 80px 97px 0; margin-top: 120px;}
 
 .ready-to-work-bg::before { position: absolute; left: -100vw; width: 100vw; top: 0; display: block; content: ""; background-color: var(--seafom-10); height: 100%;}
 .ready-to-text p{font-size: 2rem; font-weight: 700; letter-spacing: -0.64px; color: var(--heading); line-height: 142%; display: flex; flex-wrap: wrap; gap: 0 17px; margin-bottom: 12px;}
 .ready-to-text ul > li::before{display: none;}
 .ready-to-text ul{margin-left: 0;}
 .ready-to-text ul li a{font-size: 1.125rem; font-weight: 700; color: var(--midnight); text-decoration: none;}
-/* .ready-to-text::before { position: absolute; display: block; content: ""; width: 338px; height: 338px; background-image: url("../images/rings@2x.png"); background-repeat: no-repeat; top: -135px; left: -243px; z-index: -1; background-size: contain; } */
 
-.ready-to-work-main::before { position: absolute; display: block; content: ""; width: 338px; height: 338px; background-image: url("../images/rings@2x.png"); background-repeat: no-repeat; top: 0; left: -243px; z-index: -1; background-size: contain; }
-/* .ready-to-work-main{overflow: hidden;} */
+.ready-to-work-main{overflow: hidden; }
+.ready-to-work-main::before { position: absolute; display: block; content: ""; width: 338px; height: 338px; background-image: url("../images/rings@2x.png"); background-repeat: no-repeat; top: -40px; left: 0; z-index: -1; background-size: contain; }
+.ready-to-work-main::after{position: absolute; width: 100%; top: 0; display: block; content: ""; background-color: var(--seafom-10); height: 100%;}
+
 
 .bio-team-info {  position: absolute; bottom: 0; top: auto; left: 0; z-index: 1; width: 100%; height: auto; }
 .bio-team-info:before{position: absolute; content:""; display: block; width: 4px; height: 100%; background-color: var(--var(--sunshine));}
@@ -54,44 +55,30 @@ span.link-text{width: 275px;}
 span.link-text::after{display: none;}
 span.link-text::before{display: none;}
 
-.bio-aside-wrap{position: absolute;}
-.bio-aside-wrap.sticky{position: fixed;}
+body.page-template-bio{overflow: clip;}
+.bio-aside-wrap{ position: -webkit-sticky; position: sticky;}
 
-/* 
-#bio-aside-wraps {
-    height: auto;
-    width: 210px;
-    float: right;
-    position: relative;
-    box-shadow: none;
-    border: none;
-    margin: 0;
-    padding: 0;
-  } */
 
-  
-  @media only screen and (min-width: 1024px){
-      
-      .bio-article-inner{flex: 1;}
-      .bio-aside{flex: 0 0 480px; max-width: 480px; }
-      .bio-aside-wrap{top: 64px; max-width: 480px;}
-
+/*--  media css starts here --*/
+@media only screen and (min-width: 1024px){
+    .bio-article-inner{flex: 1;}
+    .bio-aside{flex: 0 0 480px;}
+    .bio-aside-wrap{top: 0;}
+    .ready-to-work-main{width: calc(100% + 243px); left: -243px; overflow: hidden; background-color: transparent;}
+    .ready-to-work-main::after{left: 243px;}
+    .ready-to-text{padding-left: 243px;}
 }
-
 @media only screen and (max-width: 1279px) and (min-width: 1024px) {
     .bio-article-inner{flex: 0 0 58%; padding: 64px 0 0 64px;}
-
     .bio-team-cont h3{font-size: 1.5rem;}
     .bio-main{gap: 64px;}
     .bio-article-inner { flex: 1;}
     .bio-aside { flex: 0 0 340px;}
-    .bio-aside-wrap.fixed{max-width: 380px;}
 
     .bio-article-info.links-main ul{gap: 16px 32px;}
     .bio-article-info.links-main ul > li { flex: 0 0 calc(50% - 16px);}
-
+    .ready-to-work-main{padding: 69px 40px 67px 0;}
 }
-
 @media only screen and (max-width: 1023px) and (min-width: 200px) {
     .bio-main{display: flex; flex-direction: column-reverse;}
     .bio-article-inner{padding: 80px 0 0 ;}
@@ -107,7 +94,10 @@ span.link-text::before{display: none;}
     .bio-article-info.links-main ul {display: block;}
     .ready-to-work-bg{margin-top: 24px;}
     .ready-to-work-main {margin-top: 0; padding: 40px 24px;}
-
+    .ready-to-work-main{width: calc(100% + 219px); left: -219px; overflow: hidden; background-color: transparent;}
+    .ready-to-work-main::after{left: 219px;}
+    .ready-to-text{padding-left: 195px;}
+    .ready-to-work-main::before{left: 34px;}
     .bio-aside-wrap{top: 0; z-index: 1; }
 }
 
