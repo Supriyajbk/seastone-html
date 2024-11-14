@@ -54,15 +54,14 @@ span.link-text{width: 275px;}
 span.link-text::after{display: none;}
 span.link-text::before{display: none;}
 
-body.page-template-bio{overflow: clip;}
-.bio-aside-wrap{ position: -webkit-sticky; position: sticky;}
+.bio-aside-wrap{position: fixed; z-index: 1;}
 
 
 /*--  media css starts here --*/
 @media only screen and (min-width: 1024px){
     .bio-article-inner{flex: 1; padding: 80px 0 0 80px;}
     .bio-aside{flex: 0 0 480px;}
-    .bio-aside-wrap{top: 0;}
+    .bio-aside-wrap{top: 64px; max-width: 480px;}
     
     .ready-to-work-main{padding: 99px 80px 97px 0; margin-top: 120px;}
     .ready-to-work-main{width: calc(100% + 243px); left: -243px; overflow: hidden; background-color: transparent;}
@@ -82,7 +81,7 @@ body.page-template-bio{overflow: clip;}
 @media only screen and (max-width: 1023px) and (min-width: 200px) {
 
     .bio-team-cont{padding: 24px;}
-    .bio-team-btns .button{font-size: 1rem; padding: 26px 0px; line-height: 0; }
+    .bio-team-btns .button{font-size: 12px; padding: 26px 0px; line-height: 0; }
     .bio-article-inner{padding: 64px 24px 64px;}
     .bio-article-inner h1 {font-size: 1.5rem;}
 
@@ -90,7 +89,6 @@ body.page-template-bio{overflow: clip;}
 
     .bio-article-info.links-main ul > li { width: 100%; display: inline-block; }
     .bio-article-info.links-main ul {display: block;}
-    .bio-aside-wrap{top: 0; z-index: 1; }
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
     .ready-to-work-bg{margin-top: 24px;}
@@ -100,12 +98,13 @@ body.page-template-bio{overflow: clip;}
     .bio-article-inner{width: calc(100% - 316px);}
     .bio-aside{width: 300px;}
     .ready-to-text p{font-size: 1.65rem;}
+    .bio-aside-wrap{top: 64px;}
 }
 @media only screen and (max-width: 767px) and (min-width: 200px) {
     .ready-to-work-main{width: calc(100% + 48px); left: -24px;}
     .ready-to-work-bg::before{left: calc(-24px - 100vw);}
     .ready-to-work-main::before { left: -162px; }
-    .ready-to-text{padding: 0 24px;}
+    .ready-to-text{padding: 40px 24px;}
     .bio-main{flex-direction: column-reverse;}
     .bio-article-inner{flex: 0 0 100%;}
     .bio-aside{flex: 0 0 100%;}
