@@ -2,10 +2,21 @@
 @import url("_intro-section.css");
 @import url("_featured-section.css");
 @import url("_expertise-section.css");
-
+@import url("_accordion.css");
+@import url("_blog-module.css");
+@import url("_more-expertise-section.css");
 
 .default-banner-section { background: var(--aeganbg); }
 .intro-main{padding: 160px 0;}
 .intro-section.aegean-bg{background-color: var(--aegean-85);}
 .intro-section.stone-bg{background-color: var(--stone-85);}
 .intro-section .optional-text{color: var(--seafom);}
+
+
+.blog-top-container {background: var(--aegean-90);}
+/* .blog-big-txt .h1{font-size: 2rem;
+    line-height: 125%;
+    color: var(--white);
+    margin: 0 0 14px 0;}
+.blog-big-txt .h1 a{color: var(--white);}
+.blog-big-txt .h1 a:hover { color: var(--sapphire); }  */
