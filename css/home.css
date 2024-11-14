@@ -1,9 +1,10 @@
 @import url("_default-banner.css");
-@import url("_logo-slider.css");
+@import url("_logo-module.css");
 @import url("_intro-section.css");
 @import url("_our-clients-section.css");
 @import url("_blog-module.css");
 @import url("_cta-module.css");
 
 .default-banner-section {background: var(--aeganbg);}
+.default-banner-main {min-height: 528px; align-items: center;}
 .intro-section{background-color: var(--white);}
