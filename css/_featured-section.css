@@ -33,7 +33,9 @@
 .featured-head h2{font-size: 2rem; font-weight: 300; color: var(--midnight); line-height: 1.75; margin-bottom: 0;}
 .featured-head h2 strong{color: var(--cerulean);}
 
-.featured-list .number{ width: 64px; height: 64px; }
+.featured-list .number{ width: 64px; height: 64px; color: var(--white);
+    font-size: 2.5rem;
+    border-radius: 50%; margin-bottom: 16px; }
 
 
 @media only screen and (max-width:1279px) and (min-width: 200px) {
