@@ -116,7 +116,7 @@ button.hollow:hover, .button.hollow:hover {color: var(--midnight); background-co
 button.hollow:focus, .button.hollow:focus, button.hollow:active, .button.hollow:active {background-color:transparent; border: 2px solid var(--cerulean); color: var(--midnight);}
 
 /* Hollow Reverse*/
-button.hollow.reverse, .button.hollow.reverse {background-color:transparent; border: 2px solid var(--sapphire); color: var(--white);}
+button.hollow.reverse, .button.hollow.reverse {background-color:transparent!important; border: 2px solid var(--sapphire); color: var(--white)!important;}
 button.hollow.reverse:hover, .button.hollow.reverse:hover {color: var(--white); background-color:transparent; border: 2px solid var(--sunshine); outline: 2px solid var(--sunshine);}
 button.hollow.reverse:focus, .button.hollow.reverse:focus, button.hollow.reverse:active, .button.hollow.reverse:active {background-color:transparent; border: 2px solid var(--sapphire); color: var(--white);}
 
