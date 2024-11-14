@@ -243,7 +243,7 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
 /* Success Message */
 .frm_forms .frm_error_style {display: none;}
 .frm_forms .frm_message, .frm_forms .frm_success_style {margin: 0 0 20px 0; padding: 0; background: top; border: 0 none; font-weight: bold; font-size: 1rem; line-height: 1.5;}
-.frm_forms .frm_message p {color: var(--optionaltxt); text-align: center; padding: 0 25px;}
+.frm_forms .frm_message p {color: var(--white); text-align: center; padding: 0 25px; font-size: 2rem; line-height: 1; margin-bottom: 0;}
 
 .default_form {border-radius: 16px; background: var(--white); clear: both; width:100%; padding: 40px 39px; margin: 40px 0;}
 
@@ -431,7 +431,7 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
     .frm-wrapper .frm_submit {width: 100%;}
     .frm_forms.with_frm_style .frm_checkbox input[type="checkbox"], .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field input[type="checkbox"] {width: 28px!important; height: 28px!important;}
     .frm_forms.with_frm_style .frm_checkbox input[type="checkbox"]:checked::before {position: absolute!important; top: 4px; font-size: 14px;}
-    .with_frm_style .vertical_radio .frm_checkbox{margin-bottom: 12px;}
+    .with_frm_style .vertical_radio .frm_checkbox{margin-bottom: 15px;}
     .frm_forms.with_frm_style .frm_checkbox label {padding-left: 40px; line-height: 1;}
     .frm_forms .frm_form_fields .frm-wrapper .frm_form_field {padding: 0;}
     

@@ -20,3 +20,9 @@
     margin: 0 0 14px 0;}
 .blog-big-txt .h1 a{color: var(--white);}
 .blog-big-txt .h1 a:hover { color: var(--sapphire); }  */
+
+.cta-short{background: transparent; padding-bottom: 0;}
+.cta-short p { font-size: 2rem;}
+
+
+

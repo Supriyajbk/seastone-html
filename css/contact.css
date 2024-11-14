@@ -81,7 +81,7 @@ body.page-template-contact #main_footer .background-bg{top: inherit; z-index: 1;
 
 
   .contact-form .frm_forms .frm_form_fields .frm-wrapper .frm_form_field.vertical_radio .frm_checkbox{margin: 0;}
-  .contact-form .frm_forms .frm_form_fields .frm-wrapper #frm_field_6_container{ flex: 0 0 160px; width: 160px !important; padding: 0; margin: 0; }
+  .contact-form .frm_forms .frm_form_fields .frm-wrapper #frm_field_6_container{ flex: 0 0 100px; width: 100px !important; padding: 0; margin: 0; }
   .contact-form .frm_forms .frm_form_fields .frm-wrapper .frm_submit{width: auto;}
   }
   @media only screen and (min-width: 1199px){
@@ -96,10 +96,12 @@ body.page-template-contact #main_footer .background-bg{top: inherit; z-index: 1;
 
 
   @media only screen and (min-width: 1024px){
+    .contact-main{padding: 160px 0 100px;}
     .contact-section .container{padding: 0 40px;}
     .contact-form {margin: 48px 0 40px;}
 
     
+    footer#main_footer {padding: 74px 0 80px;}
 
   }
   @media only screen and (max-width: 1198px) and (min-width: 768px){
