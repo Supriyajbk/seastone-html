@@ -29,6 +29,7 @@ body {font-family:"itc-avant-garde-gothic-pro", sans-serif; color:var(--body-tex
 .container {max-width:1280px; margin:0 auto; width:100%;}
 .container-lg {max-width: 1440px; margin: 0 auto; padding: 0 40px;}
 .container-md {max-width:1060px; margin:0 auto; width:100%;}
+.container-sm {max-width: 960px; margin: 0 auto; width: 100%;}
 .btn {display:block;}
 .btn-wrap {width:100%; clear:both; font-size: 0; display: flex; flex-wrap: wrap; gap:16px;}
 .optional-text {font-size:1rem; color:var(--cerulean); font-weight: 700; margin:0 0 24px 0; display:block; line-height: 1.25;}
