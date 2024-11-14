@@ -1,6 +1,9 @@
 @import url("_default-banner.css");
 @import url("_logo-slider.css");
+@import url("_intro-section.css");
+@import url("_our-clients-section.css");
 @import url("_blog-module.css");
 @import url("_cta-module.css");
 
 .default-banner-section {background: var(--aeganbg);}
+.intro-section{background-color: var(--white);}
