@@ -38,8 +38,7 @@
 }
 
 @media only screen and (max-width: 767px) and (min-width: 200px){
-    
-    .default-banner-main {padding: 64px 0; min-height: 488px; align-items: flex-end;}
+    .default-banner-main {padding: 64px 0; min-height: 488px; align-items: flex-end; margin: 80px auto 0;}
     .default-banner-main .default-banner-text h1 {font-size: 2rem;}
     
     .banner-gradients .strip{min-height: 64px;}

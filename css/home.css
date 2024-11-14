@@ -8,3 +8,7 @@
 .default-banner-section {background: var(--aeganbg);}
 .default-banner-main {min-height: 528px; align-items: center;}
 .intro-section{background-color: var(--white);}
+
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    .default-banner-main {min-height: 496px; align-items: flex-end;}
+}
