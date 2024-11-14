@@ -57,17 +57,17 @@ jQuery(document).ready(function () {
 
 
   /* Accorrdion */
-  jQuery(".accordion-item .accordion-heading").on("click", function (e) {
+  jQuery(".accordion-header").on("click", function (e) {
     e.preventDefault();
-    if (jQuery(this).closest(".accordion-item").hasClass("active")) {
-      jQuery(".accordion-item").removeClass("active");
+    if (jQuery(this).closest(".accordion-list").hasClass("active")) {
+      jQuery(".accordion-list").removeClass("active");
     } else {
-      jQuery(".accordion-item").removeClass("active");
-      jQuery(this).closest(".accordion-item").addClass("active");
+      jQuery(".accordion-list").removeClass("active");
+      jQuery(this).closest(".accordion-list").addClass("active");
     }
     var jQuerycontent = jQuery(this).next();
     jQuerycontent.slideToggle(300);
-    jQuery(".accordion-item .content").not(jQuerycontent).slideUp("slow");
+    jQuery(".accordion-content").not(jQuerycontent).slideUp("slow");
   });
 
 

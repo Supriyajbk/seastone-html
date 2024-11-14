@@ -16,7 +16,15 @@ ul.expertise-links li:hover{outline: 4px solid var(--sunshine-50); transition: 0
 .expertise-text{padding-bottom: 64px;}
 
 
-.accordion-header { background-color: var(--seafom-25); padding: 15px 16px 11px;margin-bottom: 16px;  border-radius: 12px;}
+.accordion-list { border: 4px solid transparent; background-color: var(--seafom-25); margin-bottom: 16px;  border-radius: 12px;  transition: all  0.3s ease-in-out;}
+.accordion-list:hover {background-color: var(--sunshine-40);}
+.accordion-list.active{border-color: var(--seafom-25); border-radius: 12px; background-color: transparent;}
+.accordion-list.active .readmore span.vtl {position: absolute; content:"\f078";}
+.accordion-list.active .readmore span.vtl i:before{content: "\f077";}
+.accordion-list.active .readmore span.vtl:before{display: none;} 
+.accordion-list.active .readmore span.vtl:after{display: none;} 
+
+.accordion-header{padding: 15px 16px 11px; cursor: pointer;}
 .accordion-header h4{font-size: 1.125rem; margin-bottom: 0;}
 .accordion-header span{right: 0; position: absolute; margin-left: 10px;}
 .accordion-header .readmore:hover{color: var(--midnight);}
@@ -28,11 +36,10 @@ ul.expertise-links li:hover{outline: 4px solid var(--sunshine-50); transition: 0
 .readmore:hover span.vtl:after{transform: translatey(-11px); }
 .readmore:hover span.vtl i{color: var(--cerulean);}
 
-.accordion-content{padding: 16px 16px 20px 16px; border: 4px solid var(--seafom-25); border-radius: 12px;}
-.accordion-desc{padding: 0 16px;}
+.accordion-content{ display: none;}
+.accordion-desc{padding: 16px 32px 20px;}
 .accordion-desc h4{margin-bottom: 24px; font-size: 1.125rem;}
 .accordion-desc p{margin-bottom: 22px;}
-.accordion-header:hover {background-color: var(--sunshine-40); transition: all  0.3s ease-in-out;}
 /* .accordion-header::after {
     background-image: url(dist/assets/faq-plus-icon91a2654b38d8548830f1.svg);
     content: "";
