@@ -15,20 +15,6 @@ ul.expertise-links li:active{outline: 4px solid var(--sapphire);}
 ul.expertise-links li:hover{outline: 4px solid var(--sunshine-50); transition: 0.2s all ease;}
 .expertise-text{padding-bottom: 64px;}
 
-.accordion-list:last-child{margin-bottom: 0;}
-.accordion-list { border: 4px solid transparent; background-color: var(--seafom-25); margin-bottom: 16px;  border-radius: 12px;  transition: all  0.3s ease-in-out;}
-.accordion-list:hover {background-color: var(--sunshine-40);}
-.accordion-list.active{border-color: var(--seafom-25); border-radius: 12px; background-color: transparent;}
-.accordion-list.active .readmore span.vtl {position: absolute; content:"\f078";}
-.accordion-list.active .readmore span.vtl i:before{content: "\f077";}
-.accordion-list.active .readmore span.vtl:before{display: none;} 
-.accordion-list.active .readmore span.vtl:after{display: none;} 
-.accordion-list.active .accordion-header{padding: 16px 16px 7px;}
-.accordion-header{ padding: 11px 16px 7px; cursor: pointer; transition: all 0.3s ease-in-out;}
-.accordion-header h4{font-size: 1.125rem; margin-bottom: 0;}
-.accordion-header span{right: 0; position: absolute; margin-left: 10px;}
-.accordion-header .readmore:hover{color: var(--midnight);}
-.accordion-desc ul{margin: -1px 0 20px 15px;}
 
 .readmore span.vtl{top: 1px;}
 .readmore span.vtl i{font-size: 1.25rem;}
@@ -36,19 +22,3 @@ ul.expertise-links li:hover{outline: 4px solid var(--sunshine-50); transition: 0
 .readmore span.vtl:after, .readmore span.vtl:before{width: 20px; height: 20px;font-size: 1.25rem; content: "\f078"}
 .readmore:hover span.vtl:after{transform: translatey(-11px); }
 .readmore:hover span.vtl i{color: var(--cerulean);}
-
-.accordion-content{ display: none;}
-.accordion-desc{padding: 12px 32px 20px;}
-.accordion-desc h4{margin-bottom: 24px; font-size: 1.125rem;}
-.accordion-desc p{margin-bottom: 22px;}
-/* .accordion-header::after {
-    background-image: url(dist/assets/faq-plus-icon91a2654b38d8548830f1.svg);
-    content: "";
-    height: 24px;
-    position: absolute;
-    right: 15px;
-    top: 15px;
-    transform: rotate(0deg);
-    transition: 0.5s all ease;
-    width: 24px;
-  } */
