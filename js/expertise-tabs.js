@@ -8,7 +8,7 @@
     let $sliderfor = $jq(".expertise-rows");
 
     let $desktop = function() {
-        return $jq(window).width() >= 1024;
+        return $jq(window).width() >= 1024; // if you want desktop design for ipad change 1024 to 768
     }
 
     function initializeSlick() {
