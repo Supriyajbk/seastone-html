@@ -1,9 +1,9 @@
-(function(jQuery) {
-    let $header = $("#main_header");
-    let $footer = $("#main_footer");
-    let $bioSection = $(".bio-section");
-    let $bioaside = $(".bio-aside-wrap");
-    let $article = $(".bio-article-inner");
+(function() {
+    let $header = jQuery("#main_header");
+    let $footer = jQuery("#main_footer");
+    let $bioSection = jQuery(".bio-section");
+    let $bioaside = jQuery(".bio-aside-wrap");
+    let $article = jQuery(".bio-article-inner");
 
     let $headerHeight = $header.outerHeight(true);
     let $bioasideTop = $bioaside.offset().top;
@@ -12,11 +12,11 @@
     let $maxY = $footerTop - $bioasideHeight;
 
     function isDesktop() {
-        return $(window).width() >= 768;
+        return jQuery(window).width() >= 768;
     }
 
     function scrollfun() {
-        let $scrolly = $(window).scrollTop();
+        let $scrolly = jQuery(window).scrollTop();
         
         if (isDesktop()) {
             if ($scrolly >= $bioasideTop - $headerHeight) {
@@ -68,7 +68,7 @@
         }
     }
 
-    $(window).on('scroll resize', scrollfun);
-    $(window).on('load', scrollfun);
+    jQuery(window).on('scroll resize', scrollfun);
+    jQuery(window).on('load', scrollfun);
 
 })(jQuery);
