@@ -7,3 +7,14 @@
 .more-expertise-list.cerulean h4 a{color: var(--cerulean);}
 .more-expertise-list.stone h4 a:hover{color: var(--midnight);}
 .more-expertise-list.cerulean h4 a:hover{color: var(--midnight);}
+
+
+
+@media only screen and (max-width: 1023px) and (min-width:200px){
+
+.more-expertise-row{display: block;}
+.more-expertise-list{margin-bottom: 32px;}
+.more-expertise-list:last-child{margin-bottom: 0;}
+
+
+}

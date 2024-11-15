@@ -10,6 +10,11 @@
 .intro-section.white-text h2{color: var(--white);}
 .intro-section.white-text h2 strong{color: var(--white);}
 
+.intro-section.white-text{clear: both; width: 100%; position: relative;}
+.intro-section.white-text .intro-text{padding: 0 148px 0 0; position: relative;}
+.intro-section.white-text.row-reverse .intro-text{padding:  0 0 0 148px;}
+.intro-section.white-text.row-reverse .color-line:before{left: 0; right: inherit;}
+.intro-section.white-text .intro-main{padding: 160px 0;}
 
 @media only screen and (max-width: 1279px) and (min-width: 1024px) {
     
@@ -22,41 +27,7 @@
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
     
     .intro-text { padding: 0 130px 0 0;}
-    
-    
-    
-}
-@media only screen and (max-width:767px) and (min-width: 200px) {
-    .intro-main{padding: 64px 0 194px;}
-    .intro-text{padding: 0;}
-    .intro-main h2{font-size: 1.5rem; margin-bottom: 30px;}
-
-
-
-}
-
-
-
-
-.intro-section.white-text{clear: both; width: 100%; position: relative;}
-.intro-section.white-text .intro-text{padding: 0 148px 0 0; position: relative;}
-.intro-section.white-text.row-reverse .intro-text{padding:  0 0 0 148px;}
-.intro-section.white-text.row-reverse .color-line:before{left: 0; right: inherit;}
-
-.intro-section.white-text h2{color: var(--white);}
-.intro-section.white-text h2 strong{color: var(--white);}
-/* @media only screen and (max-width: 1279px) and (min-width: 1024px) {
-    
-    .intro-text { padding: 0 155px 0 0;}
-    
-    
-    
-}
-
-@media only screen and (max-width: 1023px) and (min-width: 768px) {
-    
-    .intro-text { padding: 0 130px 0 0;}
-    
+    .intro-section.white-text .intro-main{padding: 128px 0;}
     
     
 }
@@ -66,5 +37,15 @@
     .intro-main h2{font-size: 1.5rem; margin-bottom: 30px;}
 
 
+    .intro-section.white-text .intro-main{padding: 96px 0 226px;}
+    .intro-section.white-text .intro-text{padding: 0;}
 
-} */
+    .intro-section.white-text.row-reverse .intro-text {padding: 0;}
+}
+
+
+
+
+
+
+
