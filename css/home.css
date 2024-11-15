@@ -1,9 +1,48 @@
 @import url("_default-banner.css");
-@import url("_logo-slider.css");
+@import url("_logo-module.css");
 @import url("_intro-section.css");
 @import url("_our-clients-section.css");
 @import url("_blog-module.css");
 @import url("_cta-module.css");
 
 .default-banner-section {background: var(--aeganbg);}
+.default-banner-main {min-height: 528px; align-items: center;}
 .intro-section{background-color: var(--white);}
+
+.our-people {clear: both; width: 100%; padding: 80px 0; background: var(--white); position: relative; z-index: 1;}
+.our-people h2{font-size: 4.5rem; line-height: 100%; margin-bottom:77px; color: var(--sapphire);}
+.our-people p strong{color: var(--cerulean);}
+.our-people p {font-size: 2rem; font-weight: 300; line-height: 175%; color: var(--midnight); margin-bottom: 31px;}
+.our-people .button {padding: 15px 14px 11px 14px;}
+.our-people-main {gap:6.25%;}
+.our-people-lt {width:calc(100% - 53.125%); flex-grow: 1;}
+.our-people-rt {width:46.875%; margin-top: 2px;}
+
+.our-people-group {display: flex; flex-wrap: wrap; width: 100%; align-items: center; gap: 8px 0;}
+.our-people-group .our-people-thumb {width: 256px; z-index: 1;}
+.our-people-group .our-people-thumb:nth-child(8n+2), .our-people-group .our-people-thumb:nth-child(8n+8), .our-people-group .our-people-thumb:nth-child(8n+4) {width:232.434px;}
+.our-people-group .our-people-thumb:nth-child(3n+1) {z-index:2;}
+.our-people-group .our-people-thumb:nth-child(2n+2), .our-people-group .our-people-thumb:nth-child(3n+2) {margin-right: -72px;}
+.our-people-group .our-people-thumb:nth-child(3n+1) {margin-right: -73px;}
+.our-people-group .our-people-thumb:nth-child(3n+3) {z-index:0}
+.our-people-group .our-people-thumb img {object-fit: contain;}
+
+@media only screen and (max-width:1400px) and (min-width:1280px) {
+    .our-people {padding: 80px 0 84px;}
+    .our-people-main {gap: 5.333333333333334%;}   
+    .our-people h2 {margin-bottom: 49px;}
+    .our-people-group .our-people-thumb:nth-child(3n+1) {margin-right: -88px;}
+    .our-people-group .our-people-thumb:nth-child(2n+2), .our-people-group .our-people-thumb:nth-child(3n+2) {margin-right: -89px;}
+    .our-people-lt {width: calc(100% - 52.666666666666664%);}
+    .our-people-rt {width: 47.333333333333336%; margin-top: 4px;}
+}
+
+
+@media only screen and (max-width:1279px) and (min-width:1024px) {
+    
+}
+
+
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    .default-banner-main {min-height: 496px; align-items: flex-end;}
+}

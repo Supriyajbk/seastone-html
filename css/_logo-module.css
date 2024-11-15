@@ -1,0 +1,17 @@
+.logo-module {position:relative; z-index: 1; clear: both; width: 100%; padding:72px 0; background: var(--white);}
+.logo-img {max-width: 166px; display: flex; align-items: center;}
+.logo-img img{height: auto; width: auto; object-fit: contain; line-height: 48px; max-height: 48px;}
+.logo-slider-row {justify-content:center; gap:40px;}
+
+@media only screen and (max-width: 1240px) and (min-width: 1024px) {
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+    
+}
+
+@media only screen and (max-width: 767px) and (min-width: 200px) {   
+    .logo-module {padding: 40px 0;}
+    .logo-img img {max-height: 38px; line-height: 38px; max-width: 132px;}
+    .logo-slider-row {gap:26px 18px; justify-content: space-between;}
+}

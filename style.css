@@ -29,6 +29,7 @@ body {font-family:"itc-avant-garde-gothic-pro", sans-serif; color:var(--body-tex
 .container {max-width:1280px; margin:0 auto; width:100%;}
 .container-lg {max-width: 1440px; margin: 0 auto; padding: 0 40px;}
 .container-md {max-width:1060px; margin:0 auto; width:100%;}
+.container-sm {max-width: 960px; margin: 0 auto; width: 100%;}
 .btn {display:block;}
 .btn-wrap {width:100%; clear:both; font-size: 0; display: flex; flex-wrap: wrap; gap:16px;}
 .optional-text {font-size:1rem; color:var(--cerulean); font-weight: 700; margin:0 0 24px 0; display:block; line-height: 1.25;}
@@ -242,7 +243,7 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
 /* Success Message */
 .frm_forms .frm_error_style {display: none;}
 .frm_forms .frm_message, .frm_forms .frm_success_style {margin: 0 0 20px 0; padding: 0; background: top; border: 0 none; font-weight: bold; font-size: 1rem; line-height: 1.5;}
-.frm_forms .frm_message p {color: var(--optionaltxt); text-align: center; padding: 0 25px;}
+.frm_forms .frm_message p {color: var(--white); text-align: center; padding: 0 25px; font-size: 2rem; line-height: 1; margin-bottom: 0;}
 
 .default_form {border-radius: 16px; background: var(--white); clear: both; width:100%; padding: 40px 39px; margin: 40px 0;}
 
@@ -331,13 +332,13 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
 .fancy-link:after {width: 0;}
 .fancy-link:hover:after {width: 100%; background: var(--sapphire);}
 
-.sapphire-bg {background: var(--sapphire);}
+/*.sapphire-bg {background: var(--sapphire);}*/
 .sapphire-bg .fancy-link {color: var(--midnight);}
 .sapphire-bg .fancy-link:hover {color: var(--midnight);}
 .sapphire-bg .fancy-link:before, .sapphire-bg .fancy-link:after {background: var(--white-60);}
 .sapphire-bg .fancy-link:hover:after {background: var(--sunshine);}
 
-.dark-bg {background: var(--midnight);}
+/*.dark-bg {background: var(--midnight);}*/
 .dark-bg .fancy-link {color: var(--sapphire);}
 .dark-bg .fancy-link:hover {color: var(--white);}
 .dark-bg .fancy-link:before, .dark-bg .fancy-link:after {background: var(--sapphire-60);}
@@ -430,7 +431,7 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
     .frm-wrapper .frm_submit {width: 100%;}
     .frm_forms.with_frm_style .frm_checkbox input[type="checkbox"], .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field input[type="checkbox"] {width: 28px!important; height: 28px!important;}
     .frm_forms.with_frm_style .frm_checkbox input[type="checkbox"]:checked::before {position: absolute!important; top: 4px; font-size: 14px;}
-    .with_frm_style .vertical_radio .frm_checkbox{margin-bottom: 12px;}
+    .with_frm_style .vertical_radio .frm_checkbox{margin-bottom: 15px;}
     .frm_forms.with_frm_style .frm_checkbox label {padding-left: 40px; line-height: 1;}
     .frm_forms .frm_form_fields .frm-wrapper .frm_form_field {padding: 0;}
     

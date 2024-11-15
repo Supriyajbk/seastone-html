@@ -17,6 +17,7 @@ ul.expertise-links li a.active, ul.expertise-links li a.active:hover{outline: 4p
 .expertise-row{display: none;}
 .expertise-text{padding-bottom: 64px;}
 
+<<<<<<< HEAD
 .accordion-list:last-child{margin-bottom: 0;}
 .accordion-list {position: relative; background-color: var(--seafom-25); margin-bottom: 16px;  border-radius: 12px;  transition: all  0.3s ease-in-out;}
 .accordion-list:hover {background-color: var(--sunshine-40);}
@@ -42,6 +43,8 @@ ul.expertise-links li a.active, ul.expertise-links li a.active:hover{outline: 4p
 .accordion-header span{right: 0; position: absolute; margin-left: 10px;}
 .accordion-header .readmore:hover{color: var(--midnight);}
 .accordion-desc ul{margin: -1px 0 20px 15px;}
+=======
+>>>>>>> b403c6c862a4c7686ab92151266ec0ac55c1fa12
 
 .readmore span.vtl{top: 1px;}
 .readmore span.vtl i{font-size: 1.25rem;}
@@ -49,6 +52,7 @@ ul.expertise-links li a.active, ul.expertise-links li a.active:hover{outline: 4p
 .readmore span.vtl:after, .readmore span.vtl:before{width: 20px; height: 20px;font-size: 1.25rem; content: "\f078"}
 .readmore:hover span.vtl:after{transform: translatey(-11px); }
 .readmore:hover span.vtl i{color: var(--cerulean);}
+<<<<<<< HEAD
 
 .accordion-content{ display: none;}
 .accordion-desc{padding: 12px 32px 20px;}
@@ -71,3 +75,5 @@ ul.expertise-links li a.active, ul.expertise-links li a.active:hover{outline: 4p
 
     .expertise-main{display: block;}
   }
+=======
+>>>>>>> b403c6c862a4c7686ab92151266ec0ac55c1fa12

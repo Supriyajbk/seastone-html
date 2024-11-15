@@ -1,13 +1,21 @@
 .intro-section{clear: both; width: 100%; position: relative;}
 .intro-main{padding: 80px 0; position: relative;}
-.intro-main h2{font-size: 2rem; font-weight: 300; color: var(--midnight); line-height: 1.75;}
+.intro-main h2{font-size: 2rem; font-weight: 300; color: var(--midnight); line-height: 1.75; margin-bottom: 32px;}
 .intro-main h2 strong{color: var(--cerulean);}
-.intro-text{padding: 0 148px 0 0; position: relative;}
+.intro-main .button {padding: 15px 14px 11px 14px;}
+.intro-text{padding: 0 320px 0 0; position: relative;}
 .intro-section.row-reverse .intro-text{padding:  0 0 0 148px;}
 .intro-section.row-reverse .color-line:before{left: 0; right: inherit;}
 
 .intro-section.white-text h2{color: var(--white);}
 .intro-section.white-text h2 strong{color: var(--white);}
+
+.intro-section.white-text{clear: both; width: 100%; position: relative;}
+.intro-section.white-text .intro-text{padding: 0 148px 0 0; position: relative;}
+.intro-section.white-text.row-reverse .intro-text{padding:  0 0 0 148px;}
+.intro-section.white-text.row-reverse .color-line:before{left: 0; right: inherit;}
+.intro-section.white-text .intro-main{padding: 160px 0;}
+
 @media only screen and (max-width: 1279px) and (min-width: 1024px) {
     
     .intro-text { padding: 0 155px 0 0;}
@@ -19,7 +27,7 @@
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
     
     .intro-text { padding: 0 130px 0 0;}
-    
+    .intro-section.white-text .intro-main{padding: 128px 0;}
     
     
 }
@@ -29,5 +37,15 @@
     .intro-main h2{font-size: 1.5rem; margin-bottom: 30px;}
 
 
+    .intro-section.white-text .intro-main{padding: 96px 0 226px;}
+    .intro-section.white-text .intro-text{padding: 0;}
 
+    .intro-section.white-text.row-reverse .intro-text {padding: 0;}
 }
+
+
+
+
+
+
+
