@@ -26,3 +26,13 @@
 
 
 
+
+@media only screen and (max-width: 767px) and (min-width: 200px){
+.cta-short .h2 {margin-bottom: 24px;}
+
+
+
+}
+
+
+

@@ -37,11 +37,14 @@
     .intro-main h2{font-size: 1.5rem; margin-bottom: 30px;}
 
 
-    .intro-section.white-text .intro-main{padding: 96px 0 226px;}
+    .intro-section.white-text .intro-main{padding: 96px 0 220px;}
     .intro-section.white-text .intro-text{padding: 0;}
+    .intro-section.white-text .intro-text h2{margin-bottom: 20px;}
 
-    .intro-section.white-text.row-reverse .intro-text {padding: 150px 0 0 ;}
+    .intro-section.white-text.row-reverse .intro-text {padding: 130px 0 0 ;}
     .intro-section.white-text.row-reverse .intro-main{padding: 96px 0;}
+
+    .intro-section.white-text .color-line:before{bottom: -124px;}
 }
 
 

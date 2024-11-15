@@ -10,41 +10,13 @@ ul.expertise-links{margin-left: 0;}
 ul.expertise-links li{width: 100%; margin-bottom: 28px;}
 ul.expertise-links li::before{display: none;}
 ul.expertise-links li a{transition: 0.2s all ease; background-color: var(--white); padding: 11px 12px 7px 12px; border-radius: 12px;  text-decoration: none;}
-ul.expertise-links li .readmore span { top: 0; position: absolute; display: inline-block; right: 0; margin-left: 10px; }
+ul.expertise-links li .readmore span { top: inherit; position: absolute; display: inline-block; right: 12px; margin-left: 10px; }
 ul.expertise-links li a:hover{outline: 4px solid var(--sunshine-50); }
-ul.expertise-links li a.active, ul.expertise-links li a.active:hover{outline: 4px solid var(--sapphire);}
+ul.expertise-links li a.active, ul.expertise-links li a.active:hover{outline: 4px solid var(--sapphire-50);}
 .expertise-row:first-child{display: block;}
 .expertise-row{display: none;}
 .expertise-text{padding-bottom: 64px;}
 
-<<<<<<< HEAD
-.accordion-list:last-child{margin-bottom: 0;}
-.accordion-list {position: relative; background-color: var(--seafom-25); margin-bottom: 16px;  border-radius: 12px;  transition: all  0.3s ease-in-out;}
-.accordion-list:hover {background-color: var(--sunshine-40);}
-.accordion-list.active{background-color: transparent;}
-.accordion-list.active::before {
-	content: "";
-	display: block;
-	width: 100%;
-	height: 100%;
-	top: -4px;
-	left: 0;
-	position: absolute;
-	border: 4px solid var(--seafom-25);
-	border-radius: 12px;
-}
-.accordion-list.active .readmore span.vtl {position: absolute; content:"\f078";}
-.accordion-list.active .readmore span.vtl i:before{content: "\f077";}
-.accordion-list.active .readmore span.vtl:before{display: none;} 
-.accordion-list.active .readmore span.vtl:after{display: none;} 
-.accordion-list.active .accordion-header{padding: 16px 16px 7px;}
-.accordion-header{ padding: 15px 16px 11px; cursor: pointer; transition: all 0.3s ease-in-out;}
-.accordion-header h4{font-size: 1.125rem; margin-bottom: 0;}
-.accordion-header span{right: 0; position: absolute; margin-left: 10px;}
-.accordion-header .readmore:hover{color: var(--midnight);}
-.accordion-desc ul{margin: -1px 0 20px 15px;}
-=======
->>>>>>> b403c6c862a4c7686ab92151266ec0ac55c1fa12
 
 .readmore span.vtl{top: 1px;}
 .readmore span.vtl i{font-size: 1.25rem;}
@@ -52,28 +24,48 @@ ul.expertise-links li a.active, ul.expertise-links li a.active:hover{outline: 4p
 .readmore span.vtl:after, .readmore span.vtl:before{width: 20px; height: 20px;font-size: 1.25rem; content: "\f078"}
 .readmore:hover span.vtl:after{transform: translatey(-11px); }
 .readmore:hover span.vtl i{color: var(--cerulean);}
-<<<<<<< HEAD
-
-.accordion-content{ display: none;}
-.accordion-desc{padding: 12px 32px 20px;}
-.accordion-desc h4{margin-bottom: 24px; font-size: 1.125rem;}
-.accordion-desc p{margin-bottom: 22px;}
-/* .accordion-header::after {
-    background-image: url(dist/assets/faq-plus-icon91a2654b38d8548830f1.svg);
-    content: "";
-    height: 24px;
-    position: absolute;
-    right: 15px;
-    top: 15px;
-    transform: rotate(0deg);
-    transition: 0.5s all ease;
-    width: 24px;
-  } */
 
 
-  @media only screen and (max-width:767px) and (min-width: 200px) {
+
+
+
+
+@media only screen and (max-width: 1400px) and (min-width: 1280px){
+
+    .expertise-lt{padding: 80px 64px 80px 24px; flex: 0 0 472px;}
+    .expertise-rt{padding: 80px 24px 80px 64px;}
+
+
+}
+
+@media only screen and (max-width: 1279px) and (min-width: 1024px){
+    .expertise-lt{flex: 0 0 400px; padding: 64px 40px 64px 0;}
+
+    .expertise-rt{ padding: 64px 0 64px 40px;}
+
+}
+
+
+@media only screen and (max-width: 1023px) and (min-width: 768px){
 
     .expertise-main{display: block;}
-  }
-=======
->>>>>>> b403c6c862a4c7686ab92151266ec0ac55c1fa12
+    .expertise-lt{padding: 64px 0;}
+    .expertise-rt{padding: 64px 0;}
+    ul.expertise-links{gap: 20px;}
+    ul.expertise-links li {flex: 0 0 calc(33.33% - 14px); margin-bottom: 0;}
+    ul.expertise-links .readmore{font-size: 15px;}
+    
+    .expertise-lt::after{ width: 100vw; background-color: var(--white-90); position: absolute; display: block; content: ""; height: 100%; right: -100vw; top: 0; }
+    .expertise-rt::after{
+        position: absolute;
+        display: block;
+        content: "";
+        left: -100vw;
+        width: 100vw;
+        background-color: var(--white);
+        top: 0;
+        right: 0;
+        height: 100%;
+        z-index: -1;
+      }
+}
