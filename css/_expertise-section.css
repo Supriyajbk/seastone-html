@@ -7,12 +7,14 @@
 .expertise-lt h3{color: var(--midnight);}
 
 ul.expertise-links{margin-left: 0;}
-ul.expertise-links li{background-color: var(--white); padding: 11px 12px 7px 12px; border-radius: 12px; width: 100%; margin-bottom: 28px;}
+ul.expertise-links li{width: 100%; margin-bottom: 28px;}
 ul.expertise-links li::before{display: none;}
-ul.expertise-links li a{text-decoration: none;}
-ul.expertise-links li .readmore span { top: 0; position: absolute; display: inline-block; right: 0; margin-left: 10px; }
-ul.expertise-links li:active{outline: 4px solid var(--sapphire);}
-ul.expertise-links li:hover{outline: 4px solid var(--sunshine-50); transition: 0.2s all ease;}
+ul.expertise-links li a{transition: 0.2s all ease; background-color: var(--white); padding: 11px 12px 7px 12px; border-radius: 12px;  text-decoration: none;}
+ul.expertise-links li .readmore span { top: inherit; position: absolute; display: inline-block; right: 12px; margin-left: 10px; }
+ul.expertise-links li a:hover{outline: 4px solid var(--sunshine-50); }
+ul.expertise-links li a.active, ul.expertise-links li a.active:hover{outline: 4px solid var(--sapphire-50);}
+.expertise-row:first-child{display: block;}
+.expertise-row{display: none;}
 .expertise-text{padding-bottom: 64px;}
 
 
@@ -22,3 +24,48 @@ ul.expertise-links li:hover{outline: 4px solid var(--sunshine-50); transition: 0
 .readmore span.vtl:after, .readmore span.vtl:before{width: 20px; height: 20px;font-size: 1.25rem; content: "\f078"}
 .readmore:hover span.vtl:after{transform: translatey(-11px); }
 .readmore:hover span.vtl i{color: var(--cerulean);}
+
+
+
+
+
+
+@media only screen and (max-width: 1400px) and (min-width: 1280px){
+
+    .expertise-lt{padding: 80px 64px 80px 24px; flex: 0 0 472px;}
+    .expertise-rt{padding: 80px 24px 80px 64px;}
+
+
+}
+
+@media only screen and (max-width: 1279px) and (min-width: 1024px){
+    .expertise-lt{flex: 0 0 400px; padding: 64px 40px 64px 0;}
+
+    .expertise-rt{ padding: 64px 0 64px 40px;}
+
+}
+
+
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+
+    .expertise-main{display: block;}
+    .expertise-lt{padding: 64px 0;}
+    .expertise-rt{padding: 64px 0;}
+    ul.expertise-links{gap: 20px;}
+    ul.expertise-links li {flex: 0 0 calc(33.33% - 14px); margin-bottom: 0;}
+    ul.expertise-links .readmore{font-size: 15px;}
+    
+    .expertise-lt::after{ width: 100vw; background-color: var(--white-90); position: absolute; display: block; content: ""; height: 100%; right: -100vw; top: 0; }
+    .expertise-rt::after{
+        position: absolute;
+        display: block;
+        content: "";
+        left: -100vw;
+        width: 100vw;
+        background-color: var(--white);
+        top: 0;
+        right: 0;
+        height: 100%;
+        z-index: -1;
+      }
+}

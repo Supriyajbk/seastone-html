@@ -8,10 +8,10 @@
 .accordion-list.active .readmore span.vtl i:before{content: "\f077";}
 .accordion-list.active .readmore span.vtl:before{display: none;} 
 .accordion-list.active .readmore span.vtl:after{display: none;} 
-.accordion-list.active .accordion-header{padding: 16px 16px 7px;}
-.accordion-header{ padding: 11px 16px 7px; cursor: pointer; transition: all 0.3s ease-in-out;}
+.accordion-list.active .accordion-header{padding: 16px 60px 7px 16px;}
+.accordion-header{ padding: 11px 60px 7px 16px; cursor: pointer; transition: all 0.3s ease-in-out;}
 .accordion-header h4{font-size: 1.125rem; margin-bottom: 0;}
-.accordion-header span{right: 0; position: absolute; margin-left: 10px;}
+.accordion-header span{right: -48px; position: absolute; margin-left: 10px;}
 .accordion-header .readmore:hover{color: var(--midnight);}
 .accordion-desc ul{margin: -1px 0 20px 15px;}
 .accordion-content{ display: none;}
@@ -20,7 +20,8 @@
 .accordion-desc p{margin-bottom: 22px;}
 
 .accordion-section.accordion-white{background-color: var(--white-90);}
-.accordion-section.accordion-white .accordion-list{background-color: var(--white);}
+.accordion-section.accordion-white .accordion-list{background-color: var(--white);  transition: all  0.3s ease-in-out;}
+.accordion-section.accordion-white .accordion-list .accordion-header{transition: all  0.3s ease-in-out;}
 .accordion-section.accordion-white  .accordion-main{padding: 80px 0;}
 .accordion-section.accordion-white .accordion-list:hover {border: 4px solid var(--sunshine-40);}
 .accordion-section.accordion-white .accordion-list.active { border: 4px solid var(--seafom-40); } 
@@ -28,3 +29,33 @@
 
 .accordion-section.accordion-white .accordion-list{margin-bottom: 20px;}
 .accordion-section.accordion-white .accordion-main h3{margin-bottom: 40px; color: var(--midnight)}
+
+
+
+
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+
+    .accordion-section.accordion-white .accordion-list:last-child{margin-bottom: 0;}
+    .accordion-list.active .accordion-header { padding: 11px 40px  7px 16px; }
+    .accordion-header { padding: 11px 40px 7px 16px; }
+    .accordion-header span{right: -28px;}
+
+}
+
+
+
+
+@media only screen and (max-width: 767px) and (min-width: 200px){
+
+    .accordion-list.active .accordion-header { padding: 15px 35px  7px 16px; }
+    .accordion-section.accordion-white .accordion-main { padding: 64px 0; }
+    .accordion-header { padding: 15px 35px 13px 16px; }
+    .accordion-header span{right: -23px;}
+
+    .accordion-header .readmore{line-height: 1;}
+
+    .readmore:hover span.vtl::after { transform: translatey(-9px); }
+    .readmore:hover span.vtl::before { transform: translatey(7px);}
+    .readmore span.vtl { top: inherit; } 
+
+}

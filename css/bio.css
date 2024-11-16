@@ -54,14 +54,15 @@ span.link-text{width: 275px;}
 span.link-text::after{display: none;}
 span.link-text::before{display: none;}
 
-.bio-aside-wrap{position: fixed; z-index: 1;}
 
 
 /*--  media css starts here --*/
+@media only screen and (min-width: 768px){
+}
 @media only screen and (min-width: 1024px){
     .bio-article-inner{flex: 1; padding: 80px 0 0 80px;}
     .bio-aside{flex: 0 0 480px;}
-    .bio-aside-wrap{top: 64px; max-width: 480px;}
+    .bio-aside-wrap{max-width: 480px;}
     
     .ready-to-work-main{padding: 99px 80px 97px 0; margin-top: 120px;}
     .ready-to-work-main{width: calc(100% + 243px); left: -243px; overflow: hidden; background-color: transparent;}
@@ -98,7 +99,6 @@ span.link-text::before{display: none;}
     .bio-article-inner{width: calc(100% - 316px);}
     .bio-aside{width: 300px;}
     .ready-to-text p{font-size: 1.65rem;}
-    .bio-aside-wrap{top: 64px;}
 }
 @media only screen and (max-width: 767px) and (min-width: 200px) {
     .ready-to-work-main{width: calc(100% + 48px); left: -24px;}
@@ -108,4 +108,5 @@ span.link-text::before{display: none;}
     .bio-main{flex-direction: column-reverse;}
     .bio-article-inner{flex: 0 0 100%;}
     .bio-aside{flex: 0 0 100%;}
+    .bio-aside-wrap{top: 0 !important;}
 }

@@ -7,7 +7,7 @@
 @import url("_more-expertise-section.css");
 
 .default-banner-section { background: var(--aeganbg); }
-.intro-main{padding: 160px 0;}
+/* .intro-main{padding: 160px 0;} */
 .intro-section.aegean-bg{background-color: var(--aegean-85);}
 .intro-section.stone-bg{background-color: var(--stone-85);}
 .intro-section .optional-text{color: var(--seafom);}
@@ -23,6 +23,16 @@
 
 .cta-short{background: transparent; padding-bottom: 0;}
 .cta-short p { font-size: 2rem;}
+
+
+
+
+@media only screen and (max-width: 767px) and (min-width: 200px){
+.cta-short .h2 {margin-bottom: 24px;}
+
+
+
+}
 
 
 

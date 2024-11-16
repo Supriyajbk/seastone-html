@@ -3,23 +3,23 @@
 .featured-section .aegean .featured-icon:before{background-color: var(--aegean);}
 
 .featured-section .stone  h2{color: var(--stone); }
-.featured-section .stone  .number{color: var(--stone); }
+.featured-section .stone  .number{background-color: var(--stone); }
 .featured-section .stone .featured-icon:before{background-color: var(--stone);}
 
 .featured-section .cerulean h2{color: var(--cerulean);}
-.featured-section .cerulean .number{color: var(--cerulean);}
+.featured-section .cerulean .number{background-color: var(--cerulean);}
 .featured-section .cerulean .featured-icon:before{background-color: var(--cerulean);}
 
 
 .featured-section .sapphire h2{color: var(--sapphire); }
-.featured-section .sapphire .number{color: var(--sapphire); }
+.featured-section .sapphire .number{background-color: var(--sapphire); }
 .featured-section .sapphire .featured-icon:before{background-color: var(--sapphire);}
 
 
 .featured-section{background-color: var(--white); clear: both; width: 100%;}
 .featured-main{padding: 80px 0;}
 .featured-row{gap: 40px;}
-.featured-list{flex: 0 0 calc(25% - 30px);}
+.featured-list{flex: 0 0 calc(25% - 30px); flex-grow: 1;}
 .featured-list h2{ margin-bottom: 8px; line-height: 1;}
 .featured-list p{line-height: 1.5;}
 
@@ -29,14 +29,16 @@
 .featured-icon img{width: 32px; height: 32px; position: relative; object-fit: contain;}
 .featured-icon::before{position: absolute; display: block; width: 65px;height: 65px; border-radius: 50px;  content: "";}
 
-.featured-head{padding: 0 320px 72px 0;}
+.featured-head{padding: 0 0 72px 0;}
 .featured-head h2{font-size: 2rem; font-weight: 300; color: var(--midnight); line-height: 1.75; margin-bottom: 0;}
 .featured-head h2 strong{color: var(--cerulean);}
 
-.featured-list .number{ width: 64px; height: 64px; color: var(--white);
-    font-size: 2.5rem;
-    border-radius: 50%; margin-bottom: 16px; }
+.featured-list .number{ width: 64px; height: 64px; color: var(--white); font-size: 2.5rem; border-radius: 50%; margin-bottom: 14px; line-height: 74px;}
 
+@media only screen and (min-width:1280px) {
+.featured-head{padding: 0 320px 72px 0;}
+
+}
 
 @media only screen and (max-width:1279px) and (min-width: 200px) {
 
@@ -55,7 +57,7 @@
     .featured-row{display: block;}
     .featured-list{margin-bottom: 40px;}
     .featured-list:last-child{margin-bottom: 0;}
-
+    .featured-head h2 { font-size: 1.5rem;}
 
 
 }
