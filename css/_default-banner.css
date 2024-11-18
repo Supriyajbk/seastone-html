@@ -18,6 +18,9 @@
 .default-banner-text .btn-wrap{gap:20px;}
 .default-banner-text .btn-wrap .button{padding: 15px 14px 11px 15px;}
 
+.default-banner-text .btn-wrap .button.reverse:hover { color: var(--midnight)!important; background-color: var(--sunshine)!important;}
+
+
 /*-- media starts here --*/
 
 @media only screen and (min-width: 1024px){
@@ -38,10 +41,12 @@
 }
 
 @media only screen and (max-width: 767px) and (min-width: 200px){
-    .default-banner-main {padding: 64px 0; min-height: 488px; align-items: flex-end; margin: 80px auto 0;}
+    .default-banner-main {padding: 64px 0 60px; min-height: 488px; align-items: flex-end; margin: 86px auto 0;}
     .default-banner-main .default-banner-text h1 {font-size: 2rem;}
-    
+    .default-banner-main .default-banner-text p{margin: 25px 0 28px; line-height: 1.6; font-size: 1.125rem;}
     .banner-gradients .strip{min-height: 64px;}
     .banner-gradients .strip:before {min-height: 64px;}
+
+    .default-banner-text .btn-wrap .button{width: 100%;}
 
 }
