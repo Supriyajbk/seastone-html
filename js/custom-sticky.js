@@ -364,7 +364,7 @@ if (jQueryPlugin) {
 
 document.addEventListener("DOMContentLoaded", function () {
     let $headerHeight = document.querySelector("header").clientHeight;
-    let $isSticky = document.querySelector('.sidebar-sticky');
+    let $isSticky = document.querySelector('.bio-aside-wrap');
     let instance;
     
     let $mobile = window.matchMedia('(max-width: 767px)');

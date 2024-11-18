@@ -9,9 +9,9 @@
 ul.expertise-links{margin-left: 0;}
 ul.expertise-links li{width: 100%; margin-bottom: 28px;}
 ul.expertise-links li::before{display: none;}
-ul.expertise-links li a{transition: 0.2s all ease; background-color: var(--white); padding: 11px 12px 7px 12px; border-radius: 12px;  text-decoration: none;}
+ul.expertise-links li a{transition: 0.2s all ease; background-color: var(--white); padding: 11px 12px 7px 12px; border-radius: 12px;  text-decoration: none; outline: 4px solid transparent;}
 ul.expertise-links li .readmore span { top: inherit; position: absolute; display: inline-block; right: 12px; margin-left: 10px; }
-ul.expertise-links li a:hover{outline: 4px solid var(--sunshine-50); }
+ul.expertise-links li a:hover{outline-color: var(--sunshine-50); }
 ul.expertise-links li a.active, ul.expertise-links li a.active:hover{outline: 4px solid var(--sapphire-50);}
 .expertise-row:first-child{display: block;}
 .expertise-row{display: none;}
@@ -26,9 +26,10 @@ ul.expertise-links li a.active, ul.expertise-links li a.active:hover{outline: 4p
 .readmore:hover span.vtl i{color: var(--cerulean);}
 
 
-
-
-
+.expertise-links .slick-prev.slick-arrow{left: 0; right: auto;}
+.expertise-links .slick-next.slick-arrow{right: 0; left: auto;}
+.expertise-links .slick-arrow{top: 8px; background-color: var(--midnight);}
+.expertise-links .slick-disabled.slick-arrow span i{color: var(--white);}
 
 @media only screen and (max-width: 1400px) and (min-width: 1280px){
 
@@ -46,26 +47,27 @@ ul.expertise-links li a.active, ul.expertise-links li a.active:hover{outline: 4p
 }
 
 
-@media only screen and (max-width: 1023px) and (min-width: 768px){
+@media only screen and (max-width: 1023px) and (min-width: 200px){
 
     .expertise-main{display: block;}
-    .expertise-lt{padding: 64px 0;}
-    .expertise-rt{padding: 64px 0;}
+    .expertise-lt{padding: 64px 0 40px;}
+    .expertise-rt{padding: 40px 0 64px;}
     ul.expertise-links{gap: 20px;}
     ul.expertise-links li {flex: 0 0 calc(33.33% - 14px); margin-bottom: 0;}
     ul.expertise-links .readmore{font-size: 15px;}
     
     .expertise-lt::after{ width: 100vw; background-color: var(--white-90); position: absolute; display: block; content: ""; height: 100%; right: -100vw; top: 0; }
-    .expertise-rt::after{
-        position: absolute;
-        display: block;
-        content: "";
-        left: -100vw;
-        width: 100vw;
-        background-color: var(--white);
-        top: 0;
-        right: 0;
-        height: 100%;
-        z-index: -1;
-      }
+    .expertise-rt::after{ position: absolute; display: block; content: ""; left: -100vw; width: 100vw; background-color: var(--white); top: 0; right: 0; height: 100%; z-index: -1; }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    ul.expertise-links{display: block; padding: 22px 50px 0; text-align: center;}
+    ul.expertise-links li a {background: transparent; border-radius: 0; padding: 0; border-radius: 0;}
+    ul.expertise-links li .readmore span{display: none;}
+    ul.expertise-links li a.active{outline: none;}
+    ul.expertise-links li a{justify-content: center;}
+
+    .expertise-lt span.optional-text{margin-bottom: 26px;}
+    .expertise-text { padding-bottom: 40px; }
+
 }
