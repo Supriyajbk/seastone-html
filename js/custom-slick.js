@@ -54,6 +54,9 @@ jQuery(document).ready(function () {
       draggable: true,
       swipeToSlide: true,
       touchThreshold: 50,
+        variableWidth: true,
+        centerMode:true,
+        centerPadding: '22px'
     });
   }
 });

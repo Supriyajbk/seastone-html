@@ -30,9 +30,9 @@
 
 .our-expertise-grid .stone-wrap {display: flex; flex-wrap: wrap; align-items: center; justify-content: center; text-align: center; position: relative; z-index: 2;}
 .our-expertise-grid .stone-wrap .h3 {position: absolute; top: 0; bottom: 0; margin: auto; width: 100%; height: 100%; display: flex; align-items: center; flex-wrap: wrap; color: var(--white); justify-content: center; max-width: 180px; left: 0; right: 0;}
-.our-expertise-grid .stone-wrap svg {width: 272px; height: 272px; transition: all 0.4s ease-in-out;}
+.our-expertise-grid .stone-wrap svg, .our-expertise-grid .stone-wrap img {width: 272px; height: 272px; transition: all 0.4s ease-in-out;}
 
-.our-expertise-grid:hover .stone-wrap svg {transform: rotate(15deg); transition: all 0.4s ease-in-out; width: 288px; height: 288px;}
+.our-expertise-grid:hover .stone-wrap svg, .our-expertise-grid:hover .stone-wrap img {transform: rotate(15deg); transition: all 0.4s ease-in-out; width: 288px; height: 288px;}
 .our-expertise-grid:hover {transform: translateY(-71px);}
 .our-expertise-grid .stone-wrap a {line-height: 0;}
 
@@ -86,8 +86,8 @@
     .our-people-rt {width: 46.61016949152542%; margin-top: 0;}
     
     .our-expertise-main {padding: 158px 0 195px;}
-    .our-expertise-grid .stone-wrap svg {width: 218px; height: 218px;}
-    .our-expertise-grid:hover .stone-wrap svg {width: 234px; height: 234px;}
+    .our-expertise-grid .stone-wrap svg,  .our-expertise-grid:hover .stone-wrap img  {width: 218px; height: 218px;}
+    .our-expertise-grid:hover .stone-wrap svg,  .our-expertise-grid:hover .stone-wrap img  {width: 234px; height: 234px;}
     .our-expertise-grid .stone-wrap .h3 {font-size: 1.6rem; line-height: 125%; letter-spacing: -0.512px; max-width: 140px;}
     .our-expertise-grid {min-height: 275px;}
     .our-expertise-grid:hover .our-expertise-desc::after {bottom: -128px;}
@@ -121,7 +121,7 @@
     .our-expertise-grid .our-expertise-desc p {margin-bottom: 4px;}
     .our-expertise-grid {width: 100%; min-height: inherit; text-align: left; align-items: center; justify-content: flex-start; flex-direction: row; margin: -13px 0;}
     .our-expertise-grid .stone-wrap {width: 218px; height: 218px;}
-    .our-expertise-grid .stone-wrap svg, .our-expertise-grid:hover .stone-wrap svg {width: 218px; height: 218px; transform: none;}
+    .our-expertise-grid .stone-wrap svg, .our-expertise-grid:hover .stone-wrap svg, .our-expertise-grid .stone-wrap img, .our-expertise-grid:hover .stone-wrap img {width: 218px; height: 218px; transform: none;}
     .our-expertise-grid .stone-wrap .h3 {font-size: 1.6rem; line-height: 125%; letter-spacing: -0.512px; max-width: 140px;}
     .our-expertise-overlay, .our-expertise-grid:hover .our-expertise-overlay {padding:0 43px; width: calc(100% -  218px); flex-grow: 1;}
     .our-expertise-grid:hover .our-expertise-desc::after {display: none;}
@@ -136,9 +136,19 @@
     .our-people-group .our-people-thumb {width: 32.824vw; z-index: 1; margin: 0 -8px;}
     .our-people-group .our-people-thumb:nth-child(8n+2), .our-people-group .our-people-thumb:nth-child(8n+8), .our-people-group .our-people-thumb:nth-child(8n+4) {width: 29.799vw;}
     
-    .our-expertise-main {display: block;}
+    .our-expertise {padding: 65px 0 0 0;}
+    .our-expertise-main {display: block; padding: 18px 0 83px;}
     .our-expertise-main .slick-list {overflow: visible;}
+    .our-expertise-main ul.slick-dots {padding-top: 44px;}
+    .our-expertise-main .slick-arrow {bottom: 63px; top: inherit;}
+    .our-expertise-main .slick-arrow.slick-prev {right: auto; left: 0;}
     .our-expertise h2 {text-align: center; font-size: 2.5rem; line-height: 100%;}
-    .our-expertise-grid {width: 342px;}
+    .our-expertise-grid {width: 296px; margin: 0 0 0 7px !important;}
+    .our-expertise-grid .stone-wrap svg, .our-expertise-grid:hover .stone-wrap svg, .our-expertise-grid .stone-wrap img, .our-expertise-grid:hover .stone-wrap img {width: 272px; height: 272px; transform: none;}
+    .our-expertise-grid .our-expertise-desc {opacity: 0;}
+    .our-expertise-grid .our-expertise-desc .read-link {display: none;}
+    .our-expertise-grid .our-expertise-desc:after {position: absolute; left: 50%; transform: translateX(-50%); bottom: -49px; width: 296px; height: 460px; display: block; content: ""; border-radius: 460px; background: rgba(4, 52, 76, 0.75); filter: blur(52px); z-index: -1;}
+    .our-expertise-overlay, .our-expertise-grid:hover .our-expertise-overlay {padding:23px 0 0 0;}
+    .our-expertise-grid.slick-current .our-expertise-desc {opacity:1;}
 
 }
