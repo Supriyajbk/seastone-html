@@ -7,7 +7,7 @@
 .inclusion-image{flex: 0 0  280px;  background-size: contain; background-position: center;}
 .inclusion-image img{object-fit: contain;}
 
-
+.inclusion-row.reverse{flex-direction: row-reverse;}
 @media only screen and (max-width:1199px) and (min-width: 1024px) {
     .inclusion-main{padding: 96px 0;}
 

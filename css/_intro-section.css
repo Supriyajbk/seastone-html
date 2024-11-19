@@ -16,6 +16,11 @@
 .intro-section.white-text.row-reverse .color-line:before{left: 0; right: inherit;}
 .intro-section.white-text .intro-main{padding: 160px 0;}
 .intro-text .btn-wrap{margin-top: 32px;}
+
+.intro-text .readmore{margin-top: 32px;}
+
+
+
 @media only screen and (max-width: 1279px) and (min-width: 1024px) {
     
     .intro-text { padding: 0 155px 0 0;}
