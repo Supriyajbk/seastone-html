@@ -15,10 +15,8 @@
 .intro-section.white-text.row-reverse .intro-text{padding:  0 0 0 148px;}
 .intro-section.white-text.row-reverse .color-line:before{left: 0; right: inherit;}
 .intro-section.white-text .intro-main{padding:160px 0 155px;}
-.intro-text .btn-wrap{margin-top: 32px;}
 
-<<<<<<< HEAD
-.intro-text .readmore{margin-top: 32px;}
+.intro-text .readmore{margin-top: 20px;}
 
 
 
@@ -28,11 +26,6 @@
     
     
     
-=======
-
-@media only screen and (max-width: 1279px) and (min-width: 1024px) { 
-    .intro-text { padding: 0 155px 0 0;}   
->>>>>>> 17feec2e8a0f8ba038c73a55a29aafd3a30fec9e
 }
 
 @media only screen and (max-width: 1023px) and (min-width: 768px) {

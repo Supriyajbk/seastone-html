@@ -2,11 +2,12 @@
 @import url("_featured-section.css");
 @import url("_inclusion-section.css");
 @import url("_cta-module.css");
+@import url("tab.css");
 
 .default-banner-section{background-color: var(--midnight-75);}
 
 .our-people-section{clear: both; width: 100%; position: relative; background-color: var(--white);}
-.our-people-row{gap: 40px;}
+.our-people-row{gap:36px 40px; padding-bottom: 40px;}
 .our-people-list{flex: 0 0 calc(25% - 30px)}
 
 .our-people-info:before{ background-color: var(--sunshine); width: 8px; height: 100%; z-index: 2; top: 0; left: -8px; content: ""; display: block; position: absolute; }
@@ -18,4 +19,5 @@
 .our-people-mail { line-height: 125%; }
 .our-people-mail figure{display: none;}
 .our-people-ph figure{display: none;}
-.our-people-thumb{clear: both; width: 256px; margin: 0 0 25px 0; position: relative;}
+.our-people-thumb{clear: both; max-width: 256px; margin: 0 0 25px 0; height: 256px; position: relative;}
+.our-people-thumb figure img{object-fit: contain;}

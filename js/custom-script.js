@@ -145,5 +145,10 @@ jQuery(document).ready(function () {
       jQuery(this).closest('.heading-rt').siblings().toggleClass('minusleft');
     });
   } 
+
+
+
+
+  
 }); 
 

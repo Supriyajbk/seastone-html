@@ -5,6 +5,7 @@
 @import url("_accordion.css");
 @import url("_blog-module.css");
 @import url("_more-expertise-section.css");
+@import url("_cta-people.css");
 
 .default-banner-section { background: var(--aeganbg); }
 /* .intro-main{padding: 160px 0;} */
