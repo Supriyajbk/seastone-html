@@ -105,7 +105,7 @@ button:hover, .button:hover {color: var(--midnight); background-color: var(--sun
 button:focus, .button:focus, button:active, .button:active {background-color: var(--cerulean); color: var(--white);}
 
 /* Default Reverse */
-button.reverse, .button.reverse {background-color:var(--white)!important; color: var(--aegean)!important;}
+button.reverse, .button.reverse {background-color:var(--white); color: var(--aegean);}
 button.reverse:hover, .button.reverse:hover {color: var(--midnight); background-color: var(--sunshine); outline: 4px solid rgba(237, 208, 86, 0.50);}
 button.reverse:focus, .button.reverse:focus, button.reverse:active, .button.reverse:active {background-color:var(--white); color: var(--aegean);}
 
