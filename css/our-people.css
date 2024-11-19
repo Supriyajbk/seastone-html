@@ -1,0 +1,23 @@
+@import url("_default-banner.css");
+@import url("_featured-section.css");
+@import url("_inclusion-section.css");
+@import url("_cta-module.css");
+@import url("tab.css");
+
+.default-banner-section{background-color: var(--midnight-75);}
+
+.our-people-section{clear: both; width: 100%; position: relative; background-color: var(--white);}
+.our-people-row{gap:36px 40px; padding-bottom: 40px;}
+.our-people-list{flex: 0 0 calc(25% - 30px)}
+
+.our-people-info:before{ background-color: var(--sunshine); width: 8px; height: 100%; z-index: 2; top: 0; left: -8px; content: ""; display: block; position: absolute; }
+.our-people-cont h3{margin-bottom: 6px; color: var(--midnight);}
+.our-people-pos { font-size: 1.25rem; line-height: 20px; color: var(--aegean); }
+.our-people-contact { margin: 16px 0 0 0; clear: both; width: 100%; }
+.our-people-contact span{display: block;}
+.our-people-location { color: var(--cerulean); font-weight: 700; line-height: 123%; font-size: 1.125rem; margin-bottom: 3px; }
+.our-people-mail { line-height: 125%; }
+.our-people-mail figure{display: none;}
+.our-people-ph figure{display: none;}
+.our-people-thumb{clear: both; max-width: 256px; margin: 0 0 25px 0; height: 256px; position: relative;}
+.our-people-thumb figure img{object-fit: contain;}
