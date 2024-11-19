@@ -1,0 +1,32 @@
+@import url("_default-banner.css");
+@import url("_intro-section.css");
+@import url("_featured-section.css");
+@import url("_expertise-section.css");
+@import url("_more-expertise-section.css");
+@import url("_more-insights.css");
+@import url("_cta-people.css");
+
+.default-banner-section { background: var(--aeganbg);}
+.intro-section.aegean-bg{background-color: var(--aegean-85);}
+.intro-section.stone-bg{background-color: var(--stone-85);}
+.intro-section .optional-text{color: var(--seafom);}
+.intro-text .btn-wrap {margin: 20px 0 0 0;}
+
+.more-insights {background: var(--white-80);}
+
+.more-expertise-section {background: var(--white-90);}
+
+
+@media only screen and (min-width: 1024px){
+.more-expertise-main {padding: 80px 0;}
+}
+
+@media only screen and (max-width: 767px) and (min-width: 200px){
+.cta-short .h2 {margin-bottom: 24px;}
+
+
+
+}
+
+
+
