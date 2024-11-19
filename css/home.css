@@ -31,6 +31,7 @@
 .our-expertise-grid .stone-wrap {display: flex; flex-wrap: wrap; align-items: center; justify-content: center; text-align: center; position: relative; z-index: 2;}
 .our-expertise-grid .stone-wrap .h3 {position: absolute; top: 0; bottom: 0; margin: auto; width: 100%; height: 100%; display: flex; align-items: center; flex-wrap: wrap; color: var(--white); justify-content: center; max-width: 180px; left: 0; right: 0;}
 .our-expertise-grid .stone-wrap svg, .our-expertise-grid .stone-wrap img {width: 272px; height: 272px; transition: all 0.4s ease-in-out;}
+.our-expertise-grid .stone-wrap img {object-fit: contain;}
 
 .our-expertise-grid:hover .stone-wrap svg, .our-expertise-grid:hover .stone-wrap img {transform: rotate(15deg); transition: all 0.4s ease-in-out; width: 288px; height: 288px;}
 .our-expertise-grid:hover {transform: translateY(-71px);}

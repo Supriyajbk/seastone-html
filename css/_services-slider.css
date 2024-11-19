@@ -1,0 +1,17 @@
+.services-slider-main:only-child {clear: both; width: 100%; padding: 80px 0;}
+.services-slider-grid {width: 216px; margin-right:40px;}
+.services-slider-grid .stone-wrap {display: flex; flex-wrap: wrap; align-items: center; justify-content: center; text-align: center; position: relative; z-index: 2;}
+.services-slider-grid .stone-wrap .span-center {position: absolute; top: 0; bottom: 0; margin: auto; width: 100%; height: 100%; display: flex; align-items: center; flex-wrap: wrap; justify-content: center; left: 0; right: 0;}
+.services-slider-grid .stone-wrap svg, .services-slider-grid .stone-wrap img {width: 216px; height: 216px; transition: all 0.4s ease-in-out;}
+.services-slider-grid .stone-wrap img {object-fit: contain;}
+
+.services-slider-grid .stone-wrap a {line-height: 0;}
+.services-slider-grid .stone-wrap .arrow-icon {opacity: 0; transform: translateY(20px); transition: all 0.4s ease-in-out; color: var(--sapphire); font-size: 3rem; font-weight: 300; line-height: 100%; position: absolute;}
+.services-slider-grid .stone-wrap .h5 { transition: all 0.4s ease-in-out; margin: 0; line-height: 125%;}
+
+.services-slider-grid:hover .stone-wrap .arrow-icon {opacity: 1; transform: translateY(0);}
+.services-slider-grid:hover .stone-wrap .h5 {opacity: 0;}
+.services-slider-grid:hover .stone-wrap svg, 
+.services-slider-grid:hover .stone-wrap img {transform: rotate(-15deg); transition: all 0.4s ease-in-out; width: 214px; height: 216px;}
+
+.services-slider .slick-list {overflow: visible;}

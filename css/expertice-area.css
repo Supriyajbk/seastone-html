@@ -4,6 +4,7 @@
 @import url("_expertise-section.css");
 @import url("_more-expertise-section.css");
 @import url("_more-insights.css");
+@import url("_services-slider.css");
 @import url("_cta-people.css");
 
 .default-banner-section { background: var(--aeganbg);}
@@ -15,6 +16,26 @@
 .more-insights {background: var(--white-80);}
 
 .more-expertise-section {background: var(--white-90);}
+
+
+
+.expertise-rt-lists {display: flex; flex-wrap: wrap; width: 100%; gap:66px;}
+.expertise-rt-list {padding: 0 0 0 48px; clear: both; width: 100%; position: relative;}
+.expertise-rt-list:before {content: "\f00c"; font-family: "Font Awesome 6 Pro"; width: 32px; height: 32px; border-radius: 50%; position: absolute; left: 0; display: flex; align-items: center; font-size: 1rem; color: var(--white); font-weight: 900; justify-content: center; top: -4px;}
+.expertise-rt-list:nth-child(5n + 1):before {background: var(--aegean);}
+.expertise-rt-list:nth-child(5n + 2):before {background: var(--stone);}
+.expertise-rt-list:nth-child(5n + 3):before {background: var(--cerulean);}
+.expertise-rt-list:nth-child(5n + 4):before {background: var(--sapphire);}
+.expertise-rt-list:nth-child(5n):before {background: var(--seafom);}
+
+.expertise-rt-list .h5 {margin-bottom: 4px; color: var(--midnight);}
+
+
+@media only screen and (min-width: 1401px){
+ .expertise-lt{padding-right: 70px;}
+.expertise-rt {padding-left: 103px;}  
+}
+
 
 
 @media only screen and (min-width: 1024px){

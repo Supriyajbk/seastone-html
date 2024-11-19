@@ -59,4 +59,21 @@ jQuery(document).ready(function () {
         centerPadding: '22px'
     });
   }
+    
+    jQuery(".services-slider").slick({
+      slidesToShow: 1,
+      slidesToScroll:4,
+      arrows: true,
+      prevArrow: '<div class="slick-arrow slick-prev flex flex-center radius-50" aria-label="Previous Arrow" role="button"><span><i class="fa-regular fa-chevron-left"></i></span></div>',
+      nextArrow: '<div class="slick-arrow slick-next flex flex-center radius-50" aria-label="Next Arrow" role="button"><span><i class="fa-regular fa-chevron-right"></i></span></div>',
+      dots: false,
+      speed: 1000,
+      infinite: false,
+      autoplay: false,
+      draggable: true,
+      swipeToSlide: false,
+      touchThreshold: 50,
+        variableWidth: true,
+    });
+    
 });
