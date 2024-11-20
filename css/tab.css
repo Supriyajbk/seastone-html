@@ -1,10 +1,10 @@
-.tabs-filter-row{ background-color: #fff; }
+.tabs-filter-row{ background-color: #fff; padding: 40px 0;}
 .tab-divider { background: var(--seafom-25); height: 100%; min-height: 56px; width: 2px; }
 .tab-links-main {
  display: none;  
 }
 .tab-links-d {
-  color: var(--Raisin-Black);
+  color: var(--raisin-black);
   cursor: pointer;
   font-size: 24px;
   font-weight: 800;
@@ -13,62 +13,32 @@
   padding-right: 30px;
   width: fit-content;
 }
-ul.tab-links {
-  gap: 12px;
-}
-ul.tab-links {
-  margin: 0;
-  padding: 28px 0 32px;
-}
-.tab-links-d.open .tab-link-svgs svg:first-child {
-  opacity: 0;
-}
-.tab-link-svgs svg {
-  position: absolute;
-}
-.tab-link-svgs {
-  height: 20px;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 20px;
-}
-.absolute {
-  position: absolute;
-}
-  button.res-expand-icon, button.res-srch-icon {
-    background: transparent;
-    border: none;
-    color: transparent;
-    height: 40px;
-    left: 5px;
-    padding: 0;
-    top: calc(50% + 1px);
-    transform: translateY(-50%);
-    width: 40px;
-  }
-  .res-srch-form.open button.res-expand-icon, .res-srch-form.open button.res-srch-icon {
-    right: 20px;
-    top: 50%;
-  }
-  ul.tab-links > li > a:not(.active):hover {
-    background: var(--Accent-3);
-    border-radius: 12px;
-  }
-  ul.tab-links > li > a {
-    color: var(--raisin-black);
-    font-size: 16px;
-    font-weight: 500;
-    gap: 8px;
-    line-height: 24px;
-    padding: 8px 16px;
-    text-transform: capitalize;
-    border: 1px solid var(--sapphire);
-    border-radius: 20px;
-  }
-  
+ul.tab-links { gap: 12px; }
+ul.tab-links { margin: 0; padding: 28px 0 40px; }
+.tab-link-svgs { height: 20px; right: 0; top: 50%; transform: translateY(-50%); width: 20px; }
+.tab-links-d.open .tab-link-svgs svg:first-child { opacity: 0; }
+.tab-link-svgs svg:nth-child(2) { opacity: 0; }
+.tab-links-d.open .tab-link-svgs svg:nth-child(2) { opacity: 1; }
+.tab-link-svgs svg { position: absolute; }
+.absolute { position: absolute; }
 
-ul.tab-links > li:before{display: none;}
+
+
+  button.res-expand-icon, button.res-srch-icon { background: transparent; border: none; color: transparent; height: 41px; left: 5px; padding: 0; top: calc(50% + 1px); transform: translateY(-50%); width: 41px; border-radius: 0; outline: none; }
+  button.res-srch-icon svg{width: 100%; height: 100%; object-fit: contain;}
+
+  .res-srch-form.open button.res-expand-icon, .res-srch-form.open button.res-srch-icon { right: 10px; top: 50%; }
+  ul.tab-links > li > a:not(.active):hover { background: var(--Accent-3); border-radius: 12px; }
+ 
+ 
+  ul.tab-links > li > a { color: var(--raisin-black); font-size: 16px; font-weight: 500; gap: 8px; line-height: 24px; padding: 8px 16px; text-transform: capitalize; border: 1px solid var(--sapphire); border-radius: 20px; text-decoration: none; }
+  ul.tab-links > li:before{display: none;}
+  
+  ul.tab-links > li > a span {display: none;}
+  ul.tab-links > li > a.active span {display: block;}
+  ul.tab-links > li > a.active{background-color: var(--seafom);}
+  ul.tab-links > li > a:hover{outline: 4px solid var(--sunshine); border-color: transparent}
+
 
   .flex-vcenter {
     -webkit-box-align: center;
@@ -88,19 +58,8 @@ ul.tab-links > li:before{display: none;}
   .radius-8, .radius-img-8 img {
     border-radius: 8px;
   }
-  .res-srch-field input {
-    background-color: var(--White);
-    border-color: transparent;
-    border-radius: 8px;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 22px;
-    padding: 12px 65px 12px 17px;
-    width: 100%;
-  }
-  .absolute {
-    position: absolute;
-  }
+  .res-srch-field input { background-color: var(--White); border-color: transparent; border-radius: 8px; font-size: 16px; font-weight: 400; line-height: 22px; padding: 12px 65px 12px 17px; width: 100%; }
+  .absolute { position: absolute; }
 
   @media screen and (min-width: 1024px) {
     .tabs-filter {
@@ -108,14 +67,11 @@ ul.tab-links > li:before{display: none;}
     }
   }
   @media screen and (min-width: 768px) {
-    .res-srch-form.open .res-srch-field {
-      opacity: 1;
-      width: 436px;
-    }
+    .res-srch-form.open .res-srch-field { opacity: 1; width: 600px; }
   }
   @media screen and (min-width: 768px) {
     .res-srch-field {
-      border: 1px solid var(--Card-Stroke);
+      border: 4px solid var(--sapphire-50);
       opacity: 0;
       transition: all .5s ease-in-out;
       width: 0;
