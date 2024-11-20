@@ -5,6 +5,8 @@
 .expertise-rt:before{position: absolute; display: block; content: ""; right: -100vw; width: 1000%; background-color: var(--white); top: 0; left: 0; height: 100%; z-index: -1;}
 .expertise-rt:only-child:before{left: -100vw;}
 .expertise-lt h3{color: var(--midnight);}
+.expertise-lt h4 {font-weight: 300; line-height: 175%; color: var(--midnight); margin-bottom: 24px;}
+.expertise-lt h4 strong {color: var(--stone);}
 
 ul.expertise-links{margin-left: 0;}
 ul.expertise-links li{width: 100%; margin-bottom: 28px;}
