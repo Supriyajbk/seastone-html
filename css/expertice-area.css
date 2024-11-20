@@ -6,6 +6,9 @@
 @import url("_more-insights.css");
 @import url("_services-slider.css");
 @import url("_cta-people.css");
+@import url("_clients-love.css");
+
+
 
 .default-banner-section { background: var(--aeganbg);}
 .intro-section.aegean-bg{background-color: var(--aegean-85);}
@@ -32,7 +35,7 @@
 
 
 @media only screen and (min-width: 1401px){
- .expertise-lt{padding-right: 70px;}
+.expertise-lt{padding-right: 70px;}
 .expertise-rt {padding-left: 103px;}  
 }
 
@@ -42,9 +45,19 @@
 .more-expertise-main {padding: 80px 0;}
 }
 
-@media only screen and (max-width: 767px) and (min-width: 200px){
-.cta-short .h2 {margin-bottom: 24px;}
+@media only screen and (max-width:1023px) and (min-width:768px){
+    .expertise-rt {padding: 44px 0 64px;} 
+}
 
+
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    .expertise-lt {padding: 64px 0;}
+    .expertise-rt {padding: 68px 0 62px;}
+    .expertise-rt-lists {gap: 42px;}
+    .expertise-rt-list {padding: 44px 0 0 0;}
+    .expertise-rt-list .h5 {margin-bottom: 8px;}
+    
+    .intro-text .btn-wrap .readmore {margin:1px 0 0 0;}
 
 
 }

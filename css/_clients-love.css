@@ -1,0 +1,34 @@
+.clients-love {clear: both; width: 100%; position: relative; padding:0 0 67px 0;}
+.clients-love:only-child {padding-bottom: 0;}
+.clients-love-wrap {display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; width: 100%;}
+.clients-love-lt {width: calc(100% - 80%); flex-grow: 1;}
+.clients-love-lt .optional-text {color: var(--midnight); margin: 0 0 40px 0;}
+.clients-love-lt p {font-size:2rem; line-height: 175%;  font-weight: 300; color: var(--white);}
+.clients-love-rt .author-name {display: block; font-size: 1.125rem; letter-spacing: -0.0225rem; font-weight: 700; line-height: 125%;}
+.clients-love-rt .author-pos {display: block; font-size: 0.875rem; opacity: 0.5; line-height: 150%;}
+.clients-love-rt {margin-left: 5%; width:192px; color: var(--white); text-align: center;}
+.clients-love-rt .clients-love-thumb {width: 172px; height: 172px; position: relative; z-index: 1; margin:0 auto 27px auto; text-align: center;}
+.clients-love-rt .clients-love-thumb:after {content: ''; z-index: -1; position: absolute; left: 50%; transform: translate(-50%); height: 94px; width:188px; border-radius:  0 0 150px 150px; background-color: var(--sapphire); bottom: -10px;}
+.clients-love-rt .clients-love-thumb img {border-radius: 50%;}
+
+
+@media only screen and (max-width:1023px) and (min-width:200px) {
+    .clients-love-lt {width: 100%;} 
+    .clients-love-rt {margin: 55px 0 0 0;}
+    .clients-love {padding: 0;}  
+}
+
+
+@media only screen and (max-width:1023px) and (min-width:768px) {
+    
+    
+}
+
+@media only screen and (max-width:767px) and (min-width:200px) {
+    .clients-love-lt p {font-size: 1.5rem; line-height: 175%;}
+    .clients-love-rt {width: 100%; display: flex; flex-wrap: wrap; align-items: center;}
+    .clients-love-rt .clients-love-thumb {width: 86px; height: 86px; margin:0 22px 0 0;}
+    .clients-love-rt .clients-love-thumb::after {height: 47px; width: 96px; bottom: -5px;}
+    .clients-info {display: flex; flex-wrap: wrap; width: calc(100% -  31.871345029239766%);}
+    
+}
