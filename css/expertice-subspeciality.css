@@ -1,65 +1,69 @@
 @import url("_default-banner.css");
-@import url("_intro-section.css");
 @import url("_featured-section.css");
 @import url("_expertise-section.css");
-@import url("_more-expertise-section.css");
-@import url("_more-insights.css");
 @import url("_services-slider.css");
 @import url("_cta-people.css");
-@import url("_clients-love.css");
+@import url("_more-insights.css");
+@import url("_single-testimonial.css");
+@import url("_cta-module.css");
 
 
 
 .default-banner-section { background: var(--aeganbg);}
-.intro-section.aegean-bg{background-color: var(--aegean-85);}
-.intro-section.stone-bg{background-color: var(--stone-85);}
-.intro-section .optional-text{color: var(--seafom);}
-.intro-text .btn-wrap {margin: 20px 0 0 0;}
+.featured-section {background: var(--white-90);}
 
-.more-insights {background: var(--white-80);}
+.ip-lawyer .tm-grid {clear: both; width: 100%; margin: 47px 0 0 0;}
+.ip-lawyer .tm-grid .tm-thumb {clear: both; width: 128px; margin: 0 0 25px 0; position: relative;}
+.ip-lawyer .tm-grid .tm-content .h5 {line-height: 125%; margin: 0 0 6px 0;}
+.ip-lawyer .tm-grid .tm-content .h5 a {color: var(--midnight);}
+.ip-lawyer .tm-grid .tm-content .h5 a:hover {color: var(--aegean);}
+.ip-lawyer .tm-grid .tm-content .tm-pos {font-size: 1.25rem; line-height: 20px; color: var(--aegean);}
+.ip-lawyer .tm-grid .tm-contact figure {display: none;}
+.ip-lawyer .tm-grid .tm-contact span {display: block; margin: 0 0 4px 0;}
+.ip-lawyer .tm-grid .tm-contact {margin: 14px 0 0 0; clear: both; width: 100%;}
+.ip-lawyer .tm-grid .tm-contact .tm-location {color: var(--cerulean); font-weight: 700; line-height: 123%; font-size: 1.125rem;}
+.ip-lawyer .tm-grid .tm-contact .tm-mail {line-height: 125%;}
+.ip-lawyer .tm-grid .tm-contact .tm-ph {line-height: 125%;}
 
-.more-expertise-section {background: var(--white-90);}
-
-
-
-.expertise-rt-lists {display: flex; flex-wrap: wrap; width: 100%; gap:66px;}
-.expertise-rt-list {padding: 0 0 0 48px; clear: both; width: 100%; position: relative;}
-.expertise-rt-list:before {content: "\f00c"; font-family: "Font Awesome 6 Pro"; width: 32px; height: 32px; border-radius: 50%; position: absolute; left: 0; display: flex; align-items: center; font-size: 1rem; color: var(--white); font-weight: 900; justify-content: center; top: -4px;}
-.expertise-rt-list:nth-child(5n + 1):before {background: var(--aegean);}
-.expertise-rt-list:nth-child(5n + 2):before {background: var(--stone);}
-.expertise-rt-list:nth-child(5n + 3):before {background: var(--cerulean);}
-.expertise-rt-list:nth-child(5n + 4):before {background: var(--sapphire);}
-.expertise-rt-list:nth-child(5n):before {background: var(--seafom);}
-
-.expertise-rt-list .h5 {margin-bottom: 4px; color: var(--midnight);}
+.expertise-rt .anchor-lists {display: flex; flex-wrap: wrap; width: 100%; gap:64px;}
+.expertise-rt .video-wrap {margin: 62px 0 19px 0;}
+.expertise-rt .single-testimonial {margin:62px 0 19px;}
+.expertise-rt .cta-short:last-of-type {padding-bottom: 0;}
 
 
 @media only screen and (min-width: 1401px){
-.expertise-lt{padding-right: 70px;}
-.expertise-rt {padding-left: 103px;}  
+ 
 }
 
 
 
-@media only screen and (min-width: 1024px){
-.more-expertise-main {padding: 80px 0;}
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+    .ip-lawyer .tm-grid {display: flex; flex-wrap: wrap; align-items: center;}
+    .ip-lawyer .tm-grid .tm-thumb {margin: 0 25px 0 0; width: 104px;}
+    .ip-lawyer .tm-grid .tm-content {display: flex; flex-wrap: wrap; width: calc(100% - 129px); align-items: center;}
+    .ip-lawyer .tm-grid .tm-contact {clear: none; flex: 1; margin: 0 0 0 16px; padding: 0 0 0 16px; border-left: 1px solid var(--seafom-50);}
+    .ip-lawyer .tm-grid .tm-cnt-top {flex: 1;}
 }
 
-@media only screen and (max-width:1023px) and (min-width:768px){
-    .expertise-rt {padding: 44px 0 64px;} 
+@media only screen and (max-width: 1023px) and (min-width: 200px) {
+    .ip-lawyer .tm-grid .tm-content .tm-pos {font-size: 1.125rem;}
+
 }
 
 
-@media only screen and (max-width: 767px) and (min-width: 200px){
-    .expertise-lt {padding: 64px 0;}
-    .expertise-rt {padding: 68px 0 62px;}
-    .expertise-rt-lists {gap: 42px;}
-    .expertise-rt-list {padding: 44px 0 0 0;}
-    .expertise-rt-list .h5 {margin-bottom: 8px;}
+@media only screen and (max-width: 767px) and (min-width: 200px) {
+    .ip-lawyer .tm-grid {display: flex; flex-wrap: wrap; align-items: center; margin:36px 0 0 0;}
+    .ip-lawyer .tm-grid .tm-thumb {width: 120px; margin: 0 24px 0 0;}
+    .ip-lawyer .tm-grid .tm-content {display: flex; flex-wrap: wrap; width: calc(100% - 144px); align-items: center;}
+    .ip-lawyer .tm-grid .tm-content .h5 {margin: 0 0 4px 0;}
+
+    .ip-lawyer .tm-grid .tm-contact .tm-location {display: none;}
+    .ip-lawyer .tm-grid .tm-contact {font-size: 0; margin: 0; line-height: normal;}
+    .ip-lawyer .tm-grid .tm-contact span {display: inline-block; margin:4px 8px 0 0}
+    .ip-lawyer .tm-grid .tm-contact figure {display: block; width: 48px; height: 48px; border-radius: 50%; border: 2px solid var(--cerulean); padding: 10px; margin: 0 auto; text-align: center;}
+    .ip-lawyer .tm-grid .tm-contact a:hover figure {border: 2px solid var(--midnight); }
     
-    .intro-text .btn-wrap .readmore {margin:1px 0 0 0;}
-
-
+    
 }
 
 
