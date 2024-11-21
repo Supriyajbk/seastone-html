@@ -1,97 +1,103 @@
-.tabs-filter-row{ background-color: #fff; padding: 40px 0;}
+.tabs-filter-row{ background-color: #fff; padding: 32px 0;}
 .tab-divider { background: var(--seafom-25); height: 100%; min-height: 56px; width: 2px; }
-.tab-links-main {
- display: none;  
-}
-.tab-links-d {
-  color: var(--raisin-black);
-  cursor: pointer;
-  font-size: 24px;
-  font-weight: 800;
-  letter-spacing: -.24px;
-  line-height: 30px;
-  padding-right: 30px;
-  width: fit-content;
-}
-ul.tab-links { gap: 12px; }
-ul.tab-links { margin: 0; padding: 28px 0 40px; }
+.tab-links-main { display: none; }
+.tab-links-d { color: var(--raisin-black); cursor: pointer; font-size: 24px; font-weight: 800; letter-spacing: -.24px; line-height: 30px; padding-right: 30px; width: fit-content; }
+ul.tab-links { gap: 10px; }
+ul.tab-links { margin: 0; padding: 24px 0 0; }
 .tab-link-svgs { height: 20px; right: 0; top: 50%; transform: translateY(-50%); width: 20px; }
-.tab-links-d.open .tab-link-svgs svg:first-child { opacity: 0; }
+/* .tab-links-d.open .tab-link-svgs svg:first-child { opacity: 0; }
 .tab-link-svgs svg:nth-child(2) { opacity: 0; }
 .tab-links-d.open .tab-link-svgs svg:nth-child(2) { opacity: 1; }
-.tab-link-svgs svg { position: absolute; }
+.tab-link-svgs svg { position: absolute; } */
 .absolute { position: absolute; }
+.res-srch-form.open .res-srch-field {opacity: 1;}
 
+.tab-links-d .tab-link-text:hover{color: var(--sapphire);}
+.tab-links-d.open .tab-link-text{color: var(--aegean);}
+.tab-links-d.open .tab-link-text:hover{color: var(--sapphire);}
+.tab-link-svgs .readmore span.vtl{top:-6px;}
 
-
+.tab-link-svgs .readmore span.vtl i{font-size: 20px;}
+.tab-link-svgs .readmore span.vtl:after, .readmore span.vtl:before{width: 20px; height: 20px;font-size: 1.25rem; content: "\f078"}
+.tab-link-svgs .readmore:hover span.vtl i{color: var(--cerulean);}
+.tab-link-svgs .readmore span.vtl:before{transform: translatey(5px); color: var(--sapphire)}
+.tab-link-svgs .readmore:hover span.vtl:after{transform: translatey(-11px); }
+.tab-links-d.open .tab-link-svgs .readmore span.vtl:before{transform: translatey(-10px); color: var(--sapphire); content: "\f077";}
+.tab-links-d.open .tab-link-svgs  .readmore span.vtl i::before { content: "\f077";}
+.tab-links-d.open .tab-link-svgs .readmore:hover span.vtl:after{transform: translatey(5px); content: "\f077"; }
+.radius-8{border-radius: 8px;}
   button.res-expand-icon, button.res-srch-icon { background: transparent; border: none; color: transparent; height: 41px; left: 5px; padding: 0; top: calc(50% + 1px); transform: translateY(-50%); width: 41px; border-radius: 0; outline: none; }
   button.res-srch-icon svg{width: 100%; height: 100%; object-fit: contain;}
-
+  button.res-srch-icon:hover svg path{fill: var(--aegean);}
   .res-srch-form.open button.res-expand-icon, .res-srch-form.open button.res-srch-icon { right: 10px; top: 50%; }
-  ul.tab-links > li > a:not(.active):hover { background: var(--Accent-3); border-radius: 12px; }
+  ul.tab-links > li > a:not(.active):hover {  border-radius: 20px; }
  
  
-  ul.tab-links > li > a { color: var(--raisin-black); font-size: 16px; font-weight: 500; gap: 8px; line-height: 24px; padding: 8px 16px; text-transform: capitalize; border: 1px solid var(--sapphire); border-radius: 20px; text-decoration: none; }
+  ul.tab-links > li > a { color: var(--raisin-black); font-size: 16px; font-weight: 500; gap: 8px; line-height: 24px; padding: 10px 14px 6px 16px; text-transform: capitalize; border: 1px solid var(--sapphire); border-radius: 20px; text-decoration: none; outline-color: transparent; }
   ul.tab-links > li:before{display: none;}
-  
-  ul.tab-links > li > a span {display: none;}
+  ul.tab-links > li > a span {display: none; width: 22px; height: 22px; top: -2px; position: relative}
+  ul.tab-links > li > a:hover span {display: block;}
   ul.tab-links > li > a.active span {display: block;}
-  ul.tab-links > li > a.active{background-color: var(--seafom);}
-  ul.tab-links > li > a:hover{outline: 4px solid var(--sunshine); border-color: transparent}
+  ul.tab-links > li > a.active{background-color: var(--seafom); font-weight: 700;}
+  ul.tab-links > li > a:hover{outline: 4px solid var(--sunshine); border-color: transparent; background-color: transparent; transition: 0.3s all ease-in-out;}
+  ul.tab-links > li a:hover svg:first-child{display: none;}
+  ul.tab-links > li a:hover svg:last-child{display: block;}
+  ul.tab-links > li a svg:last-child{display: none;}
+  ul.tab-links > li > a.active:hover {outline: 4px solid var(--seafom);}
+  ul.tab-links > li > a.active:hover svg:last-child path{fill: var(--midnight);}
+  ul.tab-links > li > a.active:hover svg:last-child{transform: rotate(45deg);}
 
-
-  .flex-vcenter {
-    -webkit-box-align: center;
-    -moz-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-  }
-  .res-srch-form {
-    min-width: 52px;
-    transition: all .5s ease;
-  }
-  .relative {
-    position: relative;
-    z-index: 1;
-  }
-  .radius-8, .radius-img-8 img {
-    border-radius: 8px;
-  }
-  .res-srch-field input { background-color: var(--White); border-color: transparent; border-radius: 8px; font-size: 16px; font-weight: 400; line-height: 22px; padding: 12px 65px 12px 17px; width: 100%; }
+  ul.tab-links > li:last-child > a svg{display: block;} 
+  ul.tab-links > li:last-child > a{border: transparent;}
+  .flex-vcenter { -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; }
+  .res-srch-form { min-width: 52px; transition: all .5s ease; }
+  .relative { position: relative; z-index: 1; }
+  .res-srch-field input { background-color: var(--white); border-color: transparent; border-radius: 8px; font-size: 16px; font-weight: 400; line-height: 22px; padding: 12px 65px 12px 17px; width: 100%; }
   .absolute { position: absolute; }
 
+  @media only screen and (min-width: 1401px)  {
+  .res-srch-form.open .res-srch-field {  width: 600px; }
+
+  }
+
+  
+  @media only screen and (max-width: 1400px) and (min-width: 1280px) {
+    .res-srch-form.open .res-srch-field {  width: 500px;}
+
+    .tabs-filter-row {padding: 52px 0;}
+  }
+  @media only screen and (max-width: 1279px) and (min-width: 1024px) {
+  .res-srch-form.open .res-srch-field { width: 290px;}
+    .tabs-filter-row {padding: 52px 0;}
+
+  }
   @media screen and (min-width: 1024px) {
-    .tabs-filter {
-      gap: 0 41px;
-    }
   }
+  
   @media screen and (min-width: 768px) {
-    .res-srch-form.open .res-srch-field { opacity: 1; width: 600px; }
+    .tabs-filter { gap: 0 41px; }
+    .res-srch-field { border: 4px solid var(--sapphire-50); opacity: 0; transition: all .5s ease-in-out; width: 0; }
+    .res-srch-form.open button.res-expand-icon { opacity: 1; visibility: visible; }
+   
+    .res-srch-form button.res-expand-icon { left: auto; right: 20px; }
+    .res-srch-form.open button.res-srch-icon, button.res-expand-icon { opacity: 0; visibility: hidden; }
   }
-  @media screen and (min-width: 768px) {
-    .res-srch-field {
-      border: 4px solid var(--sapphire-50);
-      opacity: 0;
-      transition: all .5s ease-in-out;
-      width: 0;
-    }
-  }
-  @media screen and (min-width: 768px) {
-    .res-srch-form.open button.res-expand-icon {
-      opacity: 1;
-      visibility: visible;
-    }
-  }
-  @media screen and (min-width: 768px) {
-    .res-srch-form button.res-expand-icon {
-      left: auto;
-      right: 20px;
-    }
-  }
-  @media screen and (min-width: 768px) {
-    .res-srch-form.open button.res-srch-icon, button.res-expand-icon {
-      opacity: 0;
-      visibility: hidden;
-    }
-  }
+
+  @media only screen and (max-width: 1023px) and (min-width: 768px) {
+    .tabs-filter { gap:  36px; }
+    .res-srch-form.open .res-srch-field { width: 100%; }
+    .res-srch-form.open{flex: 0 0 100%;}
+
+}
+@media only screen and (max-width: 767px) and (min-width: 200px){ 
+    .tabs-filter { gap:  13px; }
+    .tabs-filter-row{padding: 24px 0;}
+    ul.tab-links{gap: 5px;}
+    .res-srch-form{min-width: 100%; flex: 0 0 100%; margin-bottom: 15px;}
+    .res-srch-field input{border: 4px solid var(--seafom)}
+    button.res-expand-icon{right: 20px; left: auto;}
+    .res-srch-icon{display: none;}
+    .tab-links-d {font-size: 18px;}
+    .tab-divider {min-height: 32px;}
+
+}
