@@ -10,6 +10,9 @@
 .insight-big-txt h1 a {color: var(--white);}
 .insight-big-txt h1 a:hover {color: var(--sapphire);}
 
+.tabs-filter-row {background-color: transparent;}
+
+
 
 .newsletter {clear: both; width: 100%; border-radius: 16px; padding: 40px; background: var(--midnight); color: var(--white); display: flex; flex-wrap: wrap;
   height: 100%; flex-direction: column;}
