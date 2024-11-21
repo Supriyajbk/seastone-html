@@ -90,10 +90,14 @@ ul.tab-links { margin: 0; padding: 24px 0 0; }
 
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){ 
-    .tabs-filter { gap:  20px; }
-    .res-srch-form{min-width: 100%; flex: 0 0 100%;}
-    .res-srch-field input{border: 2px solid var(--seafom)}
+    .tabs-filter { gap:  13px; }
+    .tabs-filter-row{padding: 24px 0;}
+    ul.tab-links{gap: 5px;}
+    .res-srch-form{min-width: 100%; flex: 0 0 100%; margin-bottom: 15px;}
+    .res-srch-field input{border: 4px solid var(--seafom)}
     button.res-expand-icon{right: 20px; left: auto;}
     .res-srch-icon{display: none;}
+    .tab-links-d {font-size: 18px;}
+    .tab-divider {min-height: 32px;}
 
 }

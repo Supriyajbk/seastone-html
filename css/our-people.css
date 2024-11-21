@@ -19,6 +19,7 @@
 .our-people-mail { line-height: 125%; }
 .our-people-mail figure{display: none;}
 .our-people-ph figure{display: none;}
+.our-people-thumb{position: relative;}
 .our-people-thumb figure img{object-fit: contain;}
 .our-people-cont .h5 {line-height: 125%; margin: 0 0 4px 0;}
 .our-people-cont .h5 a {color: var(--midnight);}
@@ -38,10 +39,8 @@
     .our-people-cont .h5{font-size: 1.5rem;}
     .our-people-pos {font-size: 1.125rem;}
 }
+   
 
-@media only screen and (max-width: 1023px) and (min-width: 768px) {
-    
-}
 
 
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
@@ -53,4 +52,27 @@
         .our-people-top {flex: 1;}
         .our-people-pos{font-size: 1.125rem;}
     
+    }
+
+
+
+    @media only screen and (max-width: 767px) and (min-width: 200px) {
+ 
+    .our-people-main { padding: 28px 0 64px; }
+    .our-people-list {margin:31px 0 0 0;} 
+    .our-people-info:first-child {margin:0;}
+    .our-people-info{display: flex; flex-wrap: wrap; align-items: center;  width: 100%;}
+    .our-people-thumb {width: 120px; margin: 0 24px 0 0; height: 120px;}
+    .our-people-cont {display: flex; flex-wrap: wrap; width: calc(100% - 144px); align-items: center;}
+    .our-people-cont .h5 {margin: 0 0 4px 0; font-size: 1.25rem;}
+    .our-people-cont .locator {bottom: -3px;}
+    .our-people-pos { font-size: 1.125rem;}
+    .our-people-location {display: none!important}
+    .our-people-contact {font-size: 0; margin: 0; line-height: normal;}
+    .our-people-contact span {display: inline-block; margin:4px 8px 0 0}
+    .our-people-contact figure {display: block; width: 48px; height: 48px; border-radius: 50%; border: 2px solid var(--cerulean); padding: 10px; margin: 0 auto; text-align: center;}
+    .our-people-contact a:hover figure {border: 2px solid var(--midnight);}
+
+
+
     }
