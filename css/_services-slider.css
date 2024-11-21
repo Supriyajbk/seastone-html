@@ -17,4 +17,15 @@
 .services-slider-grid:hover .stone-wrap svg, 
 .services-slider-grid:hover .stone-wrap img {transform: rotate(-15deg); transition: all 0.4s ease-in-out; width: 214px; height: 216px;}
 
-.services-slider .slick-list {overflow: visible;}
+.services-slider .slick-list {overflow: visible; padding: 0 0 0 4px;}
+
+@media only screen and (max-width: 1400px) and (min-width: 1024px){
+    .services-slider-grid {margin-right: 32px;}  
+}
+
+
+@media only screen and (max-width: 1023px) and (min-width:768px){
+    .services-slider-grid {margin-right: 16px;}  
+    .services-slider-main .heading-lt {width: 50%;}
+    .services-slider-main .heading {padding: 0 0 32px;}
+}

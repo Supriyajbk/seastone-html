@@ -154,6 +154,11 @@ jQuery('a[href*="#"]').on('click', function (e) {
     var target = jQuery(this.hash),
         headerHeight = jQuery('.main_header').outerHeight() || 0,
         extraSpace = 50;
+
+    // Toggle the 'active' class on the parent <li>
+    jQuery('.anchor-links li').removeClass('active'); // Remove 'active' from all <li> elements
+    jQuery(this).closest('.anchor-links li').addClass('active'); // Add 'active' to the parent <li> of the clicked link
+
     if (target.length) {
       jQuery('html, body').animate({
         scrollTop: target.offset().top - headerHeight - extraSpace
@@ -163,6 +168,8 @@ jQuery('a[href*="#"]').on('click', function (e) {
     }
   }
 });
+
+
 
 
 
