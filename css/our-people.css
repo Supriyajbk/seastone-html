@@ -74,5 +74,6 @@
     .our-people-contact a:hover figure {border: 2px solid var(--midnight);}
 
 
+    .inclusion-row.reverse{display: flex; flex-direction: column-reverse;}
 
     }
