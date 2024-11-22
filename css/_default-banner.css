@@ -43,10 +43,12 @@
 @media only screen and (max-width: 767px) and (min-width: 200px){
     .default-banner-main {padding: 64px 0 60px; min-height: 488px; align-items: flex-end; margin: 86px auto 0;}
     .default-banner-main .default-banner-text h1 {font-size: 2rem;}
+    .default-banner-main .default-banner-text h1 span::after {height: 12px; bottom: 1px;}
     .default-banner-main .default-banner-text p{margin: 25px 0 28px; line-height: 1.6; font-size: 1.125rem;}
     .banner-gradients .strip{min-height: 64px;}
     .banner-gradients .strip:before {min-height: 64px;}
 
     .default-banner-text .btn-wrap .button{width: 100%;}
+    
 
 }
