@@ -13,7 +13,7 @@
 .accordion-header h4{font-size: 1.125rem; margin-bottom: 0;}
 .accordion-header span{right: -48px; position: absolute; margin-left: 10px;}
 .accordion-header .readmore:hover{color: var(--midnight);}
-.accordion-desc ul{margin: -1px 0 20px 15px;}
+.accordion-desc ul{margin: -1px 0 20px 20px;}
 .accordion-content{ display: none;}
 .accordion-desc{padding: 12px 32px 15px;}
 .accordion-desc h4{margin-bottom: 24px; font-size: 1.125rem;}
