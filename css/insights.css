@@ -10,7 +10,6 @@
 .insight-big-txt h1 a {color: var(--white);}
 .insight-big-txt h1 a:hover {color: var(--sapphire);}
 
-.tabs-filter-row {background-color: transparent;}
 
 
 
@@ -38,6 +37,8 @@
 .more-insights-grid .more-inights-cnt .h5 {line-height: 150%; margin: 0 0 10px 0;}
 .more-insights-grid .more-inights-cnt .h5 a {color: var(--midnight); display: inline-block; transition: underline 0.3s ease;}
 .more-insights-grid .more-inights-cnt .h5 a:hover {text-decoration: underline; text-decoration-color: var(--sapphire);}
+
+
 
 
 
