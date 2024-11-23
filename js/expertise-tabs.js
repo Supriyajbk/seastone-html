@@ -23,6 +23,7 @@
         nextArrow:
           '<div class="slick-arrow slick-next flex flex-center radius-50" aria-label="Next Arrow" role="button"><span><i class="fa-regular fa-chevron-right"></i></span></div>',
         dots: false,
+        adaptiveHeight: true,
         asNavFor: $sliderfor,
       });
 

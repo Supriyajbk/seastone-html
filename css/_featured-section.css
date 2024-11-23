@@ -29,15 +29,16 @@
 .featured-icon img{width: 32px; height: 32px; position: relative; object-fit: contain;}
 .featured-icon::before{position: absolute; display: block; width: 65px;height: 65px; border-radius: 50px;  content: "";}
 
-/* .featured-head{padding: 0 0 72px 0;} */
+ .featured-head{padding: 0 0 72px 0;} 
 .featured-head h2{font-size: 2rem; font-weight: 300; color: var(--midnight); line-height: 1.75; margin-bottom: 0;}
 .featured-head h2 strong{color: var(--cerulean);}
 
 .featured-list .number{ width: 64px; height: 64px; color: var(--white); font-size: 2.5rem; border-radius: 50%; margin-bottom: 15px; line-height: 74px;}
 .featured-main.no-row { padding: 80px 0 70px; }
+
+
 @media only screen and (min-width:1280px) {
 .featured-head{padding: 0 320px 0 0;}
-.featured-row{margin-top: 72px;}
 }
 
 @media only screen and (max-width:1279px) and (min-width: 200px) {

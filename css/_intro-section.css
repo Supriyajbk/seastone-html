@@ -16,9 +16,8 @@
 .intro-section.white-text.row-reverse .color-line:before{left: 0; right: inherit;}
 .intro-section.white-text .intro-main{padding:160px 0 155px;}
 
-.intro-text .readmore{margin-top: 20px;}
 
-
+.intro-text .btn-wrap{margin-top: 30px;}
 
 @media only screen and (max-width: 1279px) and (min-width: 1024px) {
     
@@ -36,11 +35,11 @@
 @media only screen and (max-width:767px) and (min-width: 200px) {
     .intro-main{padding: 64px 0 194px;}
     .intro-text{padding: 0;}
-    .intro-main h2{font-size: 1.5rem; margin-bottom: 30px;}
+    .intro-main h2{font-size: 1.5rem; margin-bottom: 0;}
 
     .intro-section.white-text .intro-main{padding: 96px 0 220px;}
     .intro-section.white-text .intro-text{padding: 0;}
-    .intro-section.white-text .intro-text h2{margin-bottom: 20px;}
+    .intro-section.white-text .intro-text h2{margin-bottom: 0;}
 
     .intro-section.white-text.row-reverse .intro-text {padding: 130px 0 0 ;}
     .intro-section.white-text.row-reverse .intro-main{padding: 96px 0;}

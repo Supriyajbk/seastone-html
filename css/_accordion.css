@@ -20,6 +20,9 @@
 .accordion-desc p{margin-bottom: 22px;}
 .accordion-list:last-child{margin-bottom: 0;}
 
+.accordion-desc ol{margin: -1px 0 28px 20px;}
+.accordion-desc ol > li::before {left: -26px; background-color: transparent; color: var(--body-text); top: 4px}
+
 .accordion-section.accordion-white{background-color: var(--white-90);}
 .accordion-section.accordion-white .accordion-list{background-color: var(--white);  transition: all  0.3s ease-in-out;}
 .accordion-section.accordion-white .accordion-list .accordion-header{transition: all  0.3s ease-in-out;}

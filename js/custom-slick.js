@@ -60,6 +60,22 @@ jQuery(document).ready(function () {
     });
   }
 
+//  jQuery(".services-slider").slick({
+//    slidesToShow: 1,
+//    slidesToScroll: 4,
+//    arrows: true,
+//    prevArrow: '<div class="slick-arrow slick-prev flex flex-center radius-50" aria-label="Previous Arrow" role="button"><span><i class="fa-regular fa-chevron-left"></i></span></div>',
+//    nextArrow: '<div class="slick-arrow slick-next flex flex-center radius-50" aria-label="Next Arrow" role="button"><span><i class="fa-regular fa-chevron-right"></i></span></div>',
+//    dots: false,
+//    speed: 1000,
+//    infinite: false,
+//    autoplay: false,
+//    draggable: true,
+//    swipeToSlide: false,
+//    touchThreshold: 50,
+//    variableWidth: true,
+//  });
+
 
   var eventslider = jQuery('.services-slider');
   eventslider.slick({
@@ -78,22 +94,6 @@ jQuery(document).ready(function () {
     appendArrows: jQuery('.custom_arrows_wc'),
     prevArrow: '<div class="custom_arrow slick-prev flex flex-center radius-50" aria-label="Previous Arrow" role="button"><span><i class="fa-regular fa-chevron-left"></i></span></div>',
     nextArrow: '<div class="custom_arrow slick-next flex flex-center radius-50" aria-label="Next Arrow" role="button"><span><i class="fa-regular fa-chevron-right"></i></span></div>',
-    responsive: [{
-        breakpoint: 1023,
-        settings: {
-          slidesToScroll: 3,
-        }
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToScroll: 1,
-             centerMode: true,
-      centerPadding: '22px',
-            dots: true,
-        }
-      }
-    ]
   });
 
 

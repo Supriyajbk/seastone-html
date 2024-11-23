@@ -59,8 +59,8 @@ span.link-text::after{display: none;}
 span.link-text::before{display: none;}
 
 
-ol{margin: -1px 0 28px 28px;}
-ol > li::before {left: -26px; background-color: transparent; color: var(--body-text); top: 4px}
+ol{margin: -1px 0 28px 27px;}
+ol > li::before {left: -24px; background-color: transparent; color: var(--body-text); top: 4px}
 
 
 /*--  media css starts here --*/

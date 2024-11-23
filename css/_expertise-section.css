@@ -52,7 +52,7 @@ ul.expertise-links li a.active, ul.expertise-links li a.active:hover{outline: 4p
 @media only screen and (max-width: 1023px) and (min-width: 200px){
 
     .expertise-main{display: block;}
-    .expertise-lt{padding: 64px 0 40px;}
+    .expertise-lt{padding: 64px 0 30px;}
     .expertise-rt{padding: 40px 0 64px;}
     ul.expertise-links{gap: 20px;}
     ul.expertise-links li {flex: 0 0 calc(33.33% - 14px); margin-bottom: 0;}

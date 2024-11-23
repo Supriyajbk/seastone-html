@@ -9,7 +9,7 @@
 .cta-people .tm-grid .tm-content .h5 {line-height: 125%; margin: 0 0 4px 0; font-size: 1.5rem;}
 .cta-people .tm-grid .tm-content .h5 a {color: var(--midnight);}
 .cta-people .tm-grid .tm-content .h5 a:hover {color: var(--aegean);}
-.cta-people .tm-grid .tm-content .tm-pos {font-size: 1.125rem; line-height: 20px; color: var(--aegean);}
+.cta-people .tm-grid .tm-content .tm-pos {font-size: 1.125rem; line-height: 20px; color: var(--stone);}
 .cta-people .tm-grid .tm-contact figure {display: none;}
 .cta-people .tm-grid .tm-contact span {display: block; margin: 0 0 4px 0;}
 .cta-people .tm-grid .tm-contact {margin:18px 0 0 0; clear: both; width: 100%;}

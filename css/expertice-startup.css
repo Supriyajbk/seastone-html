@@ -8,30 +8,35 @@
 @import url("_cta-people.css");
 
 .default-banner-section { background: var(--aeganbg); }
-/* .intro-main{padding: 160px 0;} */
 .intro-section.aegean-bg{background-color: var(--aegean-85);}
 .intro-section.stone-bg{background-color: var(--stone-85);}
 .intro-section .optional-text{color: var(--seafom);}
 
+.intro-text .readmore{margin-top: 20px;}
 
 .blog-top-container {background: var(--aegean-90);}
-/* .blog-big-txt .h1{font-size: 2rem;
-    line-height: 125%;
-    color: var(--white);
-    margin: 0 0 14px 0;}
-.blog-big-txt .h1 a{color: var(--white);}
-.blog-big-txt .h1 a:hover { color: var(--sapphire); }  */
+
 
 .cta-short{background: transparent; padding-bottom: 0;}
 .cta-short p { font-size: 2rem;}
 
+.featured-head{padding: 0;}
+.featured-row{margin-top: 72px;}
+
+@media only screen and (min-width:1280px) {
+    .featured-head{padding: 0 320px 0 0;}
+
+
+
+}
 
 
 
 @media only screen and (max-width: 767px) and (min-width: 200px){
 .cta-short .h2 {margin-bottom: 24px;}
 
-
+.intro-section.white-text.row-reverse .intro-main { padding: 96px 0 86px; }
+.expertise-rows .slick-list{height: auto !important;}
 
 }
 
