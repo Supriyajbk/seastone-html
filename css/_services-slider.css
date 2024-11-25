@@ -34,5 +34,7 @@
     .services-slider-main .heading {padding: 0 0 32px;}
 }
 @media only screen and (max-width: 767px) and (min-width:200px){
+    .services-slider-main .container {position: relative;}
     .services-slider ul.slick-dots {gap: 4px; width: calc(100% - 120px); margin: 0 auto;}
+    .services-slider-main .heading-lt {width: 100%;}
 }

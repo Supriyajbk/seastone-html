@@ -100,7 +100,7 @@ input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:ac
 .search-submit {display: none;} 
 
 /* Default */
-button, .button  {display: inline-block; font-size:1.125rem; font-weight: 700; line-height: 100%; padding:15px 16px 11px 16px; vertical-align: middle; cursor: pointer; border:2px solid transparent; background-color: var(--cerulean); position: relative; transition: all .35s ease-in-out; -webkit-transition: all .35s ease-in-out; -moz-transition: all .35s ease-in-out; text-align: center; color: var(--white); font-family:"itc-avant-garde-gothic-pro", sans-serif; text-decoration: none; overflow: hidden; z-index: 1; border-radius: 24px; outline: 4px solid transparent; box-sizing: border-box;}
+button, .button  {display: inline-block; font-size:1.125rem; font-weight: 700; line-height: 100%; padding:15px 16px 11px 16px; vertical-align: middle; cursor: pointer; border:2px solid transparent; background-color: var(--cerulean); position: relative; transition: all .35s ease-in-out; -webkit-transition: all .35s ease-in-out; -moz-transition: all .35s ease-in-out; text-align: center; color: var(--white); font-family:"itc-avant-garde-gothic-pro", sans-serif; text-decoration: none; overflow: hidden; z-index: 1; border-radius: 300px; outline: 4px solid transparent; box-sizing: border-box;}
 button:hover, .button:hover {color: var(--midnight); background-color: var(--sunshine); outline: 4px solid rgba(237, 208, 86, 0.50);}
 button:focus, .button:focus, button:active, .button:active {background-color: var(--cerulean); color: var(--white);}
 
