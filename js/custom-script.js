@@ -9,69 +9,143 @@ jQuery(document).ready(function () {
     }
   });
 
-  /* Menu */
   if (jQuery(window).width() <= 767) {
-    jQuery(".toggle_button").on("click", function (event) {
-      event.preventDefault();
-      jQuery(this).toggleClass("active");
-      jQuery(".mobile_menu").toggleClass("navOpen");
-      jQuery(".main_header").toggleClass("menu-open");
-      jQuery("html").toggleClass("no-scroll");
-    });
+  // Toggle mobile menu visibility
+  jQuery(".toggle_button").on("click", function (event) {
+    event.preventDefault();
+    jQuery(this).toggleClass("active");
+    jQuery(".mobile_menu").toggleClass("navOpen");
+    jQuery(".main_header").toggleClass("menu-open");
+    jQuery("html").toggleClass("no-scroll");
+  });
 
-    jQuery("ul.main_menu > li").has("ul").addClass("menu-icon");
-    jQuery("ul.main_menu > li").has("ul ul").addClass("menu-icon3");
+  // Add menu-icon classes for items with submenus
+  jQuery("ul.main_menu > li").has("ul").addClass("menu-icon");
+  jQuery("ul.main_menu > li").has("ul ul").addClass("menu-icon3");
 
-    jQuery("ul.main_menu > li.menu-icon > a").on("click", function (event) {
-      event.preventDefault();
-      jQuery(this).toggleClass("toggle_icon");
-      jQuery(this).siblings("ul.sub-menu").toggleClass("sub-menu-open");
-      jQuery(this).parent().siblings("li").toggleClass("sib");
-    });
+  // Handle level 1 menu toggle
+  jQuery("ul.main_menu > li.menu-icon > a").on("click", function (event) {
+    event.preventDefault();
 
-    /*-- 3rd level --*/
-    jQuery("ul.main_menu> li > ul > li.menu-item-has-children > a").on(
-      "click",
-      function (event) {
-        event.preventDefault();
-        jQuery(this)
-          .parent()
-          .siblings("li")
-          .parent("ul.sub-menu")
-          .toggleClass("remove-margin");
-        jQuery(this)
-          .parent()
-          .siblings("li")
-          .parent("ul.sub-menu")
-          .siblings("a.toggle_icon")
-          .toggleClass("hide-level-two");
-        jQuery(this).toggleClass("toggle_icon3");
-        jQuery(this).siblings("ul.sub-menu").toggleClass("sub-menu-open-two");
-        jQuery(this).parent().siblings("li").toggleClass("sib2");
+    const $submenu = jQuery(this).siblings("ul");
+    const $submenuHeight = $submenu.get(0).scrollHeight;  // Dynamically calculate submenu height
+
+    // Close all other submenus before opening the current one
+    jQuery("ul.main_menu > li > ul.sub-menu-open").each(function () {
+      if (this !== $submenu[0]) {
+        jQuery(this).removeClass("sub-menu-open").css({
+          height: '0',
+          opacity: '0',
+          paddingTop: '0'
+        });
       }
-    );
-
-    /*-- 4th level --*/
-    jQuery(
-      "ul.main_menu> li > ul > li > ul > li.menu-item-has-children > a"
-    ).on("click", function (event) {
-      event.preventDefault();
-      jQuery(this)
-        .parent()
-        .siblings("li")
-        .parent("ul.sub-menu")
-        .toggleClass("remove-margin");
-      jQuery(this)
-        .parent()
-        .siblings("li")
-        .parent("ul.sub-menu")
-        .siblings("a.toggle_icon3")
-        .toggleClass("hide-level-three");
-      jQuery(this).toggleClass("toggle_icon4");
-      jQuery(this).siblings("ul.sub-menu").toggleClass("sub-menu-open-three");
-      jQuery(this).parent().siblings("li").toggleClass("sib3");
     });
-  }
+
+    // Toggle the current submenu
+    if ($submenu.hasClass("sub-menu-open")) {
+      $submenu.removeClass("sub-menu-open").css({
+        height: '0',
+        opacity: '0',
+        paddingTop: '0'
+      });
+    } else {
+      $submenu.addClass("sub-menu-open").css({
+        height: $submenuHeight + 'px',
+        opacity: '1',
+        paddingTop: '10px'
+      });
+    }
+
+    // Toggle sibling blur and font size adjustment
+    jQuery(this).parent().siblings("li").toggleClass("sib");
+
+    // Toggle active class for font-size
+    jQuery(this).parent().siblings("li").find("a").removeClass("active");
+    jQuery(this).addClass("active");
+  });
+
+  // Handle level 2 submenu toggle
+  jQuery("ul.main_menu > li > ul > li.menu-item-has-children > a").on("click", function (event) {
+    event.preventDefault();
+
+    const $submenu = jQuery(this).siblings("ul");
+    const $submenuHeight = $submenu.get(0).scrollHeight; // Dynamically calculate submenu height
+
+    // Close all other level 2 submenus before opening the current one
+    jQuery("ul.main_menu > li > ul > li > ul.sub-menu-open-two").each(function () {
+      if (this !== $submenu[0]) {
+        jQuery(this).removeClass("sub-menu-open-two").css({
+          maxHeight: '0',
+          opacity: '0'
+        });
+      }
+    });
+
+    // Toggle the current level 2 submenu
+    if ($submenu.hasClass("sub-menu-open-two")) {
+      $submenu.removeClass("sub-menu-open-two").css({
+        maxHeight: '0',
+        opacity: '0'
+      });
+    } else {
+      $submenu.addClass("sub-menu-open-two").css({
+        maxHeight: $submenuHeight + 'px',
+        opacity: '1'
+      });
+    }
+
+    // Toggle sibling blur and font size adjustment for level 2
+    jQuery(this).parent().siblings("li").toggleClass("sib");
+
+    // Toggle active class for font-size in level 2
+    jQuery(this).parent().siblings("li").find("a").removeClass("active");
+    jQuery(this).addClass("active");
+  });
+
+  // Handle level 3 submenu toggle
+  jQuery("ul.main_menu > li > ul > li > ul > li.menu-item-has-children > a").on("click", function (event) {
+    event.preventDefault();
+
+    const $submenu = jQuery(this).siblings("ul");
+    const $submenuHeight = $submenu.get(0).scrollHeight; // Dynamically calculate submenu height
+
+    // Close all other level 3 submenus before opening the current one
+    jQuery("ul.main_menu > li > ul > li > ul > li > ul.sub-menu-open-three").each(function () {
+      if (this !== $submenu[0]) {
+        jQuery(this).removeClass("sub-menu-open-three").css({
+          maxHeight: '0',
+          opacity: '0'
+        });
+      }
+    });
+
+    // Toggle the current level 3 submenu
+    if ($submenu.hasClass("sub-menu-open-three")) {
+      $submenu.removeClass("sub-menu-open-three").css({
+        maxHeight: '0',
+        opacity: '0'
+      });
+    } else {
+      $submenu.addClass("sub-menu-open-three").css({
+        maxHeight: $submenuHeight + 'px',
+        opacity: '1'
+      });
+    }
+
+    // Toggle sibling blur and font size adjustment for level 3
+    jQuery(this).parent().siblings("li").toggleClass("sib");
+
+    // Toggle active class for font-size in level 3
+    jQuery(this).parent().siblings("li").find("a").removeClass("active");
+    jQuery(this).addClass("active");
+  });
+}
+
+
+
+
+
+
 
   /* Accorrdion */
   jQuery(".accordion-header").on("click", function (e) {
