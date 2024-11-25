@@ -40,22 +40,6 @@ jQuery(document).ready(function () {
     }, ]
   });
 
-  jQuery('.our-clients-row').on('afterChange', function(event, slick, currentSlide){
-    const dataColor = jQuery(`.our-clients-info[data-slick-index="${currentSlide}"]`).data("color");
-    if (dataColor) {
-        jQuery('.our-clients-color').css('background-color', dataColor);
-      } else {
-        jQuery('.our-clients-color').css('background-color', "#2b6389");
-      }
-   
-   });
-   //initial page load
-   currentSlide = 0;
-   console.log(`.our-clients-info[data-slick-index="${currentSlide}"]`);
-  var dataColor = jQuery(`.our-clients-info[data-slick-index="${currentSlide}"]`).data("color");
-   //console.log(datacolor);
-  jQuery('.our-clients-color').css('background-color', dataColor);
-
   if (jQuery(window).width() <= 767) {
     jQuery(".our-expertise-main").slick({
       slidesToShow: 1,

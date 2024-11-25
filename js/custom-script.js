@@ -1,5 +1,4 @@
 jQuery(document).ready(function () {
-
   /* Fixed Header */
   jQuery(window).on("scroll", function () {
     var scroll = jQuery(this).scrollTop();
@@ -10,9 +9,8 @@ jQuery(document).ready(function () {
     }
   });
 
-
   /* Menu */
-  if (jQuery(window).width() <= 1023) {
+  if (jQuery(window).width() <= 767) {
     jQuery(".toggle_button").on("click", function (event) {
       event.preventDefault();
       jQuery(this).toggleClass("active");
@@ -21,40 +19,59 @@ jQuery(document).ready(function () {
       jQuery("html").toggleClass("no-scroll");
     });
 
-
     jQuery("ul.main_menu > li").has("ul").addClass("menu-icon");
     jQuery("ul.main_menu > li").has("ul ul").addClass("menu-icon3");
 
-
     jQuery("ul.main_menu > li.menu-icon > a").on("click", function (event) {
       event.preventDefault();
-      jQuery(this).toggleClass('toggle_icon');
+      jQuery(this).toggleClass("toggle_icon");
       jQuery(this).siblings("ul.sub-menu").toggleClass("sub-menu-open");
-      jQuery(this).parent().siblings("li").toggleClass('sib');
+      jQuery(this).parent().siblings("li").toggleClass("sib");
     });
 
     /*-- 3rd level --*/
-    jQuery("ul.main_menu> li > ul > li.menu-item-has-children > a").on("click", function (event) {
-      event.preventDefault();
-      jQuery(this).parent().siblings("li").parent("ul.sub-menu").toggleClass("remove-margin");
-      jQuery(this).parent().siblings("li").parent("ul.sub-menu").siblings("a.toggle_icon").toggleClass("hide-level-two");
-      jQuery(this).toggleClass('toggle_icon3');
-      jQuery(this).siblings("ul.sub-menu").toggleClass("sub-menu-open-two");
-      jQuery(this).parent().siblings("li").toggleClass('sib2');
-    });
+    jQuery("ul.main_menu> li > ul > li.menu-item-has-children > a").on(
+      "click",
+      function (event) {
+        event.preventDefault();
+        jQuery(this)
+          .parent()
+          .siblings("li")
+          .parent("ul.sub-menu")
+          .toggleClass("remove-margin");
+        jQuery(this)
+          .parent()
+          .siblings("li")
+          .parent("ul.sub-menu")
+          .siblings("a.toggle_icon")
+          .toggleClass("hide-level-two");
+        jQuery(this).toggleClass("toggle_icon3");
+        jQuery(this).siblings("ul.sub-menu").toggleClass("sub-menu-open-two");
+        jQuery(this).parent().siblings("li").toggleClass("sib2");
+      }
+    );
 
     /*-- 4th level --*/
-    jQuery("ul.main_menu> li > ul > li > ul > li.menu-item-has-children > a").on("click", function (event) {
+    jQuery(
+      "ul.main_menu> li > ul > li > ul > li.menu-item-has-children > a"
+    ).on("click", function (event) {
       event.preventDefault();
-      jQuery(this).parent().siblings("li").parent("ul.sub-menu").toggleClass("remove-margin");
-      jQuery(this).parent().siblings("li").parent("ul.sub-menu").siblings("a.toggle_icon3").toggleClass("hide-level-three");
-      jQuery(this).toggleClass('toggle_icon4');
+      jQuery(this)
+        .parent()
+        .siblings("li")
+        .parent("ul.sub-menu")
+        .toggleClass("remove-margin");
+      jQuery(this)
+        .parent()
+        .siblings("li")
+        .parent("ul.sub-menu")
+        .siblings("a.toggle_icon3")
+        .toggleClass("hide-level-three");
+      jQuery(this).toggleClass("toggle_icon4");
       jQuery(this).siblings("ul.sub-menu").toggleClass("sub-menu-open-three");
-      jQuery(this).parent().siblings("li").toggleClass('sib3');
+      jQuery(this).parent().siblings("li").toggleClass("sib3");
     });
-
   }
-
 
   /* Accorrdion */
   jQuery(".accordion-header").on("click", function (e) {
@@ -70,25 +87,30 @@ jQuery(document).ready(function () {
     jQuery(".accordion-content").not(jQuerycontent).slideUp("slow");
   });
 
-
   /* Form */
-  jQuery('.frm_form_field input, .frm_form_field textarea').on('input', function () {
-    var inputLength = jQuery(this).val().length;
-    if (inputLength > 0) {
-      jQuery(this).addClass('input-has-value');
-    } else {
-      jQuery(this).removeClass('input-has-value');
+  jQuery(".frm_form_field input, .frm_form_field textarea").on(
+    "input",
+    function () {
+      var inputLength = jQuery(this).val().length;
+      if (inputLength > 0) {
+        jQuery(this).addClass("input-has-value");
+      } else {
+        jQuery(this).removeClass("input-has-value");
+      }
     }
-  });
+  );
 
-  jQuery('.frm_form_field input, .frm_form_field textarea').on('blur', function () {
-    var inputValue = jQuery(this).val();
-    if (parseFloat(inputValue) > 0 && inputValue.trim() !== '') {
-      jQuery(this).addClass('highlight');
-    } else {
-      jQuery(this).removeClass('highlight');
+  jQuery(".frm_form_field input, .frm_form_field textarea").on(
+    "blur",
+    function () {
+      var inputValue = jQuery(this).val();
+      if (parseFloat(inputValue) > 0 && inputValue.trim() !== "") {
+        jQuery(this).addClass("highlight");
+      } else {
+        jQuery(this).removeClass("highlight");
+      }
     }
-  });
+  );
 
   // jQuery(".frm_forms .frm_form_fields input, .frm_forms .frm_form_fields textarea").on('focus', function () {
   //   jQuery(this).siblings(".frm_form_field").addClass("input-has-value");
@@ -112,43 +134,60 @@ jQuery(document).ready(function () {
   //   }
   // });
 
-  jQuery(document).on('change', '.frm_forms .frm_form_fields select', function () {
-    jQuery(this).siblings("label.frm_primary_label").addClass("input-has-value");
-  });
-  jQuery(document).on('change', '.frm_forms .frm_form_fields select', function () {
-    var selval = jQuery(this).val();
-    if (selval == '') {
-      jQuery(this).siblings("label.frm_primary_label").removeClass("input-has-value");
-    } else {
-      jQuery(this).siblings("label.frm_primary_label").addClass("input-has-value");
+  jQuery(document).on(
+    "change",
+    ".frm_forms .frm_form_fields select",
+    function () {
+      jQuery(this)
+        .siblings("label.frm_primary_label")
+        .addClass("input-has-value");
     }
-  });
+  );
+  jQuery(document).on(
+    "change",
+    ".frm_forms .frm_form_fields select",
+    function () {
+      var selval = jQuery(this).val();
+      if (selval == "") {
+        jQuery(this)
+          .siblings("label.frm_primary_label")
+          .removeClass("input-has-value");
+      } else {
+        jQuery(this)
+          .siblings("label.frm_primary_label")
+          .addClass("input-has-value");
+      }
+    }
+  );
 
   function checkForInput(element) {
-    const $label = jQuery(element).siblings('div.frm_error');
+    const $label = jQuery(element).siblings("div.frm_error");
     if (jQuery(element).val().length > 0) {
-      $label.addClass('input-has-value');
+      $label.addClass("input-has-value");
     } else {
-      $label.removeClass('input-has-value');
+      $label.removeClass("input-has-value");
     }
   }
 
-
   if (jQuery(window).width() >= 1024) {
-    jQuery('.more-inights-cnt .more-link, .more-inights-cnt .h5, .more-blog-cnt .more-link, .more-blog-cnt .h5').hover(function () {
-      jQuery(this).closest('.more-insights-grid, .more-blog-grid').toggleClass('toggled');
+    jQuery(
+      ".more-inights-cnt .more-link, .more-inights-cnt .h5, .more-blog-cnt .more-link, .more-blog-cnt .h5"
+    ).hover(function () {
+      jQuery(this)
+        .closest(".more-insights-grid, .more-blog-grid")
+        .toggleClass("toggled");
     });
   }
 
   if (jQuery(window).width() >= 1024) {
-    jQuery('.heading-rt .readmore').hover(function () {
-      jQuery(this).closest('.heading-rt').siblings().toggleClass('minusleft');
+    jQuery(".heading-rt .readmore").hover(function () {
+      jQuery(this).closest(".heading-rt").siblings().toggleClass("minusleft");
     });
-  } 
+  }
 
-
-
-
-  
-}); 
-
+  jQuery(".anchor-links ul li a").on("click", function (e) {
+    e.preventDefault();
+    jQuery(this).parent("li").siblings().removeClass("active");
+    jQuery(this).parent("li").addClass("active");
+  });
+});

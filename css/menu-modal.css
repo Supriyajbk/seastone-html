@@ -2,7 +2,7 @@
 .modal-content { width: 100%; height: auto; margin: 0 auto;  border: 0 none; background: transparent; padding: 20px 0; max-width: 1280px; position: relative;}
 .modal-content .h1 {color: var(--sapphire); text-align: center; font-size: 4.5rem; margin-bottom: 45px;}
 .modal-content .h3 {color: var(--white); text-align: center; font-size: 1.75rem; letter-spacing: -0.035rem;}
-.modal-content .fancy-link::before, .fancy-link::after {bottom: -3px;}
+.modal-content .fancy-link::before, .modal-content .fancy-link::after {bottom: -3px;}
 .modal-content .menu-wrapper {margin: 0 0 70px 0;}
 .close { color:var(--sapphire); font-size:32px; font-weight: 300; position: absolute; top: 48px; right:48px; width: 64px; height: 64px; border-radius: 32px;
   background: rgba(0, 0, 0, 0.50); justify-content: center; display: flex; align-items: center; cursor: pointer;}

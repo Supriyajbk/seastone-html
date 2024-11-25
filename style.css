@@ -478,7 +478,7 @@ body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:ho
     .btn-center .button {min-width:214px; margin: 0 8px;}
     
     .section-wrap {padding: 80px 0 69px;}
-    .custom_arrows_wc {position: absolute; left: 0; right: 0; margin: 0 auto; bottom: 0;}
+    .custom_arrows_wc {position: absolute; left: 0; right: 0; margin: 0 auto; bottom: 5px;}
     .custom_arrow.slick-arrow.slick-prev {right: auto; left: 24px;}
     .custom_arrow.slick-arrow.slick-next {right: 24px; left: auto;}
     
