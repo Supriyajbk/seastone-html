@@ -19,7 +19,7 @@
 .featured-section{background-color: var(--white); clear: both; width: 100%;}
 .featured-main{padding: 80px 0 78px;}
 .featured-row{gap: 40px;}
-.featured-list{flex: 0 0 calc(25% - 30px); flex-grow: 1;}
+.featured-list{flex: 0 0 calc(25% - 40px); flex-grow: 1;}
 .featured-list h2{ margin-bottom: 8px; line-height: 1;}
 .featured-list p{line-height: 1.5;}
 
@@ -37,8 +37,15 @@
 .featured-main.no-row { padding: 80px 0 70px; }
 
 
+
+
 @media only screen and (min-width:1280px) {
 .featured-head{padding: 0 320px 0 0;}
+}
+
+@media only screen and (min-width:1280px) {
+.featured-row { gap: 64px 40px; }
+
 }
 
 @media only screen and (max-width:1279px) and (min-width: 200px) {
