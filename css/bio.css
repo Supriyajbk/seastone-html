@@ -31,7 +31,7 @@
 .ready-to-text ul > li::before{display: none;}
 .ready-to-text ul{margin-left: 0;}
 .ready-to-text ul li a{font-size: 1.125rem; font-weight: 700; color: var(--midnight); text-decoration: none;}
-
+.ready-to-text{position: relative; z-index: 1;}
 .ready-to-work-main{overflow: hidden; }
 .ready-to-work-main::before { position: absolute; display: block; content: ""; width: 338px; height: 338px; background-image: url("../images/rings@2x.png"); background-repeat: no-repeat; top: -40px; left: -4px; z-index: -1; background-size: contain; }
 .ready-to-work-main::after{position: absolute; width: 100%; top: 0; display: block; content: ""; background-color: var(--seafom-10); height: 100%;}

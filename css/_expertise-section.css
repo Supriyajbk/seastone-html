@@ -70,6 +70,6 @@ ul.expertise-links li a.active, ul.expertise-links li a.active:hover{outline: 4p
     ul.expertise-links li a{justify-content: center;}
 
     .expertise-lt span.optional-text{margin-bottom: 26px;}
-    .expertise-text { padding-bottom: 40px; }
+    .expertise-text { padding-bottom: 20px; }
 
 }
