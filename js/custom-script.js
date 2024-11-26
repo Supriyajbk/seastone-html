@@ -9,142 +9,56 @@ jQuery(document).ready(function () {
     }
   });
 
+
   if (jQuery(window).width() <= 767) {
-  // Toggle mobile menu visibility
-  jQuery(".toggle_button").on("click", function (event) {
-    event.preventDefault();
-    jQuery(this).toggleClass("active");
-    jQuery(".mobile_menu").toggleClass("navOpen");
-    jQuery(".main_header").toggleClass("menu-open");
-    jQuery("html").toggleClass("no-scroll");
-  });
+    jQuery(".toggle_button").on("click", function (event) {
+      event.preventDefault();
+      jQuery(this).toggleClass("active");
+      jQuery(".mobile_menu").toggleClass("navOpen");
+      jQuery(".main_header").toggleClass("menu-open");
+      jQuery("html").toggleClass("no-scroll");
+    });
 
-  // Add menu-icon classes for items with submenus
-  jQuery("ul.main_menu > li").has("ul").addClass("menu-icon");
-  jQuery("ul.main_menu > li").has("ul ul").addClass("menu-icon3");
+    jQuery("ul.main_menu > li").has("ul").addClass("menu-icon");
+    jQuery("ul.main_menu > li").has("ul ul").addClass("menu-icon3");
 
-  // Handle level 1 menu toggle
-  jQuery("ul.main_menu > li.menu-icon > a").on("click", function (event) {
-    event.preventDefault();
+    // Toggle Level 1 Submenu
+    jQuery("ul.main_menu > li.menu-icon > a").on("click", function (event) {
+      event.preventDefault();
+      jQuery(this).toggleClass("toggle_icon");
+      const $this = jQuery(this);
+      const $submenu = $this.siblings("ul.sub-menu");
 
-    const $submenu = jQuery(this).siblings("ul");
-    const $submenuHeight = $submenu.get(0).scrollHeight;  // Dynamically calculate submenu height
+      jQuery("ul.main_menu > li > ul").not($submenu).removeClass("sub-menu-open");
+      $submenu.toggleClass("sub-menu-open");
+      $this.parent().siblings("li").toggleClass("sib", $submenu.hasClass("sub-menu-open"));
 
-    // Close all other submenus before opening the current one
-    jQuery("ul.main_menu > li > ul.sub-menu-open").each(function () {
-      if (this !== $submenu[0]) {
-        jQuery(this).removeClass("sub-menu-open").css({
-          height: '0',
-          opacity: '0',
-          paddingTop: '0'
-        });
+      if ($submenu.hasClass("sub-menu-open")) {
+        jQuery(".header_right").addClass("level-one-active");
+      } else {
+        jQuery(".header_right").removeClass("level-one-active");
       }
     });
 
-    // Toggle the current submenu
-    if ($submenu.hasClass("sub-menu-open")) {
-      $submenu.removeClass("sub-menu-open").css({
-        height: '0',
-        opacity: '0',
-        paddingTop: '0'
-      });
-    } else {
-      $submenu.addClass("sub-menu-open").css({
-        height: $submenuHeight + 'px',
-        opacity: '1',
-        paddingTop: '10px'
-      });
-    }
+    // Toggle Level 2 Submenu
+    jQuery("ul.main_menu > li > ul > li.menu-item-has-children > a").on("click", function (event) {
+      jQuery(this).toggleClass("toggle_icon3");
+      event.preventDefault();
+      const $this = jQuery(this);
+      const $submenu = $this.siblings("ul.sub-menu");
+      jQuery("ul.main_menu > li > ul > li > ul").not($submenu).removeClass("sub-menu-open-two");
 
-    // Toggle sibling blur and font size adjustment
-    jQuery(this).parent().siblings("li").toggleClass("sib");
+      // Toggle the Level 2 submenu
+      $submenu.toggleClass("sub-menu-open-two");
+      $this.parent().siblings("li").toggleClass("sib2", $submenu.hasClass("sub-menu-open-two"));
 
-    // Toggle active class for font-size
-    jQuery(this).parent().siblings("li").find("a").removeClass("active");
-    jQuery(this).addClass("active");
-  });
-
-  // Handle level 2 submenu toggle
-  jQuery("ul.main_menu > li > ul > li.menu-item-has-children > a").on("click", function (event) {
-    event.preventDefault();
-
-    const $submenu = jQuery(this).siblings("ul");
-    const $submenuHeight = $submenu.get(0).scrollHeight; // Dynamically calculate submenu height
-
-    // Close all other level 2 submenus before opening the current one
-    jQuery("ul.main_menu > li > ul > li > ul.sub-menu-open-two").each(function () {
-      if (this !== $submenu[0]) {
-        jQuery(this).removeClass("sub-menu-open-two").css({
-          maxHeight: '0',
-          opacity: '0'
-        });
+      if ($submenu.hasClass("sub-menu-open-two")) {
+        jQuery(".header_right").addClass("level-two-active");
+      } else {
+        jQuery(".header_right").removeClass("level-two-active");
       }
     });
-
-    // Toggle the current level 2 submenu
-    if ($submenu.hasClass("sub-menu-open-two")) {
-      $submenu.removeClass("sub-menu-open-two").css({
-        maxHeight: '0',
-        opacity: '0'
-      });
-    } else {
-      $submenu.addClass("sub-menu-open-two").css({
-        maxHeight: $submenuHeight + 'px',
-        opacity: '1'
-      });
-    }
-
-    // Toggle sibling blur and font size adjustment for level 2
-    jQuery(this).parent().siblings("li").toggleClass("sib");
-
-    // Toggle active class for font-size in level 2
-    jQuery(this).parent().siblings("li").find("a").removeClass("active");
-    jQuery(this).addClass("active");
-  });
-
-  // Handle level 3 submenu toggle
-  jQuery("ul.main_menu > li > ul > li > ul > li.menu-item-has-children > a").on("click", function (event) {
-    event.preventDefault();
-
-    const $submenu = jQuery(this).siblings("ul");
-    const $submenuHeight = $submenu.get(0).scrollHeight; // Dynamically calculate submenu height
-
-    // Close all other level 3 submenus before opening the current one
-    jQuery("ul.main_menu > li > ul > li > ul > li > ul.sub-menu-open-three").each(function () {
-      if (this !== $submenu[0]) {
-        jQuery(this).removeClass("sub-menu-open-three").css({
-          maxHeight: '0',
-          opacity: '0'
-        });
-      }
-    });
-
-    // Toggle the current level 3 submenu
-    if ($submenu.hasClass("sub-menu-open-three")) {
-      $submenu.removeClass("sub-menu-open-three").css({
-        maxHeight: '0',
-        opacity: '0'
-      });
-    } else {
-      $submenu.addClass("sub-menu-open-three").css({
-        maxHeight: $submenuHeight + 'px',
-        opacity: '1'
-      });
-    }
-
-    // Toggle sibling blur and font size adjustment for level 3
-    jQuery(this).parent().siblings("li").toggleClass("sib");
-
-    // Toggle active class for font-size in level 3
-    jQuery(this).parent().siblings("li").find("a").removeClass("active");
-    jQuery(this).addClass("active");
-  });
-}
-
-
-
-
-
+  }
 
 
   /* Accorrdion */
@@ -161,36 +75,30 @@ jQuery(document).ready(function () {
     jQuery(".accordion-content").not(jQuerycontent).slideUp("slow");
   });
 
-  /* Form */
-  jQuery(".frm_form_field input, .frm_form_field textarea").on(
-    "input",
-    function () {
-      var inputLength = jQuery(this).val().length;
-      if (inputLength > 0) {
-        jQuery(this).addClass("input-has-value");
-      } else {
-        jQuery(this).removeClass("input-has-value");
-      }
-    }
-  );
 
-  jQuery(".frm_form_field input, .frm_form_field textarea").on(
-    "blur",
-    function () {
-      var inputValue = jQuery(this).val();
-      if (parseFloat(inputValue) > 0 && inputValue.trim() !== "") {
-        jQuery(this).addClass("highlight");
-      } else {
-        jQuery(this).removeClass("highlight");
-      }
+  /* Form */
+  jQuery(".frm_form_field input, .frm_form_field textarea").on("input", function () {
+    var inputLength = jQuery(this).val().length;
+    if (inputLength > 0) {
+      jQuery(this).addClass("input-has-value");
+    } else {
+      jQuery(this).removeClass("input-has-value");
     }
-  );
+  });
+  jQuery(".frm_form_field input, .frm_form_field textarea").on("blur", function () {
+    var inputValue = jQuery(this).val();
+    if (parseFloat(inputValue) > 0 && inputValue.trim() !== "") {
+      jQuery(this).addClass("highlight");
+    } else {
+      jQuery(this).removeClass("highlight");
+    }
+  });
+
 
   // jQuery(".frm_forms .frm_form_fields input, .frm_forms .frm_form_fields textarea").on('focus', function () {
   //   jQuery(this).siblings(".frm_form_field").addClass("input-has-value");
   //   jQuery(this).parent(".frm_form_field ").removeClass("frm_blank_field");
   //   jQuery(this).siblings("label.frm_primary_label").addClass("label-top");
-
   //   jQuery(this).siblings(".frm_error").hide();
   // }).on('blur', function () {
   //   if (!jQuery(this).val()) {
@@ -198,41 +106,26 @@ jQuery(document).ready(function () {
   //     jQuery(this).siblings(".frm_error").show();
   //     jQuery(this).parent(".frm_form_field ").addClass("frm_blank_field");
   //     jQuery(this).siblings("label.frm_primary_label").removeClass("label-top");
-
   //   } else {
   //     jQuery(this).siblings(".frm_form_field").addClass("input-has-value");
   //     jQuery(this).parent(".frm_form_field ").removeClass("frm_blank_field");
   //     jQuery(this).siblings("label.frm_primary_label").addClass("label-top");
-
   //     jQuery(this).siblings(".frm_error").hide();
   //   }
   // });
 
-  jQuery(document).on(
-    "change",
-    ".frm_forms .frm_form_fields select",
-    function () {
-      jQuery(this)
-        .siblings("label.frm_primary_label")
-        .addClass("input-has-value");
+
+  jQuery(document).on("change", ".frm_forms .frm_form_fields select", function () {
+    jQuery(this).siblings("label.frm_primary_label").addClass("input-has-value");
+  });
+  jQuery(document).on("change", ".frm_forms .frm_form_fields select", function () {
+    var selval = jQuery(this).val();
+    if (selval == "") {
+      jQuery(this).siblings("label.frm_primary_label").removeClass("input-has-value");
+    } else {
+      jQuery(this).siblings("label.frm_primary_label").addClass("input-has-value");
     }
-  );
-  jQuery(document).on(
-    "change",
-    ".frm_forms .frm_form_fields select",
-    function () {
-      var selval = jQuery(this).val();
-      if (selval == "") {
-        jQuery(this)
-          .siblings("label.frm_primary_label")
-          .removeClass("input-has-value");
-      } else {
-        jQuery(this)
-          .siblings("label.frm_primary_label")
-          .addClass("input-has-value");
-      }
-    }
-  );
+  });
 
   function checkForInput(element) {
     const $label = jQuery(element).siblings("div.frm_error");
@@ -243,22 +136,17 @@ jQuery(document).ready(function () {
     }
   }
 
+
   if (jQuery(window).width() >= 1024) {
-    jQuery(
-      ".more-inights-cnt .more-link, .more-inights-cnt .h5, .more-blog-cnt .more-link, .more-blog-cnt .h5"
-    ).hover(function () {
-      jQuery(this)
-        .closest(".more-insights-grid, .more-blog-grid")
-        .toggleClass("toggled");
+    jQuery(".more-inights-cnt .more-link, .more-inights-cnt .h5, .more-blog-cnt .more-link, .more-blog-cnt .h5").hover(function () {
+      jQuery(this).closest(".more-insights-grid, .more-blog-grid").toggleClass("toggled");
     });
   }
-
   if (jQuery(window).width() >= 1024) {
     jQuery(".heading-rt .readmore").hover(function () {
       jQuery(this).closest(".heading-rt").siblings().toggleClass("minusleft");
     });
   }
-
   jQuery(".anchor-links ul li a").on("click", function (e) {
     e.preventDefault();
     jQuery(this).parent("li").siblings().removeClass("active");
