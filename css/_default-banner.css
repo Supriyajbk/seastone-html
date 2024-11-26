@@ -8,6 +8,7 @@
 .default-banner-main .default-banner-text .optional-text {color: var(--sapphire); margin: 0  0 22px 0;}
 .default-banner-main .default-banner-text p {font-size:1.25rem; margin: 26px 0 33px; line-height: 1.75; color:var(--white);  font-weight: 500;}
 
+.default-banner-text.no-desc h1{margin-bottom: 13px;}
 
 .banner-gradients .strip span{display: block; width: 100%; font-size: 2rem; line-height:17px; font-weight: 700; color: var(--white);}
 .banner-gradients .strip {position: relative; display: flex; width: 100%; min-height: 72px; align-items: flex-end;}

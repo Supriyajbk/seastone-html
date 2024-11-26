@@ -70,7 +70,7 @@ footer#main_footer ul.copyright-links > li > a:hover{color: var(--midnight);}
 }
 
 @media only screen and (max-width:1023px) and (min-width:768px) {
-    footer#main_footer {padding: 112px 0 80px;}
+    footer#main_footer {padding: 64px 0 80px;}
     footer#main_footer .footer_lt {width: 100%;} 
     footer#main_footer .footer_lt .footer-lt-cnt {align-items: flex-end;}
     footer#main_footer .footer_lt .footer-logo img {width: 176px; height: 124px;}
