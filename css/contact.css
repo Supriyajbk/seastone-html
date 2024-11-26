@@ -49,6 +49,9 @@ body.page-template-contact #main_footer .background-bg{top: inherit; z-index: 1;
 .contact-text h2 .fancy-link:before{bottom: -4px;}
 .contact-text h2 .fancy-link:after{bottom: -4px;}
 
+.contact-concise-section.no-row .contact-concise-bg{display: none;}
+.contact-concise-section.no-row .contact-concise-main{margin-top: 0; padding-top: 102px;}
+.contact-section.no-row .banner-gradients{z-index: 2;}
 
 .contact-form .frm_message { margin: 0; padding: 40px 0 34px; }
 
@@ -130,6 +133,9 @@ body.page-template-contact #main_footer .background-bg{top: inherit; z-index: 1;
     footer#main_footer { padding: 62px 0 80px; }
     body.page-template-contact #main_footer .background-bg { min-height: 802px; }
 
+    .contact-concise-section.no-row .contact-concise-main { margin-top: 0; padding-top: 76px; }
+
+
   }
 
   @media only screen and (max-width: 767px) and (min-width: 200px){
@@ -174,6 +180,8 @@ body.page-template-contact #main_footer .background-bg{top: inherit; z-index: 1;
     .contact-form .frm_forms .frm_message p {font-size: 1.5rem; line-height: 1.5;}
     .contact-form .frm_forms .frm_form_fields .frm_form_field { margin-bottom: 16px;}
     .contact-form .frm-wrapper{margin-top: 19px;}
+
+    .contact-section.no-row {z-index: 2;}
   }
 
   

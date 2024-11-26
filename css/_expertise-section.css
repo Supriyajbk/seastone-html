@@ -13,7 +13,7 @@ ul.expertise-links li{width: 100%; margin-bottom: 28px;}
 ul.expertise-links li::before{display: none;}
 ul.expertise-links li a{transition: 0.2s all ease; background-color: var(--white); padding: 11px 12px 7px 12px; border-radius: 12px;  text-decoration: none; outline: 4px solid transparent;}
 ul.expertise-links li .readmore span { top: inherit; position: absolute; display: inline-block; right: 12px; margin-left: 10px; }
-ul.expertise-links li a:hover{outline-color: var(--sunshine-50); }
+ul.expertise-links li a:hover{outline-color: var(--sunshine-50); cursor: pointer;}
 ul.expertise-links li a.active, ul.expertise-links li a.active:hover{outline: 4px solid var(--sapphire-50);}
 .expertise-row:first-child{display: block;}
 .expertise-row{display: none;}
